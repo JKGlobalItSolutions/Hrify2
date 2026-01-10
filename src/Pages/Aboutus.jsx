@@ -3,52 +3,54 @@ import img2 from "../assets/About/img2.png";
 import bgimg1 from "../assets/About/bgimg1.png";
 import img3 from "../assets/About/img3.png";
 import img4 from "../assets/About/img4.png";
+import HrifyLogo from "../assets/Navbar/logo.png"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function About() {
     return (
         <>
-           <div className="container mt-5">
-            <div
-                className="d-flex justify-content-center align-items-start" // align content at top
-                style={{
-                    position: "relative",
-                    width: "100%",
-                    minHeight: "100vh",
-                    margin: 0,
-                    padding: 0,
-                    backgroundImage: `url(${img1})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    overflowX: "hidden",
-                }}
-            >
-                {/* Glass/matte effect container */}
+            <div className="container mt-5">
                 <div
-                    className=""
+                    className="d-flex justify-content-center align-items-start" // align content at top
                     style={{
                         position: "relative",
                         width: "100%",
-                        marginTop: "clamp(60px, 12vh, 120px)",               // top spacing
-                        backgroundColor: "rgba(255, 255, 255, 0.2)",
-                        backdropFilter: "blur(10px)",
-                        WebkitBackdropFilter: "blur(10px)",
-                        padding: "2rem",
-                        color: "#fff",
+                        minHeight: "100vh",
+                        margin: 0,
+                        padding: 0,
+                        backgroundImage: `url(${img1})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        overflowX: "hidden",
                     }}
                 >
-                    <h1 className="mb-3">Seamless Staffing Limitless Growth</h1>
-                    <p style={{ fontSize: "20px" }}>
-                        Unleashing potential through tailored staffing and workforce.
-                        Streamline your workforce strategies with our comprehensive Talent Management solutions.
-                        From staffing to career development, we ensure the right talent meets the right opportunities.
-                        Designed to transform your business and elevate success.
-                    </p>
+                    {/* Glass/matte effect container */}
+                    <div
+                        className=""
+                        style={{
+                            position: "relative",
+                            width: "100%",
+                            marginTop: "clamp(60px, 12vh, 120px)",               // top spacing
+                            backgroundColor: "rgba(255, 255, 255, 0.2)",
+                            backdropFilter: "blur(10px)",
+                            WebkitBackdropFilter: "blur(10px)",
+                            padding: "2rem",
+                            color: "#fff",
+                        }}
+                    >
+                        <h1 className="mb-3">Seamless Staffing Limitless Growth</h1>
+                        <p style={{ fontSize: "20px" }}>
+                            Unleashing potential through tailored staffing and workforce.
+                            Streamline your workforce strategies with our comprehensive Talent Management solutions.
+                            From staffing to career development, we ensure the right talent meets the right opportunities.
+                            Designed to transform your business and elevate success.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-</div>
+            </div>
 
             <div className="container text-center mt-5">
 
@@ -160,11 +162,11 @@ function About() {
                                         fontWeight: "600",
                                     }}
                                 >
-                                    J. Jayakrishnan M.E, MBA.
+                                    J. Jayakrishnan
                                 </h5>
 
                                 <p style={{ color: "#fff", marginBottom: "5px" }}>
-                                    Managing Director
+                                    CEO & Founder
                                 </p>
 
                                 <div
@@ -173,10 +175,13 @@ function About() {
                                         backgroundColor: "#fff",
                                         padding: "5px 15px",
                                         borderRadius: "5px",
-                                        fontWeight: "700",
                                     }}
                                 >
-                                    HRIFY
+                                    <img
+                                        src={HrifyLogo}
+                                        alt="HRIFY Logo"
+                                        style={{ height: "30px" }}
+                                    />
                                 </div>
                             </div>
 
@@ -282,7 +287,7 @@ function About() {
                         width: "100%",
                         maxWidth: "600px",
                         borderRadius: "8px",
-                         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
+                        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
                     }}
                 >
                     <h4 className="text-center mb-4">Submit Your Inquiry</h4>

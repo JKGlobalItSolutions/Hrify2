@@ -69,7 +69,7 @@ function Footer() {
                         />
 
 
-                        <div className="mt-4">
+                        {/* <div className="mt-4">
                             <button
                                 className="btn"
                                 style={{
@@ -82,11 +82,11 @@ function Footer() {
                             >
                                 Download Broacher
                             </button>
-                        </div>
+                        </div> */}
 
 
                         {/* Social Icons */}
-                        <div className="d-flex gap-3 justify-content-lg-end justify-content-start mt-4">
+                        {/* <div className="d-flex gap-3 justify-content-lg-end justify-content-start mt-4">
                             <a href="#" style={iconStyle}>
                                 <i className="bi bi-facebook"></i>
                             </a>
@@ -102,7 +102,7 @@ function Footer() {
                             <a href="#" style={iconStyle}>
                                 <i className="bi bi-instagram"></i>
                             </a>
-                        </div>
+                        </div> */}
 
                     </div>
 
