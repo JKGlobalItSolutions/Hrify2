@@ -32,7 +32,7 @@ function Products() {
                                 alt="Hotel"
                                 style={{
                                     width: "100%",
-                                    maxWidth: "350px",
+                                    maxWidth: "300px",
                                     height: "auto",
                                     objectFit: "contain",
                                     borderRadius: "12px"

@@ -40,8 +40,72 @@ function Navbar() {
             <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/talent_management">Talent Management</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/industries">Industries</Link></li>
+ {/* <li className="nav-item"><Link className="nav-link" to="/trust">Trust</Link></li> */}
+
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                to="#"
+                id="productDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product & Solutions
+              </Link>
+
+              <ul className="dropdown-menu" aria-labelledby="productDropdown">
+                <li>
+                  <Link className="dropdown-item" to="/pillamar">
+                    Pillamar
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/sonachala">
+                    Sonachala
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+
+            <li className="nav-item dropdown">
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
+                id="prohubDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit"
+                }}
+              >
+                Industries
+              </button>
+
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" to="/industries/Industry_AM">
+                    Automotive and Mobility
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/industries/Industry_HL">
+                    Healthcare and Life Sciences
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/industries/Industry_EU">
+                    Energy and Utilities definition
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+
+
             <li className="nav-item"><Link className="nav-link" to="/opportunities">Opportunities</Link></li>
+
             <li className="nav-item dropdown">
               <button
                 className="nav-link dropdown-toggle btn btn-link"
@@ -74,32 +138,8 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            {/* <li className="nav-item"><Link className="nav-link" to="/trust">Trust</Link></li> */}
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                id="productDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Product & Solutions
-              </Link>
 
-              <ul className="dropdown-menu" aria-labelledby="productDropdown">
-                <li>
-                  <Link className="dropdown-item" to="/pillamar">
-                    Pillamar
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/sonachala">
-                    Sonachala
-                  </Link>
-                </li>
-              </ul>
-            </li>
+           
 
           </ul>
 

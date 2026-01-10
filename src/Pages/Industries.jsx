@@ -4,9 +4,9 @@ import img3 from "../assets/Industries/img3.png";
 import img4 from "../assets/Industries/img4.png";
 import img5 from "../assets/Industries/img5.png";
 import img6 from "../assets/Industries/img6.png";
-import img7 from "../assets/Industries/img7.png";
-import img8 from "../assets/Industries/img8.png";
-import img9 from "../assets/Industries/img9.png";
+
+
+
 import img10 from "../assets/Industries/img10.png";
 
 import bgimg1 from "../assets/Industries/bgimg1.png";
@@ -341,151 +341,6 @@ function Industries() {
 
                         </div>
                     </div>
-                </div>
-            </div>
-
-
-            <div className="container-fluid p-2 mt-3 text-center" >
-                <h1 className="mb-2"><b>Automotive and Mobility</b></h1>
-                <p style={{ color: "#015670" }}>Automotive and Mobility refers to the industries and technologies focused on the design, manufacturing, and operation of vehicles, along with the development of innovative transportation solutions that enable efficient, safe, and sustainable movement of people and goods. This domain encompasses traditional automotive manufacturing, electric and autonomous vehicles, shared mobility services, smart infrastructure, and advancements in connectivity to reshape the future of transportation. </p>
-            </div>
-
-
-
-
-
-            <div className="container py-5">
-                <div className="row align-items-center">
-
-
-                    {/* RIGHT CONTENT - col-8 */}
-                    <div className="col-lg-8 col-md-12">
-                        <h3 className="mb-3">Vehicle Innovation</h3>
-                        <p style={{ lineHeight: "1.7" }}>
-                            Driving the future of mobility, our focus is on the latest advancements in electric, autonomous, and connected vehicle technologies. We support innovation that enhances energy efficiency, promotes sustainability, and delivers safer, smarter transportation solutions. From cutting-edge electric drivetrains to AI-powered autonomous systems and integrated connectivity features, we are at the forefront of transforming the automotive industry. </p>
-
-                        <h3 className="mb-3">Sustainable Solutions</h3>
-                        <p style={{ lineHeight: "1.7" }}>We are committed to promoting eco-friendly technologies that reduce carbon emissions and support environmental sustainability. Our solutions focus on the adoption of electric vehicles (EVs), renewable energy integration, and energy-efficient transportation systems. By leveraging innovative technologies, we aim to create a cleaner, greener future for global mobility. </p>
-
-                        <h3 className="mb-3">Smart Mobility </h3>
-                        <p style={{ lineHeight: "1.7" }}>Embracing the future of transportation, our smart mobility initiatives include shared mobility services, ride-hailing platforms, and intelligent transportation systems. By integrating smart infrastructure and leveraging data-driven insights, we enhance urban mobility, reduce traffic congestion, and offer convenient, cost-effective transportation options for both individuals and businesses.</p>
-
-                        <h3 className="mb-3">Global Transportation Evolution </h3>
-                        <p style={{ lineHeight: "1.7" }}>As the world shifts toward seamless, efficient, and sustainable movement of people and goods, we are leading the way in revolutionizing global transportation. Our focus is on innovative solutions that streamline logistics, enhance connectivity between regions, and support the development of sustainable transportation networks on a global scale. </p>
-
-
-
-                    </div>
-
-
-
-                    {/* LEFT IMAGE - col-4 */}
-                    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center">
-                        <img
-                            src={img7}
-                            alt="Flexible Staffing"
-                            style={{
-                                width: "100%",
-                                maxWidth: "300px",   // optional – neat center look
-                                height: "auto",
-                                borderRadius: "8px"
-                            }}
-                        />
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div className="container-fluid p-2 mt-3 text-center" >
-                <h1 className="mb-2"><b>Healthcare and Life Sciences</b></h1>
-                <p style={{ color: "#015670" }}>Healthcare and Life Sciences refer to industries focused on improving human health and well-being through the development, delivery, and management of medical services, products, and research. This sector encompasses healthcare providers, pharmaceutical companies, biotechnology firms, medical device manufacturers, and life science researchers. It aims to advance medical knowledge, develop innovative treatments, and improve patient care while addressing global health challenges through cutting-edge technology, data-driven insights, and scientific breakthroughs.</p>
-            </div>
-
-
-            <div className="container py-5">
-                <div className="row align-items-center">
-
-
-
-
-                    {/* LEFT IMAGE - col-4 */}
-                    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center">
-                        <img
-                            src={img8}
-                            alt="Flexible Staffing"
-                            style={{
-                                width: "100%",
-                                maxWidth: "300px",   // optional – neat center look
-                                height: "auto",
-                                borderRadius: "8px"
-                            }}
-                        />
-                    </div>
-
-                    {/* RIGHT CONTENT - col-8 */}
-                    <div className="col-lg-8 col-md-12">
-                        <h3 className="mb-3">Medical Innovation</h3>
-                        <p style={{ lineHeight: "1.7" }}>
-                            Driving the future of healthcare through cutting-edge research, revolutionary therapies, and groundbreaking technologies. Our focus is on enhancing patient care, improving outcomes, and transforming lives with innovative medical solutions tailored for tomorrow’s challenges. </p>
-
-                        <h3 className="mb-3">Healthcare Delivery​ </h3>
-                        <p style={{ lineHeight: "1.7" }}>Transforming access to high-quality healthcare through innovative hospitals, specialized clinics, comprehensive telemedicine services, and personalized treatment plans. Our mission is to ensure patient-centered care that is accessible, efficient, and effective for every individual. </p>
-
-                        <h3 className="mb-3">Pharmaceutical and Biotechnology </h3>
-                        <p style={{ lineHeight: "1.7" }}>Leading advancements in drug discovery, genetic engineering, and biotechnological innovation. Our focus lies in developing life-saving medicines, pioneering therapies, and preventive healthcare solutions that address global health challenges and improve quality of life.</p>
-
-                        <h3 className="mb-3">Data and Technology Integration​ </h3>
-                        <p style={{ lineHeight: "1.7" }}>Harnessing the power of Artificial Intelligence (AI), Internet of Things (IoT), and Big Data analytics to revolutionize healthcare operations. Our intelligent systems enable real-time decision-making, streamline clinical workflows, and enhance patient outcomes through data-driven insights.  </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="container-fluid p-2 mt-3 text-center" >
-                <h1 className="mb-2"><b>Energy and Utilities definition</b></h1>
-                <p style={{ color: "#015670" }}>Energy and Utilities refers to the industries responsible for the generation, transmission, distribution, and management of essential resources such as electricity, natural gas, water, and renewable energy. This sector includes traditional energy sources like fossil fuels, as well as renewable energy innovations such as solar, wind, and hydroelectric power. Utilities manage infrastructure, ensure supply reliability, and support energy efficiency, sustainability, and regulatory compliance. With increasing emphasis on clean energy, the industry is evolving to address environmental challenges and meet growing energy demands while transitioning to more sustainable and efficient solutions.</p>
-            </div>
-
-
-            <div className="container py-5">
-                <div className="row align-items-center">
-
-                    {/* RIGHT CONTENT - col-8 */}
-                    <div className="col-lg-8 col-md-12">
-                        <h3 className="mb-3">Energy Generation</h3>
-                        <p style={{ lineHeight: "1.7" }}>
-                            Involves the production of electricity, natural gas, and renewable energy from various sources like fossil fuels, solar, wind, and hydro. </p>
-
-                        <h3 className="mb-3">Sustainable Solutions  </h3>
-                        <p style={{ lineHeight: "1.7" }}>We are committed to advancing clean and renewable energy initiatives that minimize environmental impact and promote a sustainable future. Our innovative solutions focus on harnessing solar, wind, and other renewable energy sources, ensuring energy efficiency and reducing carbon footprints for communities and industries worldwide. </p>
-
-                        <h3 className="mb-3">Infrastructure Management  </h3>
-                        <p style={{ lineHeight: "1.7" }}>Our approach to infrastructure management ensures the reliable transmission and distribution of energy resources through cutting-edge technologies and smart grid systems. We focus on building robust, scalable, and resilient energy infrastructure that optimizes performance, reduces downtime, and meets the evolving demands of modern energy consumption. </p>
-
-                        <h3 className="mb-3">Regulatory Compliance </h3>
-                        <p style={{ lineHeight: "1.7" }}>We navigate the complex landscape of industry regulations and compliance standards to ensure safety, reliability, and environmental responsibility across all operations. Our dedicated compliance strategies help organizations adhere to local and global regulatory frameworks, maintaining operational integrity and fostering public trust in the energy and utilities sector.   </p>
-                    </div>
-
-
-
-
-                    {/* LEFT IMAGE - col-4 */}
-                    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center">
-                        <img
-                            src={img9}
-                            alt="Flexible Staffing"
-                            style={{
-                                width: "100%",
-                                maxWidth: "300px",   // optional – neat center look
-                                height: "auto",
-                                borderRadius: "8px"
-                            }}
-                        />
-                    </div>
-
-
-
                 </div>
             </div>
 
