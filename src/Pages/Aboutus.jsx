@@ -162,11 +162,11 @@ function About() {
                                         fontWeight: "600",
                                     }}
                                 >
-                                    J. Jayakrishnan
+                                    Jayakrishnan J
                                 </h5>
 
                                 <p style={{ color: "#fff", marginBottom: "5px" }}>
-                                    CEO & Founder
+                                    Founder & CEO
                                 </p>
 
                                 <div

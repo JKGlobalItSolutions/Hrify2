@@ -133,7 +133,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/prohub/referal">
-                    Referal Program
+                    Referral Program
                   </Link>
                 </li>
               </ul>
