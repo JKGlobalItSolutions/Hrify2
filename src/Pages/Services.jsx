@@ -5,6 +5,8 @@ import img3 from "../assets/Services/img3.png";
 import img11 from "../assets/Services/img11.png";
 import img12 from "../assets/Services/img12.png";
 import img13 from "../assets/Services/img13.png";
+import img14 from "../assets/Services/img14.png";
+import img15 from "../assets/Services/img15.png";
 import img4 from "../assets/Services/img4.png";
 import img5 from "../assets/Services/img5.png";
 import bgimg1 from "../assets/Services/bgimg1.png";
@@ -259,7 +261,7 @@ function Services() {
                         {/* System Integration */}
                         <div className="col-md-4">
                             <img
-                                src={img1}
+                                src={img14}
                                 className="img-fluid"
                                 style={{
                                     width: "100%",
@@ -281,7 +283,7 @@ function Services() {
                         {/* Networking Solutions */}
                         <div className="col-md-4">
                             <img
-                                src={img2}
+                                src={img15}
                                 className="img-fluid"
                                 style={{
                                     width: "100%",
