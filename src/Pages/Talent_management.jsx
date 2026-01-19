@@ -1,4 +1,5 @@
 
+import Form from "../Components/Form"
 import img1 from "../assets/Talent_management/img1.png"
 import img2 from "../assets/Talent_management/img2.png"
 import img3 from "../assets/Talent_management/img3.png"
@@ -11,7 +12,11 @@ import img7 from "../assets/Talent_management/img7.png"
 function Talent_management() {
     return (
         <>
-            <div className="container mt-5">
+
+
+
+
+            <div className="container-fluid mt-5 mb-3 ">
                 <div
                     className="d-flex justify-content-center align-items-start"
                     style={{
@@ -32,7 +37,7 @@ function Talent_management() {
                         style={{
                             position: "absolute",
                             inset: 0,
-                            backgroundColor: "rgba(0,0,0,0.4)",
+                            // backgroundColor: "rgba(0,0,0,0.4)",
                         }}
                     ></div>
 
@@ -41,24 +46,27 @@ function Talent_management() {
                         className="container-fluid"
                         style={{
                             position: "relative",
+                            marginTop: "clamp(100px, 60vh, 3000px)",
                             marginTop: "clamp(60px, 12vh, 120px)",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
+                            // backgroundColor: "rgba(255, 255, 255, 0.2)",
+                            backdropFilter: "blur(20px)",
                             WebkitBackdropFilter: "blur(10px)",
                             padding: "2rem",
                             color: "#fff",
                         }}
                     >
                         <div className="container">
-                            <h1 className="mb-3 text-center text-md-start">
+                            <h1 className="mb-3" style={{ fontSize: "40px", fontFamily: "'Poppins', sans-serif" }}>
                                 Dynamic Solutions for Dynamic Teams
                             </h1>
 
                             <p
                                 className="text-center text-md-start"
                                 style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)", // Responsive font
+                                    fontSize: "20px",
+                                    fontFamily: "'Poppins', sans-serif" // Responsive font
                                 }}
+
                             >
                                 "Unleashing potential through tailored staffing and workforce solutions designed to transform your business and elevate success."
                             </p>
@@ -71,21 +79,19 @@ function Talent_management() {
 
 
 
-
-
             <div className="container py-5">
                 <div className="row align-items-center">
 
                     {/* LEFT CONTENT */}
                     <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
 
-                        <h3 className="mb-3" style={{ color: "#015670" }}>Innovative Talent Strategies for Future-Ready Organizations</h3>
+                        <h3 className="mb-3" style={{ color: "#015670",fontWeight:"bold", fontSize:"24px", fontFamily:"poppins" }}>Innovative Talent Strategies for Future-Ready Organizations</h3>
 
-                        <p>Talent Management is the strategic process of sourcing, developing, and retaining exceptional professionals to meet your organization’s workforce demands, with a specialized focus on the IT sector. Our services range from Contract Staffing and Placement to Contract-to-Hire, Permanent Staffing, Supplier Rationalization, and Hire, Train & Deploy programs. By aligning the right talent with the right opportunities, we help businesses optimize their workforce strategies. This fosters efficiency, boosts productivity, and supports long-term growth, empowering organizations to thrive in today’s competitive IT landscape.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Talent Management is the strategic process of sourcing, developing, and retaining exceptional professionals to meet your organization’s workforce demands, with a specialized focus on the IT sector. Our services range from Contract Staffing and Placement to Contract-to-Hire, Permanent Staffing, Supplier Rationalization, and Hire, Train & Deploy programs. By aligning the right talent with the right opportunities, we help businesses optimize their workforce strategies. This fosters efficiency, boosts productivity, and supports long-term growth, empowering organizations to thrive in today’s competitive IT landscape.</p>
 
-                        <p>Our approach is designed to adapt to the unique needs of each organization, whether you're a fast-growing startup or an established enterprise. We leverage data-driven insights and market intelligence to ensure a tailored strategy that not only attracts top-tier talent but also retains them through continuous engagement and development initiatives.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Our approach is designed to adapt to the unique needs of each organization, whether you're a fast-growing startup or an established enterprise. We leverage data-driven insights and market intelligence to ensure a tailored strategy that not only attracts top-tier talent but also retains them through continuous engagement and development initiatives.</p>
 
-                        <p>With a dedicated focus on building future-ready teams, we empower businesses to stay agile in an ever-evolving digital landscape. Our comprehensive talent solutions enable organizations to scale quickly, innovate faster, and maintain a competitive edge by having the right people in the right roles at the right time. </p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>With a dedicated focus on building future-ready teams, we empower businesses to stay agile in an ever-evolving digital landscape. Our comprehensive talent solutions enable organizations to scale quickly, innovate faster, and maintain a competitive edge by having the right people in the right roles at the right time. </p>
 
                     </div>
 
@@ -118,12 +124,12 @@ function Talent_management() {
                     {/* RIGHT CONTENT */}
                     <div className="col-lg-7 col-md-12">
 
-                        <h3 className="mb-3" style={{ color: "#015670" }}>
+                        <h3 className="mb-3" style={{ color: "#015670",fontWeight:"bold", fontSize:"24px", fontFamily:"poppins" }}>
                             Contract Staffing and Placement
                         </h3>
 
-                        <p>Contract Staffing and Placement connects businesses in the IT sector with skilled professionals to meet their specific project and operational needs. Our tailored services ensure the right tech talent is matched with the right opportunities, enabling organizations to build a dynamic and effective workforce. Whether it's short-term assignments or specialized roles, we deliver the expertise you need to drive innovation and achieve exceptional results in the ever-evolving IT landscape. Partner with us to accelerate your business success.</p>
-                        <p>Our recruiters have made screening and hiring for short-term contracts easier for our clients. Our contract services help our clients to meet their short-term staffing requirements across industries. Our devoted team collaborates closely with our clients to satisfy their personnel requirements for forthcoming projects and seasonal changes. Hiring personnel on a contract basis enables these businesses to maintain staffing numbers.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Contract Staffing and Placement connects businesses in the IT sector with skilled professionals to meet their specific project and operational needs. Our tailored services ensure the right tech talent is matched with the right opportunities, enabling organizations to build a dynamic and effective workforce. Whether it's short-term assignments or specialized roles, we deliver the expertise you need to drive innovation and achieve exceptional results in the ever-evolving IT landscape. Partner with us to accelerate your business success.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Our recruiters have made screening and hiring for short-term contracts easier for our clients. Our contract services help our clients to meet their short-term staffing requirements across industries. Our devoted team collaborates closely with our clients to satisfy their personnel requirements for forthcoming projects and seasonal changes. Hiring personnel on a contract basis enables these businesses to maintain staffing numbers.</p>
                     </div>
 
                 </div>
@@ -138,11 +144,11 @@ function Talent_management() {
                     {/* LEFT CONTENT */}
                     <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
 
-                        <h3 className="mb-3" style={{ color: "#015670" }}>Permanent Staffing</h3>
+                        <h3 className="mb-3" style={{ color: "#015670",fontWeight:"bold", fontSize:"24px", fontFamily:"poppins" }}>Permanent Staffing</h3>
 
-                        <p>Our permanent staffing solutions for the IT sector focus on sourcing top-tier talent that aligns seamlessly with your organization’s culture, technical requirements, and long-term objectives. Through a rigorous screening process and a personalized approach, we ensure every IT professional we place is a strategic fit. Whether you need software developers, network engineers, or IT consultants, we help you build a stable and skilled workforce that drives innovation, sustainable growth, and success for your business.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Our permanent staffing solutions for the IT sector focus on sourcing top-tier talent that aligns seamlessly with your organization’s culture, technical requirements, and long-term objectives. Through a rigorous screening process and a personalized approach, we ensure every IT professional we place is a strategic fit. Whether you need software developers, network engineers, or IT consultants, we help you build a stable and skilled workforce that drives innovation, sustainable growth, and success for your business.</p>
 
-                        <p>To guarantee we supply the ideal individual, we take the time to study our client's business requirements, industry skill sets, workforce market, and other pertinent facts about the position. Our recruitment specialists use cutting-edge search processes to locate, screen, and qualify prospects. We save our clients time and money by recruiting more efficient candidates that have the correct talent for the job and match the company's culture, mindset, and tenure for long-term success.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>To guarantee we supply the ideal individual, we take the time to study our client's business requirements, industry skill sets, workforce market, and other pertinent facts about the position. Our recruitment specialists use cutting-edge search processes to locate, screen, and qualify prospects. We save our clients time and money by recruiting more efficient candidates that have the correct talent for the job and match the company's culture, mindset, and tenure for long-term success.</p>
 
                     </div>
 
@@ -176,13 +182,13 @@ function Talent_management() {
                     {/* RIGHT CONTENT */}
                     <div className="col-lg-7 col-md-12">
 
-                        <h3 className="mb-3" style={{ color: "#015670" }}>
+                        <h3 className="mb-3" style={{ color: "#015670",fontWeight:"bold", fontSize:"24px", fontFamily:"poppins" }}>
                             Supplier Rationalization
                         </h3>
 
-                        <p>Extensive experience in the IT sector, our expertise in supplier rationalization is backed by a proven track record of successful collaborations with industry leaders, including complex, multibillion-dollar clients. Our global presence and strong reputation enable us to deliver cost savings and minimize disruptions, regardless of location. We focus on managing tail spending, achieving substantial cost efficiencies within existing contractor agreements, and reducing both direct and indirect supplier layers. Specializing in customized contract negotiations, compliance, governance, and support for geographical expansion, we help IT businesses streamline their operations and optimize vendor relationships for sustainable growth.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Extensive experience in the IT sector, our expertise in supplier rationalization is backed by a proven track record of successful collaborations with industry leaders, including complex, multibillion-dollar clients. Our global presence and strong reputation enable us to deliver cost savings and minimize disruptions, regardless of location. We focus on managing tail spending, achieving substantial cost efficiencies within existing contractor agreements, and reducing both direct and indirect supplier layers. Specializing in customized contract negotiations, compliance, governance, and support for geographical expansion, we help IT businesses streamline their operations and optimize vendor relationships for sustainable growth.</p>
 
-                        <p>What actually distinguishes our proprietary Preferred Partner program, which is supported by strong governance, large financial resources, and a specialized legal and compliance staff critical to the successful implementation of the Supplier Rationalization Initiative. As a registered Minority Business Enterprise (MBE Supplier), we are dedicated to increasing our clients' diversity spending, while our comprehensive support enables them to expand into new territories. JK Global IT Solutions acts as a trusted intermediary between clients and providers, assuring compliance in a variety of operational situations. Geographical expansion. </p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>What actually distinguishes our proprietary Preferred Partner program, which is supported by strong governance, large financial resources, and a specialized legal and compliance staff critical to the successful implementation of the Supplier Rationalization Initiative. As a registered Minority Business Enterprise (MBE Supplier), we are dedicated to increasing our clients' diversity spending, while our comprehensive support enables them to expand into new territories. JK Global IT Solutions acts as a trusted intermediary between clients and providers, assuring compliance in a variety of operational situations. Geographical expansion. </p>
 
 
                     </div>
@@ -197,11 +203,11 @@ function Talent_management() {
                     {/* LEFT CONTENT */}
                     <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
 
-                        <h3 className="mb-3" style={{ color: "#015670" }}>Hire, Train & Deploy</h3>
+                        <h3 className="mb-3" style={{ color: "#015670",fontWeight:"bold", fontSize:"24px", fontFamily:"poppins" }}>Hire, Train & Deploy</h3>
 
-                        <p> We offer a comprehensive range of HTD (Hire, Train, and Deploy) solutions tailored to the unique demands of the IT Industry, redefining talent acquisition, development, and deployment. Whether for small businesses or multinational corporations, our services assist clients in sourcing, training, and placing the right personnel. Our customized training programs, including accent-neutral communication, technical expertise, and cultural alignment, ensure a consistent pipeline of talent for entry-level to specialized IT roles. Leveraging diverse markets and global talent pools, we enable organizations to build a workforce capable of serving a worldwide client base. From rigorous background checks to seamless payroll management, our solutions tackle operational complexities with precision, providing a hassle-free and efficient experience for IT-driven businesses.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}> We offer a comprehensive range of HTD (Hire, Train, and Deploy) solutions tailored to the unique demands of the IT Industry, redefining talent acquisition, development, and deployment. Whether for small businesses or multinational corporations, our services assist clients in sourcing, training, and placing the right personnel. Our customized training programs, including accent-neutral communication, technical expertise, and cultural alignment, ensure a consistent pipeline of talent for entry-level to specialized IT roles. Leveraging diverse markets and global talent pools, we enable organizations to build a workforce capable of serving a worldwide client base. From rigorous background checks to seamless payroll management, our solutions tackle operational complexities with precision, providing a hassle-free and efficient experience for IT-driven businesses.</p>
 
-                        <p>Our strong relationships with prestigious College’s & University , as well as expert trainers from industry leaders such as leading It Company, allow us to leverage our technology curriculum to provide our clients' workforce with cutting-edge technical skills and assist them in identifying, reporting, resolving issues, managing customer interactions, and more.</p>
+                        <p style={{fontSize:"18px", fontFamily:"poppins", textAlign:"justify"}}>Our strong relationships with prestigious College’s & University , as well as expert trainers from industry leaders such as leading It Company, allow us to leverage our technology curriculum to provide our clients' workforce with cutting-edge technical skills and assist them in identifying, reporting, resolving issues, managing customer interactions, and more.</p>
 
                     </div>
 
@@ -283,81 +289,7 @@ function Talent_management() {
             </div>
 
 
-            <div
-                className="d-flex justify-content-center align-items-center"
-                style={{ minHeight: "100vh", backgroundColor: "#ffffff" }}
-            >
-                <div
-                    className="card p-4"
-                    style={{
-                        width: "100%",
-                        maxWidth: "600px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
-                    }}
-                >
-                    <h4 className="text-center mb-4">Submit Your Inquiry</h4>
-
-                    <div className="mb-3">
-                        <label className="form-label">Full Name</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter your full name"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Business Email</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            placeholder="Enter your business email"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Phone Number</label>
-                        <input
-                            type="tel"
-                            className="form-control"
-                            placeholder="Enter your phone number"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">I am seeking</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="What are you seeking?"
-                        />
-                    </div>
-
-                    <div className="mb-4">
-                        <label className="form-label">
-                            Give us an overview of your expectations
-                        </label>
-                        <textarea
-                            className="form-control"
-                            rows="4"
-                            placeholder="Describe your expectations"
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="btn w-100"
-                        style={{
-                            backgroundColor: "#015670",
-                            color: "#ffffff",
-                            fontWeight: "500",
-                        }}
-                    >
-                        Submit Inquiry
-                    </button>
-                </div>
-            </div>
+           <Form/>
 
 
 

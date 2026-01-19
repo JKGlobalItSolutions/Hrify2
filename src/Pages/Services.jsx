@@ -11,6 +11,7 @@ import img4 from "../assets/Services/img4.png";
 import img5 from "../assets/Services/img5.png";
 import bgimg1 from "../assets/Services/bgimg1.png";
 import React, { useEffect, useRef, useState } from "react";
+import Form from "../Components/Form"
 
 
 
@@ -20,7 +21,7 @@ function Services() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
-        }, 3000); // 3 seconds
+        }, 1000); // 3 seconds
 
         return () => clearTimeout(timer);
     }, []);
@@ -28,7 +29,8 @@ function Services() {
     return (
         <>
 
-            <div className="container mt-5">
+
+            <div className="container-fluid mt-5 mb-3">
                 <div
                     className="d-flex justify-content-center align-items-start"
                     style={{
@@ -49,7 +51,7 @@ function Services() {
                         style={{
                             position: "absolute",
                             inset: 0,
-                            backgroundColor: "rgba(0,0,0,0.4)",
+                            // backgroundColor: "rgba(0,0,0,0.4)",
                         }}
                     ></div>
 
@@ -58,24 +60,27 @@ function Services() {
                         className="container-fluid"
                         style={{
                             position: "relative",
-                            marginTop: "clamp(60px, 12vh, 120px)",
+                            marginTop: "clamp(100px, 60vh, 3000px)",
+                            // marginTop: "clamp(60px, 12vh, 120px)",
                             backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
+                            backdropFilter: "blur(20px)",
                             WebkitBackdropFilter: "blur(10px)",
                             padding: "2rem",
                             color: "#fff",
                         }}
                     >
                         <div className="container">
-                            <h1 className="mb-3 text-center text-md-start">
+                            <h1 className="mb-3" style={{ fontSize: "40px", fontFamily: "'Poppins', sans-serif" }}>
                                 Smart IT Solutions Limitless Potential
                             </h1>
 
                             <p
                                 className="text-center text-md-start"
                                 style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)", // Responsive font
+                                    fontSize: "20px",
+                                    fontFamily: "'Poppins', sans-serif" // Responsive font
                                 }}
+
                             >
                                 “Delivering tailored IT solutions that drive innovation,
                                 streamline operations, and keep your business ahead in the
@@ -85,6 +90,11 @@ function Services() {
                     </div>
                 </div>
             </div>
+
+
+
+
+
             <div
                 className="container-fluid py-5 mt-5"
                 style={{
@@ -100,13 +110,15 @@ function Services() {
                                 style={{
                                     fontWeight: "700",
                                     marginBottom: "20px",
-                                    color: "#015670"
+                                    color: "#015670",
+                                    fontSizez: "24px",
+                                    fontFamily: "poppins"
                                 }}
                             >
                                 Empowering Businesses with Cutting-Edge IT Solutions
                             </h2>
 
-                            <p style={{ fontSize: "18px", lineHeight: "1.7" }}>
+                            <p style={{ fontSize: "18px", lineHeight: "1.7", fontFamily: "poppins" }}>
                                 HRIFY is a comprehensive management solutions platform designed to enhance efficiency and drive growth. With two specialized divisions, HRIFY seamlessly integrates cutting-edge technology with expert talent management. HRIFYDIGITAL offers exceptional software, web, and app development, advanced networking solutions, and expert IT services and consulting to future-proof your business.
                             </p>
 
@@ -141,7 +153,7 @@ function Services() {
 
 
             <div className="container text-center mt-5">
-                <h1 style={{ color: "#015670" }}><b>What We Do</b></h1>
+                <h1 style={{ color: "#015670", fontSize: "36px", fontFamily: "poppins" }}><b>What We Do</b></h1>
 
 
 
@@ -312,7 +324,7 @@ function Services() {
 
 
             <div
-                className="container-fluid p-0 m-0 mt-5"
+                className="container-fluid p-0 m-0 mt-5 mb-5"
                 style={{ overflow: "hidden" }}
             >
                 <img
@@ -330,62 +342,72 @@ function Services() {
 
 
 
-            <div
-                className="container-fluid py-5 mt-5 mb-5"
-                style={{
-                    backgroundImage: `url(${bgimg1})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundColor: "transparent",
-                }}
-            >
-                <div className="container" style={{ backgroundColor: "transparent" }}>
-                    <div className="row justify-content-center">
+            <div className="container-fluid">
+                <div className="row min-vh-100">
+
+                    {/* LEFT SIDE */}
+                    <div className="col-lg-6 d-flex align-items-center p-0">
                         <div
-                            className="col-12 col-md-10 text-center"
-                            style={{ backgroundColor: "transparent" }}
+                            className="w-100 h-100 d-flex align-items-center justify-content-center"
+                            style={{ backgroundColor: "black", padding: "60px" }}
                         >
-                            <h2 style={{ color: "#fff", fontWeight: 700 }}>
-                                Why Choose Us?
-                            </h2>
-                            <h5 style={{ color: "#FFD700", fontWeight: "600" }}>
-                                Agile Development Process
-                            </h5>
-                            <p style={{ color: "#ffffff", lineHeight: "1.7" }}>
-                                We deliver results faster and more effectively by breaking projects
-                                into manageable phases, ensuring flexibility and client involvement
-                                at every step.
-                            </p>
+                            <div className="text-center">
+                                <h2 style={{ color: "#fff",fontSize:"24px", fontFamily:"poppins", fontWeight: 700 }}>
+                                    Why Choose Us?
+                                </h2>
 
-                            <h5 style={{ color: "#FFD700", fontWeight: "600", marginTop: "20px" }}>
-                                Secure and Scalable Solutions
-                            </h5>
-                            <p style={{ color: "#ffffff", lineHeight: "1.7" }}>
-                                Our solutions are designed with robust security protocols and
-                                scalability, enabling your business to grow without compromising
-                                on safety or performance.
-                            </p>
+                                <h5 style={{ color: "#FFD700",fontSize:"24px", fontFamily:"poppins", fontWeight: 600 }}>
+                                    Agile Development Process
+                                </h5>
+                                <p style={{ color: "#fff",fontSize:"24px", fontFamily:"poppins", lineHeight: "1.7" }}>
+                                    We deliver results faster and more effectively by breaking projects
+                                    into manageable phases.
+                                </p>
 
-                            <h5 style={{ color: "#FFD700", fontWeight: "600", marginTop: "20px" }}>
-                                End-to-End Support
-                            </h5>
-                            <p style={{ color: "#ffffff", lineHeight: "1.7" }}>
-                                From initial consultation to deployment and maintenance, we provide
-                                continuous assistance to ensure a smooth and successful journey.
-                            </p>
+                                <h5 style={{ color: "#FFD700",fontSize:"24px", fontFamily:"poppins", fontWeight: 600 }}>
+                                    Secure and Scalable Solutions
+                                </h5>
+                                <p style={{ color: "#fff", fontSize:"24px", fontFamily:"poppins",lineHeight: "1.7" }}>
+                                    Our solutions are designed with robust security protocols.
+                                </p>
 
-                            <h5 style={{ color: "#FFD700", fontWeight: "600", marginTop: "20px" }}>
-                                Latest Technologies
-                            </h5>
-                            <p style={{ color: "#ffffff", lineHeight: "1.7" }}>
-                                We utilize cutting-edge tools and frameworks to build innovative
-                                solutions that keep your business ahead in a competitive landscape.
-                            </p>
+                                <h5 style={{ color: "#FFD700", fontSize:"24px", fontFamily:"poppins",fontWeight: 600 }}>
+                                    End-to-End Support
+                                </h5>
+                                <p style={{ color: "#fff", fontSize:"24px", fontFamily:"poppins",lineHeight: "1.7" }}>
+                                    From consultation to deployment, we provide continuous assistance.
+                                </p>
+
+                                <h5 style={{ color: "#FFD700",fontSize:"24px", fontFamily:"poppins", fontWeight: 600 }}>
+                                    Latest Technologies
+                                </h5>
+                                <p style={{ color: "#fff", fontSize:"24px", fontFamily:"poppins",lineHeight: "1.7" }}>
+                                    We use cutting-edge tools to keep your business ahead.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    {/* RIGHT SIDE */}
+                    <div className="col-lg-6 p-0">
+                        <img
+                            src={bgimg1}
+                            alt="Why choose us"
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
+
                 </div>
             </div>
+
+
+
+
+
 
             <div className="container mt-5 mb-5">
                 <div
@@ -446,87 +468,13 @@ function Services() {
 
 
             <div className="container mt-4 mb-2 text-center">
-                <h2 style={{ color: "#015670" }}><b>Ready to Start Your Project?</b></h2>
-                <p style={{ color: "#000000" }}>We’re here to help you transform your ideas into reality. Reach out to discuss how we can work together.</p>
+                <h2 style={{ color: "#015670", fontFamily:"poppins", fontSize:"36px" }}><b>Ready to Start Your Project?</b></h2>
+                <p style={{ color: "#949494", fontFamily:"poppins", fontSize:"20px" }}>We’re here to help you transform your ideas into reality. Reach out to discuss how we can work together.</p>
 
             </div>
 
 
-            <div
-                className="d-flex justify-content-center align-items-center"
-                style={{ minHeight: "100vh", backgroundColor: "#ffffff" }}
-            >
-                <div
-                    className="card p-4"
-                    style={{
-                        width: "100%",
-                        maxWidth: "600px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
-                    }}
-                >
-                    <h4 className="text-center mb-4">Submit Your Inquiry</h4>
-
-                    <div className="mb-3">
-                        <label className="form-label">Full Name</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter your full name"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Business Email</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            placeholder="Enter your business email"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Phone Number</label>
-                        <input
-                            type="tel"
-                            className="form-control"
-                            placeholder="Enter your phone number"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">I am seeking</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="What are you seeking?"
-                        />
-                    </div>
-
-                    <div className="mb-4">
-                        <label className="form-label">
-                            Give us an overview of your expectations
-                        </label>
-                        <textarea
-                            className="form-control"
-                            rows="4"
-                            placeholder="Describe your expectations"
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="btn w-100"
-                        style={{
-                            backgroundColor: "#015670",
-                            color: "#ffffff",
-                            fontWeight: "500",
-                        }}
-                    >
-                        Submit Inquiry
-                    </button>
-                </div>
-            </div>
+            <Form/>
 
 
 

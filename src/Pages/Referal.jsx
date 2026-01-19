@@ -59,8 +59,8 @@ function Referal() {
                     <div
                         style={{
                             position: "absolute",
-                            inset: 0,
-                            backgroundColor: "rgba(0,0,0,0.4)",
+                            // inset: 0,
+                            // backgroundColor: "rgba(0,0,0,0.4)",
                         }}
                     ></div>
 
@@ -78,14 +78,15 @@ function Referal() {
                         }}
                     >
                         <div className="container">
-                            <h1 className="mb-3 text-center text-md-start">
+                            <h1 className="mb-3 text-center text-md-start" style={{fontFamily:"poppins"}}>
                                 Refer & Earn with Us!
                             </h1>
 
                             <p
                                 className="text-center text-md-start"
                                 style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)", // Responsive font
+                                    fontSize: "clamp(16px, 2.5vw, 20px)",
+                                    fontFamily: "poppins" // Responsive font
                                 }}
                             >
                                 "Help us find the best talent and get rewarded. Your referral can make a difference in someone's career."
@@ -97,7 +98,7 @@ function Referal() {
 
 
 
-            <div className="container mt-4 mb-5 text-center">
+            <div className="container mt-4 mb-5 text-center" style={{fontFamily:"poppins"}}>
                 <h2 style={{ color: "black" }}><b>Spot Great Talent? Refer Them to HRIFY!</b></h2>
                 <p style={{ color: "#015670" }}>We're always looking for talented individuals to join our dynamic team at HRIFY. If you know someone who would thrive in our innovative environment and align with our vision, refer them to us! Let's work together to create incredible opportunities.</p>
 
@@ -106,7 +107,7 @@ function Referal() {
 
 
 
-            <div className="container py-5">
+            <div className="container py-5" style={{fontFamily:"poppins"}}>
                 <div className="row">
                     <div className="col-12">
 
@@ -227,7 +228,7 @@ function Referal() {
     `
                 }}
             >
-                <div className="container">
+                <div className="container" style={{fontFamily:"poppins"}}>
                     <div className="row">
                         <div className="col-12">
 
@@ -280,7 +281,7 @@ function Referal() {
 
 
 
-            <div className="container mt-4 mb-5 text-center">
+            <div className="container mt-4 mb-5 text-center" style={{fontFamily:"poppins"}}>
                 <h2 style={{ color: "#015670" }}><b>Let’s Bring Your Vision to Life</b></h2>
                 <p style={{ color: "#949494" }}>Your journey toward innovation and success starts here. Connect with us to explore how we can collaborate to achieve your goals.</p>
 

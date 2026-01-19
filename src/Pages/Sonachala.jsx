@@ -28,11 +28,12 @@ function Products() {
                         {/* LEFT IMAGE */}
                         <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
                             <img
+                            className="mt-5"
                                 src={img1}
                                 alt="Hotel"
                                 style={{
                                     width: "100%",
-                                    maxWidth: "300px",
+                                    maxWidth: "200px",
                                     height: "auto",
                                     objectFit: "contain",
                                     borderRadius: "12px"
@@ -42,7 +43,7 @@ function Products() {
 
                         {/* RIGHT CONTENT */}
                         <div className="col-lg-6 col-md-12 d-flex align-items-center">
-                            <div className="text-white text-center text-lg-start">
+                            <div className="text-white text-center text-lg-start mt-5">
                                 <h1 style={{ fontWeight: "600" }}>
                                     Hotel Revenue Management Solutions
                                 </h1>

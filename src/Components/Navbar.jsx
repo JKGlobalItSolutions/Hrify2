@@ -9,14 +9,14 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-light bg-white"
       style={{ padding: "15px clamp(10px, 4vw, 40px)", borderBottom: "1px solid #eee" }}
     >
-      <div className="container-fluid mt-1  mb-1">
+      <div className="container-fluid mt-3  mb-1">
 
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src={logo}
             alt="HRIFY Logo"
-            style={{ height: "38px", width: "auto" }}
+            style={{ height: "58px", width: "auto" }}
           />
         </Link>
 
@@ -34,13 +34,13 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="hrifyNavbar">
           <ul
             className="navbar-nav mx-auto mb-2 mb-lg-0"
-            style={{ gap: "22px", fontWeight: 500 }}
+            style={{ gap: "22px", color: "black", fontSize: "16px", fontWeight: 600 }}
           >
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/about">About Us</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/talent_management">Talent Management</Link></li>
- {/* <li className="nav-item"><Link className="nav-link" to="/trust">Trust</Link></li> */}
+            {/* <li className="nav-item"><Link className="nav-link" to="/trust">Trust</Link></li> */}
 
             <li className="nav-item dropdown">
               <Link
@@ -139,7 +139,7 @@ function Navbar() {
               </ul>
             </li>
 
-           
+
 
           </ul>
 
@@ -148,18 +148,30 @@ function Navbar() {
             <Link
               to="/contact"
               className="btn"
-              style={{ background: "#0a6c8c", color: "white", borderRadius: "8px" }}
+              style={{
+                backgroundImage: "linear-gradient(to right, #015670, #0081A7)",
+                color: "#fff",
+                borderRadius: "8px",
+                border: "none",
+              }}
             >
               Contact Us
             </Link>
+
             <Link
               to="/admin"
               className="btn"
-              style={{ background: "#0a6c8c", color: "white", borderRadius: "8px" }}
+              style={{
+                backgroundImage: "linear-gradient(to right, #015670, #0081A7)",
+                color: "#fff",
+                borderRadius: "8px",
+                border: "none",
+              }}
             >
               Login
             </Link>
           </div>
+
         </div>
 
       </div>

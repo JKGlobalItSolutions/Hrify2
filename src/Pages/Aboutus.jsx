@@ -4,15 +4,16 @@ import bgimg1 from "../assets/About/bgimg1.png";
 import img3 from "../assets/About/img3.png";
 import img4 from "../assets/About/img4.png";
 import HrifyLogo from "../assets/Navbar/logo.png"
-
+import Form from "../Components/Form"
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Form } from "react-router-dom";
 
 function About() {
     return (
         <>
-            <div className="container mt-5">
+            <div className="container-fluid mt-5 mb-3">
                 <div
-                    className="d-flex justify-content-center align-items-start" // align content at top
+                    className="d-flex justify-content-center align-items-start"
                     style={{
                         position: "relative",
                         width: "100%",
@@ -23,53 +24,77 @@ function About() {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
-                        overflowX: "hidden",
+                        overflow: "hidden", // FIX horizontal scroll
                     }}
                 >
-                    {/* Glass/matte effect container */}
+                    {/* Overlay for better contrast */}
                     <div
-                        className=""
+                        style={{
+                            position: "absolute",
+                            inset: 0,
+                            // backgroundColor: "rgba(0,0,0,0.4)",
+                        }}
+                    ></div>
+
+                    {/* Glass effect content */}
+                    <div
+                        className="container-fluid"
                         style={{
                             position: "relative",
-                            width: "100%",
-                            marginTop: "clamp(60px, 12vh, 120px)",               // top spacing
+                            marginTop: "clamp(100px, 60vh, 3000px)",
+                            // marginTop: "clamp(60px, 12vh, 120px)",
                             backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
+                            backdropFilter: "blur(20px)",
                             WebkitBackdropFilter: "blur(10px)",
                             padding: "2rem",
                             color: "#fff",
                         }}
                     >
-                        <h1 className="mb-3">Seamless Staffing Limitless Growth</h1>
-                        <p style={{ fontSize: "20px" }}>
-                            Unleashing potential through tailored staffing and workforce.
-                            Streamline your workforce strategies with our comprehensive Talent Management solutions.
-                            From staffing to career development, we ensure the right talent meets the right opportunities.
-                            Designed to transform your business and elevate success.
-                        </p>
+                        <div className="container">
+                            <h1 className="mb-3" style={{ fontSize: "40px", fontFamily: "'Poppins', sans-serif" }}>
+                                <b>Smart IT Solutions Limitless Potential</b>
+                            </h1>
+
+                            <p
+                                className="text-center text-md-start"
+                                style={{
+                                    fontSize: "20px",
+                                    fontFamily: "'Poppins', sans-serif" // Responsive font
+                                }}
+                            >
+                                "Unleashing potential through tailored staffing and workforce "Streamline your workforce strategies with our comprehensive Talent Management solutions. From staffing to career development, we ensure the right talent
+                                meets the right opportunities."  designed to transform your business and elevate success."
+                            </p>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
             <div className="container text-center mt-5">
 
-                <h2 className="mt-5 mb-3 fw-bold">Streamlining Talent Management for Business Growth </h2>
-                <p className="mb-5" style={{ color: "#015670" }}>HRIFY specializes in providing comprehensive talent management services tailored to meet diverse business needs, with a focus on IT Staffing. We offer flexible solutions, including: </p>
+                <h2 className="mt-5 mb-3 fw-bold" style={{fontSize:"40px", fontFamily: "'Poppins', sans-serif"}} >Streamlining Talent Management for Business Growth </h2>
+                <p className="mb-5" style={{ color: "#015670", fontSize:"18px", fontFamily: "'Poppins', sans-serif" }}>HRIFY specializes in providing comprehensive talent management services tailored to meet diverse business needs, with a focus on IT Staffing. We offer flexible solutions, including: </p>
             </div>
 
 
-            <div className="container-fluid">
+
+
+            {/* <div className="container-fluid" style={{backgroundColor:"black"}}>
                 <p>Contract Staffing – Flexible staffing for short-term or project-based needs, giving you access to skilled professionals when you need them.
                     Permanent Placement – We connect you with top talent for long-term roles, ensuring the right fit for your organization.
                     Contract-to-Hire – A flexible option allowing you to evaluate talent before transitioning them into permanent positions.</p>
-            </div>
+            </div> */}
+
+
+
+
+
             <div
-                className="s mt-5 p-3 mb-5"
+                className="s mt-5 p-3 mb-5 text-center"
                 style={{
-                    fontFamily: "'Poppins', sans-serif",
+                    fontFamily: "'Redressed', sans-serif",
                     lineHeight: "1.8",
-                    fontSize: "16px",
+                    fontSize: "25px",
                     color: "#FFFF00",
                     backgroundColor: "#000"
                 }}
@@ -85,8 +110,10 @@ function About() {
 
                     {/* LEFT CONTENT */}
                     <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
-                        <h3 className="mb-3">Contract Staffing and Placement</h3>
-                        <p>
+                        <h3 className="mb-3" style={{fontSize:"24px", color: "#015670", fontWeight:"bold", fontFamily:"poppins"}}>Contract Staffing and Placement</h3>
+                        
+                        
+                        <p style={{fontSize:"18px", fontWeight:"medium", fontFamily:"poppins"}}>
                             Flexible staffing solutions to address short-term or project-based workforce requirements with skilled professionals.
                             We provide end-to-end recruitment services to help businesses find and retain top talent for long-term, full-time roles.
                             Our rigorous screening process ensures candidates are the right fit for your company culture and objectives.
@@ -94,14 +121,14 @@ function About() {
                             Our extensive network and targeted approach guarantee quality hires.
                         </p>
 
-                        <h4 className="mt-4">Contract-to-Hire</h4>
-                        <p>
+                        <h3 className="mb-3" style={{fontSize:"24px", color: "#015670", fontWeight:"bold", fontFamily:"poppins"}}>Contract-to-Hire</h3>
+                        <p style={{fontSize:"18px", fontWeight:"medium", fontFamily:"poppins"}}>
                             Our Contract-to-Hire solutions offer flexibility for businesses to assess a candidate’s performance and cultural fit before making a permanent hiring decision.
                             This approach minimizes hiring risks, ensures seamless transitions, and helps organizations secure top talent with confidence.
                         </p>
 
-                        <h4 className="mt-4">Permanent Staffing</h4>
-                        <p>
+                        <h3 className="mb-3" style={{fontSize:"24px", color: "#015670", fontWeight:"bold", fontFamily:"poppins"}}>Permanent Staffing</h3>
+                        <p style={{fontSize:"18px", fontWeight:"medium",  justifyContent: "center", fontFamily:"poppins"}}>
                             We provide comprehensive recruitment services to help businesses find the right talent for long-term success.
                             Our rigorous screening and selection process ensures that candidates not only possess the required skills but also align with your company’s culture and vision.
                             With our expertise, you can build a strong, dedicated workforce that drives growth and stability.
@@ -227,10 +254,10 @@ function About() {
             </div>
 
             <div className="container py-5">
-                <div className="row align-items-center">
+                <div className="row align-items-center" style={{borderBottom:"3px solid #000"}}>
 
                     {/* Left Side - Image */}
-                    <div className="col-md-6 mb-4 mb-md-0">
+                    <div className="col-md-8 mb-4 mb-md-0">
                         <img
                             src={img4}
                             alt="Guiding Vision"
@@ -244,24 +271,21 @@ function About() {
                     </div>
 
                     {/* Right Side - Content */}
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <h2
-                            style={{
-                                fontWeight: "700",
-                                marginBottom: "20px"
-                            }}
+                            style={{fontSize:"36px", fontWeight:"medium",  justifyContent: "center", fontFamily:"poppins"}}
                         >
                             Guiding the Vision
                         </h2>
 
-                        <h5 style={{ fontWeight: "600", color: "#015670" }}>General Version (for personal profile or business):</h5>
-                        <p style={{ lineHeight: "1.7" }}>"Passionate about delivering excellence, we strive to create meaningful experiences through innovation, dedication, and a deep understanding of our field."</p>
+                        <h5 style={{ fontWeight: "600", color: "#015670", fontFamily:"poppins", fontSize:"20px" }}>General Version (for personal profile or business):</h5>
+                        <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"20px" }}>"Passionate about delivering excellence, we strive to create meaningful experiences through innovation, dedication, and a deep understanding of our field."</p>
 
-                        <h5 style={{ fontWeight: "600", color: "#015670" }}>Corporate Version:</h5>
-                        <p style={{ lineHeight: "1.7" }}>"We are committed to providing reliable and cutting-edge solutions that drive growth and add value to our clients' businesses."</p>
+                        <h5 style={{ fontWeight: "600", color: "#015670", fontFamily:"poppins", fontSize:"20px" }}>Corporate Version:</h5>
+                        <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"20px" }}>"We are committed to providing reliable and cutting-edge solutions that drive growth and add value to our clients' businesses."</p>
 
-                        <h5 style={{ fontWeight: "600", color: "#015670" }}>Creative Professional Version:</h5>
-                        <p style={{ lineHeight: "1.7" }}>"Driven by creativity and inspired by purpose, I bring ideas to life through storytelling, design, and a constant desire to learn."</p>
+                        <h5 style={{ fontWeight: "600", color: "#015670", fontFamily:"poppins", fontSize:"20px" }}>Creative Professional Version:</h5>
+                        <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"20px" }}>"Driven by creativity and inspired by purpose, I bring ideas to life through storytelling, design, and a constant desire to learn."</p>
 
 
                     </div>
@@ -271,89 +295,15 @@ function About() {
 
 
             <div className="container mt-4 mb-5 text-center">
-                <h2 style={{ color: "#015670" }}><b>Let’s Bring Your Vision to Life</b></h2>
-                <p style={{ color: "#949494" }}>Your journey toward innovation and success starts here. Connect with us to explore how we can collaborate to achieve your goals.</p>
+                <h2 style={{ color: "#015670", fontFamily:"poppins", fontSize:"36px" }}><b>Let’s Bring Your Vision to Life</b></h2>
+                <p style={{ color: "#949494", fontFamily:"poppins", fontSize:"20px" }}>Your journey toward innovation and success starts here. Connect with us to explore how we can collaborate to achieve your goals.</p>
 
             </div>
 
 
-            <div
-                className="d-flex justify-content-center align-items-center"
-                style={{ minHeight: "100vh", backgroundColor: "#ffffff" }}
-            >
-                <div
-                    className="card p-4"
-                    style={{
-                        width: "100%",
-                        maxWidth: "600px",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.50)",
-                    }}
-                >
-                    <h4 className="text-center mb-4">Submit Your Inquiry</h4>
-
-                    <div className="mb-3">
-                        <label className="form-label">Full Name</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter your full name"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Business Email</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            placeholder="Enter your business email"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">Phone Number</label>
-                        <input
-                            type="tel"
-                            className="form-control"
-                            placeholder="Enter your phone number"
-                        />
-                    </div>
-
-                    <div className="mb-3">
-                        <label className="form-label">I am seeking</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="What are you seeking?"
-                        />
-                    </div>
-
-                    <div className="mb-4">
-                        <label className="form-label">
-                            Give us an overview of your expectations
-                        </label>
-                        <textarea
-                            className="form-control"
-                            rows="4"
-                            placeholder="Describe your expectations"
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="btn w-100"
-                        style={{
-                            backgroundColor: "#015670",
-                            color: "#ffffff",
-                            fontWeight: "500",
-                        }}
-                    >
-                        Submit Inquiry
-                    </button>
-                </div>
-            </div>
 
 
+            <Form />
 
 
 
