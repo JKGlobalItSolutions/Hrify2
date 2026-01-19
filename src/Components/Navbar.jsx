@@ -117,7 +117,7 @@ function Navbar() {
                   color: "inherit"
                 }}
               >
-                Prohub
+                Careers
               </button>
 
               <ul className="dropdown-menu">
