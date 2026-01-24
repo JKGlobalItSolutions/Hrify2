@@ -1,7 +1,7 @@
-import img1 from "../assets/Carrer/img1.png"
+// import img1 from "../assets/Carrer/hero-video.mp4"
 import img2 from "../assets/Carrer/img2.png"
 import React, { useState } from "react";
-
+import video1 from "../assets/Carrer/hero-video.mp4";
 function Carrer() {
 
 
@@ -14,65 +14,92 @@ function Carrer() {
     return (
 
         <>
-            <div className="container mt-5 mb-5">
-                <div
-                    className="d-flex justify-content-center align-items-start"
-                    style={{
-                        position: "relative",
-                        width: "100%",
-                        minHeight: "100vh",
-                        margin: 0,
-                        padding: 0,
-                        backgroundImage: `url(${img1})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                        overflow: "hidden", // FIX horizontal scroll
-                    }}
-                >
-                    {/* Overlay for better contrast */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            // inset: 0,
-                            // backgroundColor: "rgba(0,0,0,0.4)",
-                        }}
-                    ></div>
-
-                    {/* Glass effect content */}
-                    <div
-                        className="container-fluid"
-                        style={{
+              
+                 <div className="container-fluid p-0">
+                        <div
+                          className="d-flex justify-content-center align-items-start"
+                          style={{
                             position: "relative",
-                            marginTop: "clamp(60px, 12vh, 120px)",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
-                            WebkitBackdropFilter: "blur(10px)",
-                            padding: "2rem",
-                            color: "#fff",
-                        }}
-                    >
-                        <div className="container">
-                            <h1 className="mb-3 text-center text-md-start">
-                                Create Your Career Journey
-                            </h1>
-
-                            <p
-                                className="text-center text-md-start"
+                            minHeight: "100vh",
+                            overflow: "hidden",
+                          }}
+                        >
+                          {/* Fixed Background Video */}
+                          <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={{
+                              position: "fixed",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                              zIndex: -2,
+                            }}
+                          >
+                            <source src={video1} type="video/mp4" />
+                          </video>
+                
+                          {/* Overlay */}
+                          <div
+                            style={{
+                              position: "fixed",
+                              inset: 0,
+                              backgroundColor: "rgba(0,0,0,0.4)",
+                              zIndex: -1,
+                            }}
+                          ></div>
+                
+                          {/* Hero Content */}
+                          <div
+                            className="container-fluid"
+                            style={{
+                              position: "relative",
+                              paddingTop: "350px",
+                              paddingBottom: "80px",
+                              color: "#fff",
+                            }}
+                          >
+                            <div className="container">
+                              <h1
                                 style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)", // Responsive font
+                                  fontSize: "75px",
+                                  paddingLeft: "30px",
+                                  marginBottom: "10px",
                                 }}
-                            >
-                                "Your future starts here. Shape your career
-                                with us and grow in a supportive environment."
-                            </p>
+                              >
+                                <b>Hrify</b>
+                              </h1>
+                
+                              <h3
+                                style={{
+                                  paddingLeft: "30px",
+                                  fontSize: "32px",
+                                  fontWeight: "400",
+                                  marginTop: 0,
+                                }}
+                              >
+                                Leading the way forward
+                              </h3>
+                              <p style={{
+                                paddingLeft: "30px",
+                                fontSize: "32px", fontSize: "50px"
+                              }}>→</p>
+                
+                              {/* small scroll space only */}
+                              <div style={{ height: "40vh" }}></div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                      </div>
 
 
 
+
+<div style={{backgroundColor:"#fff"}}>
 
 
             <div className="container-fluid p-0">
@@ -89,8 +116,8 @@ function Carrer() {
 
 
             <div className="container mt-4 mb-3 text-center">
-                <h2 style={{ color: "#015670", fontFamily:"poppins", fontSize:"36px" }}><b>Join Our Team and Help Us Shape the Future</b></h2>
-                <p style={{ color: "#949494", fontFamily:"poppins", fontSize:"20px" }}>Fill out the form below to express your interest in a career with us. We’re looking for passionate, skilled
+                <h2 style={{ color: "#015670", fontFamily:"'Outfit', sans-serif", fontSize:"36px" }}><b>Join Our Team and Help Us Shape the Future</b></h2>
+                <p style={{ color: "#949494", fontFamily:"'Outfit', sans-serif", fontSize:"20px" }}>Fill out the form below to express your interest in a career with us. We’re looking for passionate, skilled
                     professionals for roles in IT staffing, consulting, talent management, and more.</p>
 
             </div>
@@ -228,7 +255,7 @@ function Carrer() {
 
 
 
-
+</div>
         </>
     );
 }

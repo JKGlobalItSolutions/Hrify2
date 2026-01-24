@@ -10,7 +10,7 @@ function Industry_HL() {
     return (
         <>
 
-            <div className="container-fluid p-0">
+            <div className="container-fluid p-0" style={{ marginTop: "80px" }}>
                 <img
                     src={HLimg1} 
                     alt="Banner"

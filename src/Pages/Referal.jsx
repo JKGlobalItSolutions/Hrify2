@@ -39,62 +39,46 @@ function Referal() {
     return (
 
         <>
-            <div className="container mt-5 mb-4">
-                <div
-                    className="d-flex justify-content-center align-items-start"
-                    style={{
-                        position: "relative",
-                        width: "100%",
-                        minHeight: "100vh",
-                        margin: 0,
-                        padding: 0,
-                        backgroundImage: `url(${img1})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                        overflow: "hidden", // FIX horizontal scroll
-                    }}
-                >
-                    {/* Overlay for better contrast */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            // inset: 0,
-                            // backgroundColor: "rgba(0,0,0,0.4)",
-                        }}
-                    ></div>
+             
+        <div className="container-fluid p-0">
+  <div
+    style={{
+      position: "relative",
+      width: "100%",
+      minHeight: "100vh",
+      backgroundImage: `url(${img1})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      overflow: "hidden",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    {/* Overlay */}
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        backgroundColor: "rgba(0, 0, 0, 0.4)",
+      }}
+    ></div>
 
-                    {/* Glass effect content */}
-                    <div
-                        className="container-fluid"
-                        style={{
-                            position: "relative",
-                            marginTop: "clamp(60px, 12vh, 120px)",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
-                            WebkitBackdropFilter: "blur(10px)",
-                            padding: "2rem",
-                            color: "#fff",
-                        }}
-                    >
-                        <div className="container">
-                            <h1 className="mb-3 text-center text-md-start" style={{fontFamily:"poppins"}}>
-                                Refer & Earn with Us!
-                            </h1>
+    {/* Hero Content */}
+    <div className="container" style={{ position: "relative", color: "#fff" }}>
+      <h1 style={{ fontSize: "75px", marginBottom: "10px" }}>
+        <b>Refer & Earn with Us!</b>
+      </h1>
 
-                            <p
-                                className="text-center text-md-start"
-                                style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)",
-                                    fontFamily: "poppins" // Responsive font
-                                }}
-                            >
-                                "Help us find the best talent and get rewarded. Your referral can make a difference in someone's career."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h3 style={{ fontSize: "32px", fontWeight: "400", marginTop: 0 }}>
+        "Help us find the best talent and get rewarded. Your referral can make a difference in someone's career."
+      </h3>
+
+      <p style={{ fontSize: "50px" }}>→</p>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -217,14 +201,15 @@ function Referal() {
                 className="container-fluid py-5"
                 style={{
                     background: `
-      linear-gradient(
-        to right,
-        #000000 0%,
-        #000000 30%,
-        #666666 50%,
-        #000000 70%,
-        #000000 100%
-      )
+     linear-gradient(
+  to right,
+  #015670 0%,
+  #015670 30%,
+  #50707f 100%,
+  #015670 70%,
+  #015670 100%
+)
+
     `
                 }}
             >
@@ -253,7 +238,7 @@ function Referal() {
                                 The referred candidate must successfully complete 90 days of active employment before the referral bonus is awarded. This time frame allows us to evaluate the candidate’s performance and commitment while ensuring fair and consistent application of the referral bonus policy.
                             </p>
 
-                            <p style={{ color: "#ffc107" }}>Note: The referral bonus currently applies only to candidates and referrers within the North America region. However, we encourage you to refer talented professionals from any location, as we are always eager to connect with exceptional individuals.</p>
+                            <p style={{ color: "#015d7e" }}>Note: The referral bonus currently applies only to candidates and referrers within the North America region. However, we encourage you to refer talented professionals from any location, as we are always eager to connect with exceptional individuals.</p>
                             <p style={{ color: "#ffffff" }}>Let’s work together to build a stronger, more talented team! Your referrals help us find outstanding professionals who contribute to our shared success and drive HRIFY’s mission forward.</p>
                             <p style={{ color: "#ffffff" }}>If you have any questions about the referral process or need assistance, feel free to contact our HR team. We are here to support you every step of the way and make your experience seamless and rewarding.</p>
 

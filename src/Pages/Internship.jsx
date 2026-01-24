@@ -14,61 +14,46 @@ function Internship() {
 
         <>
 
-            <div className="container mt-5 mb-4">
-                <div
-                    className="d-flex justify-content-center align-items-start"
-                    style={{
-                        position: "relative",
-                        width: "100%",
-                        minHeight: "100vh",
-                        margin: 0,
-                        padding: 0,
-                        backgroundImage: `url(${img1})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                        overflow: "hidden", // FIX horizontal scroll
-                    }}
-                >
-                    {/* Overlay for better contrast */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            // inset: 0,
-                            // backgroundColor: "rgba(0,0,0,0.4)",
-                        }}
-                    ></div>
+             
+        <div className="container-fluid p-0">
+  <div
+    style={{
+      position: "relative",
+      width: "100%",
+      minHeight: "100vh",
+      backgroundImage: `url(${img1})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      overflow: "hidden",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    {/* Overlay */}
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        backgroundColor: "rgba(0, 0, 0, 0.4)",
+      }}
+    ></div>
 
-                    {/* Glass effect content */}
-                    <div
-                        className="container-fluid"
-                        style={{
-                            position: "relative",
-                            marginTop: "clamp(60px, 12vh, 120px)",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
-                            WebkitBackdropFilter: "blur(10px)",
-                            padding: "2rem",
-                            color: "#fff",
-                        }}
-                    >
-                        <div className="container">
-                            <h1 className="mb-3 text-center text-md-start">
-                                Seamless Staffing Limitless Growth
-                            </h1>
+    {/* Hero Content */}
+    <div className="container" style={{ position: "relative", color: "#fff" }}>
+      <h1 style={{ fontSize: "75px", marginBottom: "10px" }}>
+        <b>Internship</b>
+      </h1>
 
-                            <p
-                                className="text-center text-md-start"
-                                style={{
-                                    fontSize: "clamp(16px, 2.5vw, 20px)", // Responsive font
-                                }}
-                            >
-                                "Unleashing potential through tailored staffing and orkforce Streamline your workforce strategies with our comprehensive Talent Management solutions. From staffing to career development, we ensure the right talent meets the right opportunities."  designed to transform your business and elevate success."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h3 style={{ fontSize: "32px", fontWeight: "400", marginTop: 0 }}>
+        Seamless Staffing Limitless Growth
+      </h3>
+
+      <p style={{ fontSize: "50px" }}>→</p>
+    </div>
+  </div>
+</div>
+
 
 
 

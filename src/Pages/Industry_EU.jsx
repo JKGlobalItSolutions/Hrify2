@@ -11,7 +11,7 @@ function Industry_EU() {
 
 
 
-            <div className="container-fluid p-0">
+            <div className="container-fluid p-0" style={{ marginTop: "80px" }}>
                 <img 
                     src={EUimg1}
                     alt="Banner"
@@ -30,7 +30,7 @@ function Industry_EU() {
 
 
             <div className="container-fluid p-2 mt-3 text-center" >
-                <h1 className="mb-2" style={{fontFamily:"poppins", fontSize:"40px"}}><b>Energy and Utilities definition</b></h1>
+                <h1 className="mb-2" style={{fontFamily:"poppins", fontSize:"40px"}}><b>Energy and Utilities</b></h1>
                 <p style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px" }}>Energy and Utilities refers to the industries responsible for the generation, transmission, distribution, and management of essential resources such as electricity, natural gas, water, and renewable energy. This sector includes traditional energy sources like fossil fuels, as well as renewable energy innovations such as solar, wind, and hydroelectric power. Utilities manage infrastructure, ensure supply reliability, and support energy efficiency, sustainability, and regulatory compliance. With increasing emphasis on clean energy, the industry is evolving to address environmental challenges and meet growing energy demands while transitioning to more sustainable and efficient solutions.</p>
             </div>
 

@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
+    font-family: 'Outfit', sans-serif;
+}
 
+/* Apply extra-light font weight to all paragraph content */
+p {
+    font-weight: 100; /* Extra-light font weight */
+}
 
-    
+/* Ensure other text elements maintain appropriate weights */
+h1, h2, h3, h4, h5, h6, strong, b {
+    font-weight: 500; /* Medium weight for headings and emphasis */
+}
+
+/* Form labels and other UI text */
+label, .form-label {
+    font-weight: 400; /* Regular weight for form elements */
 }

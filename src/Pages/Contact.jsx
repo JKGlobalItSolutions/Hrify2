@@ -30,7 +30,7 @@ const radioStyle = {
 
         <>
 
-            <div className="container mt-5 mb-5">
+            <div className="container-fluid p-0">
                 <div
                     className="d-flex justify-content-center align-items-end"
                     style={{
@@ -63,9 +63,9 @@ const radioStyle = {
                             position: "relative",
                             marginBottom: "80px",
                             marginTop: "clamp(60px, 12vh, 120px)",
-                            backgroundColor: "rgba(255, 255, 255, 0.2)",
-                            backdropFilter: "blur(10px)",
-                            WebkitBackdropFilter: "blur(10px)",
+                            // backgroundColor: "rgba(255, 255, 255, 0.2)",
+                            // backdropFilter: "blur(10px)",
+                            // WebkitBackdropFilter: "blur(10px)",
                             padding: "2rem",
                             color: "#fff",
                         }}

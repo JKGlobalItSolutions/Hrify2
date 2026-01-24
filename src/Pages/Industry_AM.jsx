@@ -9,7 +9,7 @@ function Industry_AM() {
         <>
 
 
-         <div className="container-fluid p-0">
+         <div className="container-fluid p-0" style={{ marginTop: "80px" }}>
                         <img
                             src={AMimg1}
                             alt="Banner"

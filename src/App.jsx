@@ -1,4 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+
+import ScrollToTop from "./Components/Scrolltotop"
+
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -29,6 +32,7 @@ function App() {
     <>
       <HashRouter basename="/">
         <Navbar />
+         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

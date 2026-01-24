@@ -15,7 +15,7 @@ function Pillamar() {
 
         <>
 
-            <div className="w-100 p-3">
+            <div className="w-100 p-3" style={{marginTop:"80px"}}>
                 <img
                     src={img1}
                     alt="Hero"
