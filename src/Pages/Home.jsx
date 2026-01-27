@@ -1,10 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import video1 from "../assets/Home/hero-video.mp4";
-import img2 from "../assets/Home/img2.png";
-import img3 from "../assets/Home/img3.png";
-import img4 from "../assets/Home/img4.png";
-
+import img2 from "../assets/Home/img2.jpg";
+import img3 from "../assets/Home/img3.jpg";
+import img4 from "../assets/Home/img4.jpg";
 function Home() {
   return (
     <>
