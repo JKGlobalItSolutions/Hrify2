@@ -1,4 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import HrifyLogo from "../assets/Navbar/logo.png";
+
 import video1 from "../assets/Services/hero-video.mp4";
 import img2 from "../assets/Services/img2.png";
 import img3 from "../assets/Services/img3.png";
@@ -13,6 +16,7 @@ import img18 from "../assets/Services/img18.png";
 import img19 from "../assets/Services/img19.png";
 import img20 from "../assets/Services/img20.png";
 import img21 from "../assets/Services/img21.png";
+import img22 from "../assets/Services/img22.png";
 import img4 from "../assets/Services/img4.png";
 import img5 from "../assets/Services/img5.png";
 import bgimg1 from "../assets/Services/bgimg1.png";
@@ -234,7 +238,7 @@ function Services() {
                         style={{
                             position: "fixed",
                             inset: 0,
-                            backgroundColor: "rgba(0,0,0,0.4)",
+                            // backgroundColor: "rgba(0,0,0,0.4)",
                             zIndex: -1,
                         }}
                     ></div>
@@ -247,6 +251,7 @@ function Services() {
                             paddingTop: "400px",
                             paddingBottom: "80px",
                             color: "#fff",
+                            zIndex: 1,
                         }}
                     >
                         <div className="container">
@@ -276,7 +281,7 @@ function Services() {
                             }}>→</p>
 
                             {/* small scroll space only */}
-                            <div style={{ height: "40vh" }}></div>
+                            {/* <div style={{ height: "40vh" }}></div> */}
                         </div>
                     </div>
                 </div>
@@ -289,59 +294,59 @@ function Services() {
 
 
                 <div
-                    className="container-fluid py-5 mt-5"
-                    style={{
-                        background: "linear-gradient(135deg, #CFF4FF 0%, #FFFFFF 100%)",
-                    }}
-                >
-                    <div className="container">
-                        <div className="row align-items-center">
-
-                            {/* LEFT CONTENT - col-8 */}
-                            <div className="col-12 col-md-8 mb-4 mb-md-0">
-                                <h2
+                                    className="container-fluid py-5 mt-0"
                                     style={{
-                                        fontWeight: "700",
-                                        marginBottom: "20px",
-                                        color: "#015670",
-                                        fontSize: "24px",
-                                        fontFamily: "'Outfit', sans-serif"
+                                        background: "linear-gradient(135deg, #CFF4FF 0%, #FFFFFF 100%)",
                                     }}
                                 >
-                                    Empowering Businesses with Cutting-Edge IT Solutions
-                                </h2>
-
-                                <p style={{ fontSize: "18px", lineHeight: "1.7", fontFamily: "'Outfit', sans-serif" }}>
-                                    HRIFY is a comprehensive management solutions platform designed to enhance efficiency and drive growth. With two specialized divisions, HRIFY seamlessly integrates cutting-edge technology with expert talent management. HRIFYDIGITAL offers exceptional software, web, and app development, advanced networking solutions, and expert IT services and consulting to future-proof your business.
-                                </p>
-
-                            </div>
-
-                            {/* RIGHT IMAGE - col-4 */}
-                            <div className="col-12 col-md-4 text-center">
-                                <div
-                                    style={{
-                                        backgroundColor: "#FFFFFF",
-                                        padding: "20px",
-                                        borderRadius: "14px",
-                                        // boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                                        display: "inline-block",
-                                    }}
-                                >
-                                    <img
-                                        src={img2}
-                                        alt="IT Solutions"
-                                        className="img-fluid"
-                                        style={{
-                                            borderRadius: "10px",
-                                        }}
-                                    />
+                                    <div className="container">
+                                        <div className="row align-items-center">
+                
+                                            {/* LEFT CONTENT - col-8 */}
+                                            <div className="col-12 col-md-8 mb-4 mb-md-0">
+                                                <h2
+                                                    style={{
+                                                        fontWeight: "700",
+                                                        marginBottom: "20px",
+                                                        color: "#015670",
+                                                        fontSize: "24px",
+                                                        fontFamily: "'Outfit', sans-serif"
+                                                    }}
+                                                >
+                                                    Empowering Businesses with Cutting-Edge IT Solutions
+                                                </h2>
+                
+                                                <p style={{ fontSize: "18px", lineHeight: "1.7", fontFamily: "'Outfit', sans-serif" }}>
+                                                    HRIFY is a comprehensive management solutions platform designed to enhance efficiency and drive growth. With two specialized divisions, HRIFY seamlessly integrates cutting-edge technology with expert talent management. HRIFYDIGITAL offers exceptional software, web, and app development, advanced networking solutions, and expert IT services and consulting to future-proof your business.
+                                                </p>
+                
+                                            </div>
+                
+                                            {/* RIGHT IMAGE - col-4 */}
+                                            <div className="col-12 col-md-4 text-center">
+                                                <div
+                                                    style={{
+                                                        backgroundColor: "#FFFFFF",
+                                                        padding: "20px",
+                                                        borderRadius: "14px",
+                                                        // boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+                                                        display: "inline-block",
+                                                    }}
+                                                >
+                                                    <img
+                                                        src={img2}
+                                                        alt="IT Solutions"
+                                                        className="img-fluid"
+                                                        style={{
+                                                            borderRadius: "10px",
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
                 <div className="container text-center mt-5">
                     <h1 style={{ color: "#015670", fontSize: "36px", fontFamily: "'Outfit', sans-serif" }}><b>What We Do</b></h1>
@@ -585,10 +590,6 @@ function Services() {
 
 
 
-
-
-
-
                 <div
                     className="container-fluid p-0 m-0 mt-5 mb-5"
                     style={{ overflow: "hidden" }}
@@ -606,124 +607,196 @@ function Services() {
                     />
                 </div>
 
-                <div className="container-fluid">
-                    <div className="row min-vh-100">
+                <div
+                    className="container-fluid py-2"
+                    style={{
+                        // background: "linear-gradient(135deg, #0d6efd, #0a58ca)",
+                    }}
+                >
+                    <div
+                        className="container p-5 mb-0"
+                        style={{
+                            background: "#ffffff",
+                            borderRadius: "18px",
+                            boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+                        }}
+                    >
+                        {/* Heading */}
+                        <div className="text-center mb-5">
+                            <h2 style={{ fontWeight: "700", color: "#015670" }}>
+                                Why Choose Us?
+                            </h2>
+                            <p style={{ color: "#000", maxWidth: "600px", margin: "0 auto" }}>
+                                We combine innovation, security, and support to deliver exceptional
+                                digital solutions.
+                            </p>
+                        </div>
 
-                        {/* LEFT SIDE */}
-                        <div className="col-lg-6 d-flex align-items-center p-0">
-                            <div
-                                className="w-100 h-100 d-flex align-items-center justify-content-center"
-                                style={{ backgroundColor: "black", padding: "60px" }}
-                            >
-                                <div className="text-center">
-                                    <h2 style={{ color: "#fff", fontSize: "24px", fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
-                                        Why Choose Us?
-                                    </h2>
-
-                                    <h5 style={{ color: "#FFD700", fontSize: "24px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                        {/* Content */}
+                        <div className="row align-items-center">
+                            {/* Left */}
+                            <div className="col-md-4">
+                                <div className="mb-4">
+                                    <h5 style={{ color: "#015670", fontWeight: "600" }}>
                                         Agile Development Process
                                     </h5>
-                                    <p style={{ color: "#fff", fontSize: "24px", fontFamily: "'Outfit', sans-serif", lineHeight: "1.7" }}>
-                                        We deliver results faster and more effectively by breaking projects
-                                        into manageable phases.
+                                    <p style={{ color: "#000" }}>
+                                        We deliver results faster by breaking projects into manageable
+                                        phases.
                                     </p>
+                                </div>
 
-                                    <h5 style={{ color: "#FFD700", fontSize: "24px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                                <div>
+                                    <h5 style={{ color: "#015670", fontWeight: "600" }}>
                                         Secure and Scalable Solutions
                                     </h5>
-                                    <p style={{ color: "#fff", fontSize: "24px", fontFamily: "'Outfit', sans-serif", lineHeight: "1.7" }}>
-                                        Our solutions are designed with robust security protocols.
+                                    <p style={{ color: "#000" }}>
+                                        Built with robust security protocols and scalable architecture.
                                     </p>
+                                </div>
+                            </div>
 
-                                    <h5 style={{ color: "#FFD700", fontSize: "24px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                            {/* Center Logo */}
+                            <div className="col-md-4 text-center">
+                                <div
+                                    style={{
+                                        width: "180px",
+                                        height: "180px",
+                                        margin: "0 auto",
+                                        borderRadius: "50%",
+                                        // background: "linear-gradient(135deg, #0d6efd, #015670)",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        boxShadow: "0 15px 30px rgba(13, 149, 253, 0.4)",
+                                    }}
+                                >
+                                    <img
+                                        src={HrifyLogo}
+                                        alt="Logo"
+                                        style={{
+                                            width: "90px",
+                                            height: "90px",
+                                            objectFit: "contain",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Right */}
+                            <div className="col-md-4">
+                                <div className="mb-4">
+                                    <h5 style={{ color: "#015670", fontWeight: "600" }}>
                                         End-to-End Support
                                     </h5>
-                                    <p style={{ color: "#fff", fontSize: "24px", fontFamily: "'Outfit', sans-serif", lineHeight: "1.7" }}>
-                                        From consultation to deployment, we provide continuous assistance.
+                                    <p style={{ color: "#000" }}>
+                                        From consultation to deployment, we provide continuous
+                                        assistance.
                                     </p>
+                                </div>
 
-                                    <h5 style={{ color: "#FFD700", fontSize: "24px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                                <div>
+                                    <h5 style={{ color: "#015670", fontWeight: "600" }}>
                                         Latest Technologies
                                     </h5>
-                                    <p style={{ color: "#fff", fontSize: "24px", fontFamily: "'Outfit', sans-serif", lineHeight: "1.7" }}>
+                                    <p style={{ color: "#000" }}>
                                         We use cutting-edge tools to keep your business ahead.
                                     </p>
                                 </div>
                             </div>
                         </div>
-
-                        {/* RIGHT SIDE */}
-                        <div className="col-lg-6 p-0">
-                            <img
-                                src={bgimg1}
-                                alt="Why choose us"
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
-                                }}
-                            />
-                        </div>
-
                     </div>
                 </div>
 
-                <div className="container mt-5 mb-5">
+                <div className="container  mb-5 mt-0">
                     <div
                         className="d-flex justify-content-center align-items-start"
-                        style={{
-                            position: "relative",
-                            width: "100%",
-                            minHeight: "100vh",
-                            margin: 0,
-                            padding: 0,
-                            backgroundImage: `url(${img5})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                            backgroundRepeat: "no-repeat",
-                            overflow: "hidden", // FIX horizontal scroll
-                        }}
+
                     >
-                        {/* Overlay for better contrast */}
+                        {/* Overlay */}
                         <div
                             style={{
                                 position: "absolute",
                                 inset: 0,
                                 backgroundColor: "rgba(0,0,0,0.4)",
                             }}
-                        ></div>
+                        />
 
-                        {/* Glass effect content */}
+                        {/* Glass Content */}
                         <div
                             className="container-fluid"
                             style={{
                                 position: "relative",
-                                marginTop: "clamp(140px, 28vh, 280px)",
+                                marginTop: "clamp(110px, 28vh, 080px)",
                                 backgroundColor: "rgba(10, 157, 231, 0.2)",
                                 backdropFilter: "blur(10px)",
                                 WebkitBackdropFilter: "blur(10px)",
-                                padding: "2rem",
-                                color: "#fff",
+                                padding: "2.5rem",
                             }}
                         >
-                            <div className="container" style={{ backgroundColor: "white" }}>
-                                <h2 className=" p-3 text-center" style={{ color: "#0081A7" }}>
-                                    <b>Solutions We Provide</b>
-                                </h2>
+                            <div
+                                className="container p-4"
+                                style={{
+                                    backgroundColor: "#ffffff",
+                                    borderRadius: "12px",
+                                }}
+                            >
+                                <div className="row align-items-center">
+                                    {/* LEFT IMAGE */}
+                                    <div className="col-md-5 text-center mb-4 mb-md-0">
+                                        <img
+                                            src={img22}
+                                            alt="Solution"
+                                            className="img-fluid"
+                                            style={{
+                                                borderRadius: "12px",
+                                                maxHeight: "320px",
+                                                objectFit: "cover",
+                                            }}
+                                        />
+                                    </div>
 
-                                <p
-                                    className="text-center pb-2 text-md-start"
-                                    style={{
-                                        fontSize: "clamp(16px, 2.5vw, 20px)",
-                                        color: "#000000"
-                                    }}
-                                >
-                                    <b>We offer comprehensive solutions tailored to meet your unique business needs. From IT infrastructure and cloud services to digital marketing and staffing solutions, our expert team ensures seamless execution and measurable results. With a client-first approach, we focus on quality, reliability, and innovation to help you grow faster and smarter.</b>
-                                </p>
+                                    {/* CENTER LINE */}
+                                    <div className="col-md-1 d-flex justify-content-center">
+                                        <div
+                                            style={{
+                                                width: "4px",
+                                                height: "220px",
+                                                backgroundColor: "#015670",
+                                                borderRadius: "10px",
+                                            }}
+                                        />
+                                    </div>
+
+                                    {/* RIGHT CONTENT */}
+                                    <div className="col-md-6">
+                                        <h2 style={{ color: "#015670", fontWeight: "700" }}>
+                                            Solutions We Provide
+                                        </h2>
+
+                                        <p
+                                            style={{
+                                                fontSize: "clamp(15px, 2vw, 18px)",
+                                                color: "#000",
+                                                lineHeight: "1.7",
+                                            }}
+                                        >
+                                            <b>
+                                                We offer comprehensive solutions tailored to meet your unique
+                                                business needs. From IT infrastructure and cloud services to
+                                                digital marketing and staffing solutions, our expert team ensures
+                                                seamless execution and measurable results. With a client-first
+                                                approach, we focus on quality, reliability, and innovation to
+                                                help you grow faster and smarter.
+                                            </b>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div className="container mt-4 mb-2 text-center">
                     <h2 style={{ color: "#015670", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}><b>Ready to Start Your Project?</b></h2>

@@ -6,7 +6,7 @@ body{
 
 /* Apply extra-light font weight to all paragraph content */
 p {
-    font-weight: 100; /* Extra-light font weight */
+    font-weight: 300; /* Extra-light font weight */
 }
 
 /* Ensure other text elements maintain appropriate weights */

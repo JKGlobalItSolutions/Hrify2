@@ -114,7 +114,7 @@ function Form() {
                 fontWeight: "500",
               }}
             >
-              Submit Inquiry
+              Submit
             </button>
           </form>
         </div>

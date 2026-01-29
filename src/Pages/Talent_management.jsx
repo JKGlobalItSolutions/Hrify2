@@ -1,6 +1,6 @@
 
 import Form from "../Components/Form"
-import img1 from "../assets/Talent_management/img1.png"
+import video1 from "../assets/Talent_management/hero-video.mp4"
 import img2 from "../assets/Talent_management/img2.png"
 import img3 from "../assets/Talent_management/img3.png"
 import img4 from "../assets/Talent_management/img4.png"
@@ -18,45 +18,89 @@ function Talent_management() {
         
         
         <div className="container-fluid p-0">
-  <div
-    style={{
-      position: "relative",
-      width: "100%",
-      minHeight: "100vh",
-      backgroundImage: `url(${img1})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      overflow: "hidden",
-      display: "flex",
-      alignItems: "center",
-    }}
-  >
-    {/* Overlay */}
-    <div
-      style={{
-        position: "absolute",
-        inset: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.4)",
-      }}
-    ></div>
+                                <div
+                                  className="d-flex justify-content-center align-items-start"
+                                  style={{
+                                    position: "relative",
+                                    minHeight: "100vh",
+                                    overflow: "hidden",
+                                  }}
+                                >
+                                  {/* Fixed Background Video */}
+                                  <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    style={{
+                                      position: "fixed",
+                                      top: 0,
+                                      left: 0,
+                                      width: "100%",
+                                      height: "100%",
+                                      objectFit: "cover",
+                                      zIndex: -2,
+                                    }}
+                                  >
+                                    <source src={video1} type="video/mp4" />
+                                  </video>
+                        
+                                  {/* Overlay */}
+                                  <div
+                                    style={{
+                                      position: "fixed",
+                                      inset: 0,
+                                      backgroundColor: "rgba(0,0,0,0.4)",
+                                      zIndex: -1,
+                                    }}
+                                  ></div>
+                        
+                                  {/* Hero Content */}
+                                  <div
+                                    className="container-fluid"
+                                    style={{
+                                      position: "relative",
+                                      paddingTop: "350px",
+                                      paddingBottom: "80px",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    <div className="container">
+                                      <h1
+                                        style={{
+                                          fontSize: "75px",
+                                          paddingLeft: "30px",
+                                          marginBottom: "10px",
+                                        }}
+                                      >
+                                        <b>Talent Management</b>
+                                      </h1>
+                        
+                                      <h3
+                                        style={{
+                                          paddingLeft: "30px",
+                                          fontSize: "32px",
+                                          fontWeight: "400",
+                                          marginTop: 0,
+                                        }}
+                                      >
+                                        Nuturing success with talent that grows beside you
+                                      </h3>
+                                      <p style={{
+                                        paddingLeft: "30px",
+                                        fontSize: "32px", fontSize: "50px"
+                                      }}>→</p>
+                        
+                                      {/* small scroll space only */}
+                                      <div style={{ height: "40vh" }}></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
 
-    {/* Hero Content */}
-    <div className="container" style={{ position: "relative", color: "#fff" }}>
-      <h1 style={{ fontSize: "75px", marginBottom: "10px" }}>
-        <b>Talent Management</b>
-      </h1>
 
-      <h3 style={{ fontSize: "32px", fontWeight: "400", marginTop: 0 }}>
-        Leading the way forward
-      </h3>
-
-      <p style={{ fontSize: "50px" }}>→</p>
-    </div>
-  </div>
-</div>
-
-
+<div style={{backgroundColor:"#fff"}}>
 
 
             <div className="container py-5">
@@ -247,7 +291,7 @@ function Talent_management() {
                             color: "#fff",
                         }}
                     >
-                        <div className="container p-3" style={{ backgroundColor: "rgba(1, 107, 169, 0.92)", }}>
+                        <div className="container p-3" >
                             <h1 className="mb-3 text-center text-md-start">
                                 Workforce Strategy
                             </h1>
@@ -275,7 +319,7 @@ function Talent_management() {
 
             <Form />
 
-
+</div>
 
         </>
     );

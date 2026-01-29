@@ -71,7 +71,7 @@ function Carrer() {
                                   marginBottom: "10px",
                                 }}
                               >
-                                <b>Hrify</b>
+                                <b>Career</b>
                               </h1>
                 
                               <h3
@@ -82,7 +82,7 @@ function Carrer() {
                                   marginTop: 0,
                                 }}
                               >
-                                Leading the way forward
+                                Nuturing success with talent that grows beside you
                               </h3>
                               <p style={{
                                 paddingLeft: "30px",
@@ -97,9 +97,9 @@ function Carrer() {
                       </div>
 
 
+<div style={{paddingTop:"25px", backgroundColor:"#fff"}}>
 
-
-<div style={{backgroundColor:"#fff"}}>
+<div style={{backgroundColor:"#fff"}} >
 
 
             <div className="container-fluid p-0">
@@ -237,7 +237,7 @@ function Carrer() {
                                 onMouseEnter={() => setHover(true)}
                                 onMouseLeave={() => setHover(false)}
                             >
-                                Submit Application
+                                Submit
                             </button>
                         </div>
 
@@ -256,6 +256,8 @@ function Carrer() {
 
 
 </div>
+</div>
+
         </>
     );
 }

@@ -1,5 +1,5 @@
 import img1 from "../assets/About/img1.png";
-import video1 from "../assets/Home/hero-video.mp4";
+import video1 from "../assets/About/video1.mp4";
 import img2 from "../assets/About/img2.png";
 import bgimg1 from "../assets/About/bgimg1.png";
 import img3 from "../assets/About/img3.png";
@@ -65,7 +65,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "75px", paddingLeft: "30px" }}>
-              <b>Hrify</b>
+              <b>About Us</b>
             </h1>
 
             <h3

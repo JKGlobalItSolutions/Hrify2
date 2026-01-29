@@ -46,12 +46,14 @@ function Footer() {
                             <ul style={{ lineHeight: "2", listStyleType: "disc" }}>
                                 <li><Link to="/" style={linkStyle}>Home</Link></li>
                                 <li><Link to="/services" style={linkStyle}>Services</Link></li>
-                                <li><Link to="/talent" style={linkStyle}>Talent Management</Link></li>
-                                <li><Link to="/product" style={linkStyle}>Product</Link></li>
-                                <li><Link to="/industries" style={linkStyle}>Industries</Link></li>
-                                <li><Link to="/insights" style={linkStyle}>Insights</Link></li>
+                                <li><Link to="/talent_management" style={linkStyle}>Talent Management</Link></li>
+                                {/* <li><Link to="/products" style={linkStyle}>Product</Link></li> */}
+                                {/* <li><Link to="/industries" style={linkStyle}>Industries</Link></li> */}
+                                {/* <li><Link to="/insights" style={linkStyle}>Insights</Link></li> */}
                                 <li><Link to="/about" style={linkStyle}>About</Link></li>
-                                <li><Link to="/careers" style={linkStyle}>Careers</Link></li>
+                                <li><Link to="/prohub/Carrer" style={linkStyle}>Careers</Link></li>
+                                <li><Link to="/prohub/internship" style={linkStyle}>Internship</Link></li>
+                                <li><Link to="/prohub/referal" style={linkStyle}>Referal Program</Link></li>
                                 <li><Link to="/contact" style={linkStyle}>Contact Us</Link></li>
                             </ul>
                         </div>
@@ -85,6 +87,7 @@ function Footer() {
                         </div>
 
                         {/* Logo & Social */}
+                        {/* Logo & Social */}
                         <div className="col-lg-3 col-md-6 text-lg-end text-md-start">
                             <img
                                 src={logo}
@@ -97,14 +100,63 @@ function Footer() {
                                 }}
                             />
 
+                            {/* Social Icons */}
                             <div className="d-flex gap-3 justify-content-lg-end justify-content-start mt-4">
-                                <a href="#" style={iconStyle}><i className="bi bi-facebook"></i></a>
-                                <a href="#" style={iconStyle}><i className="bi bi-whatsapp"></i></a>
-                                <a href="#" style={iconStyle}><i className="bi bi-twitter-x"></i></a>
-                                <a href="#" style={iconStyle}><i className="bi bi-linkedin"></i></a>
-                                <a href="#" style={iconStyle}><i className="bi bi-instagram"></i></a>
+                                <a
+                                    href="https://www.facebook.com/share/16sPa1rCRq/"
+                                    style={iconStyle}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <i className="bi bi-facebook"></i>
+                                </a>
+
+                                <a
+                                    href="https://wa.me/+918608600778"
+                                    style={iconStyle}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <i className="bi bi-whatsapp"></i>
+                                </a>
+
+                                <a
+                                    href="https://www.instagram.com/hrifyofficial?igsh=MXFlYXl6MjMyZzZ4Nw=="
+                                    style={iconStyle}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <i className="bi bi-instagram"></i>
+                                </a>
+                            </div>
+
+                            {/* Contact Details */}
+                            <div
+                                style={{
+                                    marginTop: "20px",
+                                    color: "#d1d5db",
+                                    fontSize: "14px",
+                                    lineHeight: "1.7",
+                                }}
+                            >
+                                <p style={{ marginBottom: "8px" }}>
+                                    <i className="bi bi-envelope-fill me-2"></i>
+                                    <a
+                                        href="mailto:jayakrishnan@hrify.co.in"
+                                        style={{ color: "#fff", textDecoration: "none", fontWeight: "500" }}
+                                    >
+                                        jayakrishnan@hrify.co.in
+                                    </a>
+                                </p>
+
+                                <p style={{ marginBottom: 0, color: "#fff", fontWeight: "500" }}>
+                                    <i className="bi bi-geo-alt-fill me-2"></i>
+                                    Annai Parvathi Nagar, Opp. Collector Office,<br />
+                                    Vengikkal, Tiruvannamalai – 606604
+                                </p>
                             </div>
                         </div>
+
 
                     </div>
                 </div>
