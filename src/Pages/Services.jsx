@@ -355,230 +355,230 @@ function Services() {
 
 
                 <div
-  className="container"
-  style={{
-    marginTop: "80px",
-    minHeight: "500px",
-    position: "relative",
-  }}
->
-  {/* FIRST IMAGE */}
-  <div
-    style={{
-      position: "absolute",
-      inset: 0,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      opacity: showContent ? 0 : 1,
-      transition: "opacity 1s ease",
-      pointerEvents: "none",
-    }}
-  >
-    <img
-      src={img3}
-      alt="IT Solutions"
-      className="img-fluid"
-      style={{
-        borderRadius: "10px",
-        maxHeight: "420px",
-        objectFit: "cover",
-      }}
-    />
-  </div>
+                    className="container"
+                    style={{
+                        marginTop: "80px",
+                        minHeight: "500px",
+                        position: "relative",
+                    }}
+                >
+                    {/* FIRST IMAGE */}
+                    <div
+                        style={{
+                            position: "absolute",
+                            inset: 0,
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            opacity: showContent ? 0 : 1,
+                            transition: "opacity 1s ease",
+                            pointerEvents: "none",
+                        }}
+                    >
+                        <img
+                            src={img3}
+                            alt="IT Solutions"
+                            className="img-fluid"
+                            style={{
+                                borderRadius: "10px",
+                                maxHeight: "420px",
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
 
-  {/* SECOND CONTENT */}
-  <div
-    style={{
-      opacity: showContent ? 1 : 0,
-      transform: showContent ? "scale(1)" : "scale(0.95)",
-      transition: "all 1s ease",
-    }}
-  >
-    <style>{servicesCarouselStyles}</style>
-    
-    {/* SINGLE CONTINUOUS MARQUEE LINE - LEFT TO RIGHT */}
-    <div className="marquee-container">
-      <div className="marquee-wrapper direction-ltr">
-        {/* First Set - Software Development */}
-        <div className="service-card">
-          <img src={img11} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Software Development</h4>
-          <p>Our software development services turn your ideas into scalable, efficient solutions tailored to your business needs.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                    {/* SECOND CONTENT */}
+                    <div
+                        style={{
+                            opacity: showContent ? 1 : 0,
+                            transform: showContent ? "scale(1)" : "scale(0.95)",
+                            transition: "all 1s ease",
+                        }}
+                    >
+                        <style>{servicesCarouselStyles}</style>
 
-        {/* Web Development */}
-        <div className="service-card">
-          <img src={img12} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Web Development</h4>
-          <p>We offer cutting-edge web development services to enhance your digital presence.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                        {/* SINGLE CONTINUOUS MARQUEE LINE - LEFT TO RIGHT */}
+                        <div className="marquee-container">
+                            <div className="marquee-wrapper direction-ltr">
+                                {/* First Set - Software Development */}
+                                <div className="service-card">
+                                    <img src={img11} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Software Development</h4>
+                                    <p>Our software development services turn your ideas into scalable, efficient solutions tailored to your business needs.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* App Development */}
-        <div className="service-card">
-          <img src={img13} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>App Development</h4>
-          <p>We deliver innovative app solutions to elevate your digital presence.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Web Development */}
+                                <div className="service-card">
+                                    <img src={img12} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Web Development</h4>
+                                    <p>We offer cutting-edge web development services to enhance your digital presence.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* System Integration */}
-        <div className="service-card">
-          <img src={img14} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>System Integration</h4>
-          <p>We unify your business systems for seamless connectivity and secure IT operations.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* App Development */}
+                                <div className="service-card">
+                                    <img src={img13} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>App Development</h4>
+                                    <p>We deliver innovative app solutions to elevate your digital presence.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Networking Solutions */}
-        <div className="service-card">
-          <img src={img15} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Networking Solutions</h4>
-          <p>Robust networking solutions including infrastructure, security, and cloud connectivity.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* System Integration */}
+                                <div className="service-card">
+                                    <img src={img14} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>System Integration</h4>
+                                    <p>We unify your business systems for seamless connectivity and secure IT operations.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Cyber Security */}
-        <div className="service-card">
-          <img src={img16} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Cyber Security</h4>
-          <p>Comprehensive security solutions to protect systems, data, and digital assets.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Networking Solutions */}
+                                <div className="service-card">
+                                    <img src={img15} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Networking Solutions</h4>
+                                    <p>Robust networking solutions including infrastructure, security, and cloud connectivity.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Blockchain */}
-        <div className="service-card">
-          <img src={img17} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Blockchain</h4>
-          <p>Secure, transparent, and decentralized blockchain solutions for modern businesses.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Cyber Security */}
+                                <div className="service-card">
+                                    <img src={img16} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Cyber Security</h4>
+                                    <p>Comprehensive security solutions to protect systems, data, and digital assets.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* AI & ML */}
-        <div className="service-card">
-          <img src={img18} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>AI & ML</h4>
-          <p>AI & ML powered solutions to automate processes and enable smarter decisions.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Blockchain */}
+                                <div className="service-card">
+                                    <img src={img17} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Blockchain</h4>
+                                    <p>Secure, transparent, and decentralized blockchain solutions for modern businesses.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Manual Services */}
-        <div className="service-card">
-          <img src={img19} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Manual Services</h4>
-          <p>Reliable manual services to streamline business processes and operations.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* AI & ML */}
+                                <div className="service-card">
+                                    <img src={img18} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>AI & ML</h4>
+                                    <p>AI & ML powered solutions to automate processes and enable smarter decisions.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Enterprise Solutions */}
-        <div className="service-card">
-          <img src={img20} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Enterprise Solutions</h4>
-          <p>Technology-driven enterprise solutions to scale and transform businesses.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Manual Services */}
+                                <div className="service-card">
+                                    <img src={img19} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Manual Services</h4>
+                                    <p>Reliable manual services to streamline business processes and operations.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Quality Engineering */}
-        <div className="service-card">
-          <img src={img21} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Quality Engineering</h4>
-          <p>Ensuring high performance, reliability, and superior user experience.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Enterprise Solutions */}
+                                <div className="service-card">
+                                    <img src={img20} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Enterprise Solutions</h4>
+                                    <p>Technology-driven enterprise solutions to scale and transform businesses.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Duplicate Set for Seamless Loop - Software Development */}
-        <div className="service-card">
-          <img src={img11} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Software Development</h4>
-          <p>Our software development services turn your ideas into scalable, efficient solutions tailored to your business needs.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Quality Engineering */}
+                                <div className="service-card">
+                                    <img src={img21} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Quality Engineering</h4>
+                                    <p>Ensuring high performance, reliability, and superior user experience.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Web Development */}
-        <div className="service-card">
-          <img src={img12} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Web Development</h4>
-          <p>We offer cutting-edge web development services to enhance your digital presence.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Duplicate Set for Seamless Loop - Software Development */}
+                                <div className="service-card">
+                                    <img src={img11} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Software Development</h4>
+                                    <p>Our software development services turn your ideas into scalable, efficient solutions tailored to your business needs.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* App Development */}
-        <div className="service-card">
-          <img src={img13} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>App Development</h4>
-          <p>We deliver innovative app solutions to elevate your digital presence.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Web Development */}
+                                <div className="service-card">
+                                    <img src={img12} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Web Development</h4>
+                                    <p>We offer cutting-edge web development services to enhance your digital presence.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* System Integration */}
-        <div className="service-card">
-          <img src={img14} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>System Integration</h4>
-          <p>We unify your business systems for seamless connectivity and secure IT operations.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* App Development */}
+                                <div className="service-card">
+                                    <img src={img13} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>App Development</h4>
+                                    <p>We deliver innovative app solutions to elevate your digital presence.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Networking Solutions */}
-        <div className="service-card">
-          <img src={img15} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Networking Solutions</h4>
-          <p>Robust networking solutions including infrastructure, security, and cloud connectivity.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* System Integration */}
+                                <div className="service-card">
+                                    <img src={img14} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>System Integration</h4>
+                                    <p>We unify your business systems for seamless connectivity and secure IT operations.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Cyber Security */}
-        <div className="service-card">
-          <img src={img16} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Cyber Security</h4>
-          <p>Comprehensive security solutions to protect systems, data, and digital assets.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Networking Solutions */}
+                                <div className="service-card">
+                                    <img src={img15} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Networking Solutions</h4>
+                                    <p>Robust networking solutions including infrastructure, security, and cloud connectivity.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Blockchain */}
-        <div className="service-card">
-          <img src={img17} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Blockchain</h4>
-          <p>Secure, transparent, and decentralized blockchain solutions for modern businesses.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Cyber Security */}
+                                <div className="service-card">
+                                    <img src={img16} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Cyber Security</h4>
+                                    <p>Comprehensive security solutions to protect systems, data, and digital assets.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* AI & ML */}
-        <div className="service-card">
-          <img src={img18} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>AI & ML</h4>
-          <p>AI & ML powered solutions to automate processes and enable smarter decisions.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Blockchain */}
+                                <div className="service-card">
+                                    <img src={img17} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Blockchain</h4>
+                                    <p>Secure, transparent, and decentralized blockchain solutions for modern businesses.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Manual Services */}
-        <div className="service-card">
-          <img src={img19} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Manual Services</h4>
-          <p>Reliable manual services to streamline business processes and operations.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* AI & ML */}
+                                <div className="service-card">
+                                    <img src={img18} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>AI & ML</h4>
+                                    <p>AI & ML powered solutions to automate processes and enable smarter decisions.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Enterprise Solutions */}
-        <div className="service-card">
-          <img src={img20} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Enterprise Solutions</h4>
-          <p>Technology-driven enterprise solutions to scale and transform businesses.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
+                                {/* Manual Services */}
+                                <div className="service-card">
+                                    <img src={img19} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Manual Services</h4>
+                                    <p>Reliable manual services to streamline business processes and operations.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
 
-        {/* Quality Engineering */}
-        <div className="service-card">
-          <img src={img21} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
-          <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Quality Engineering</h4>
-          <p>Ensuring high performance, reliability, and superior user experience.</p>
-          <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                                {/* Enterprise Solutions */}
+                                <div className="service-card">
+                                    <img src={img20} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Enterprise Solutions</h4>
+                                    <p>Technology-driven enterprise solutions to scale and transform businesses.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
+
+                                {/* Quality Engineering */}
+                                <div className="service-card">
+                                    <img src={img21} className="img-fluid" style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "4px" }} />
+                                    <h4 style={{ marginTop: "25px", color: "#0b5c75", fontWeight: 700 }}>Quality Engineering</h4>
+                                    <p>Ensuring high performance, reliability, and superior user experience.</p>
+                                    <div style={{ fontSize: "26px", color: "#0b5c75" }}>→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
