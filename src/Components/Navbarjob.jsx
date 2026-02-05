@@ -14,7 +14,12 @@ const Navbar = ({ onSearch }) => {
   };
 
   return (
-  <div style={{ width: "100%" }}>
+  <div style={{ width: "100%", marginTop: "0px" }}>
+
+
+
+
+    <div style={{height:"100px", background: "linear-gradient(135deg, #aadefc, #0096b2)",}}></div>
     {/* Header with logo */}
     {/* <header style={{ background: "#fff", boxShadow: "0 2px 4px rgba(0,0,0,0.6)" }}>
       <div
@@ -52,7 +57,7 @@ const Navbar = ({ onSearch }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "50px"
+        // marginTop: "50px"
       }}
     >
       {/* Search Filters */}

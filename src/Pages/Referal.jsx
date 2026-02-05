@@ -30,9 +30,16 @@ function Referal() {
   };
 
 
+const fadeUpStyle = {
+  animation: "fadeUp 1.2s ease-out forwards",
+  opacity: 0,
+};
 
-
-
+const arrowStyle = {
+  fontSize: "50px",
+  display: "inline-block",
+  animation: "arrowMove 1.5s ease-in-out infinite",
+};
 
 
 
@@ -42,85 +49,84 @@ function Referal() {
 
       {/* ================= HERO SECTION ================= */}
       <div className="container-fluid p-0">
+      <div
+        className="d-flex align-items-center"
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          width: "100%",
+          backgroundImage: `url(${img1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          overflow: "hidden",
+        }}
+      >
+        {/* Gradient Overlay */}
         <div
-          className="d-flex justify-content-center align-items-start"
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0))",
+            zIndex: 1,
+          }}
+        />
+
+        {/* Content */}
+        <div
+          className="container"
           style={{
             position: "relative",
-            minHeight: "100vh",
-            overflow: "hidden",
+            zIndex: 2,
+            color: "#fff",
+            paddingTop: "120px",
+            paddingBottom: "60px",
+            paddingLeft: "30px",
+            ...fadeUpStyle,
           }}
         >
-          {/* Fixed Background Video */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              zIndex: -2,
-            }}
-          >
-            <source src={video1} type="video/mp4" />
-          </video>
+          <h1 style={{ fontSize: "60px", fontWeight: "700" }}>
+            Referral Program
+          </h1>
 
-          {/* Overlay */}
-          <div
-            style={{
-              position: "fixed",
-              inset: 0,
-              backgroundColor: "rgba(0,0,0,0.4)",
-              zIndex: -1,
-            }}
-          ></div>
+          <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+            Recommend Talent, Reward Success Together.
+          </h3>
 
-          {/* Hero Content */}
-          <div
-            className="container-fluid"
-            style={{
-              position: "relative",
-              paddingTop: "400px",
-              paddingBottom: "80px",
-              color: "#fff",
-            }}
-          >
-            <div className="container">
-              <h1
-                style={{
-                  fontSize: "65px",
-                  paddingLeft: "30px",
-                  marginBottom: "10px",
-                }}
-              >
-                <b>Refer & Earn with Us!</b>
-              </h1>
-
-              <h3
-                style={{
-                  paddingLeft: "30px",
-                  fontSize: "28px",
-                  fontWeight: "400",
-                  marginTop: 0,
-                }}
-              >
-               "Help us find the best talent and get rewarded. Your referral can make a difference in someone's career."
-              </h3>
-              <p style={{
-                paddingLeft: "30px",
-                fontSize: "32px", fontSize: "50px"
-              }}>→</p>
-
-              {/* small scroll space only */}
-              <div style={{ height: "40vh" }}></div>
-            </div>
-          </div>
+          {/* Animated Arrow */}
+          <p style={arrowStyle}>→</p>
         </div>
+
+        {/* Animations */}
+        <style>
+          {`
+            @keyframes fadeUp {
+              from {
+                opacity: 0;
+                transform: translateY(30px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            @keyframes arrowMove {
+              0% {
+                transform: translateX(0);
+              }
+              50% {
+                transform: translateX(20px); /* ~5cm */
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          `}
+        </style>
       </div>
+    </div>
 
 
 <div style={{backgroundColor:"#fff", paddingTop:"25px"}}>
@@ -294,7 +300,7 @@ function Referal() {
 
 
 
-      <div className="container-fluid p-0 mt-5">
+      {/* <div className="container-fluid p-0 mt-5">
         <img
           src={img2}
           alt="Banner"
@@ -304,7 +310,7 @@ function Referal() {
             display: "block"
           }}
         />
-      </div>
+      </div> */}
 
 
 

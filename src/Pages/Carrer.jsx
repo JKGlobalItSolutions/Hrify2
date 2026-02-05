@@ -1,8 +1,46 @@
 // import img1 from "../assets/Carrer/hero-video.mp4"
 import img2 from "../assets/Carrer/img2.png"
-import React, { useState } from "react";
+import  {React, useState } from "react";
 import video1 from "../assets/Carrer/hero-video.mp4";
+
+
+import { motion } from "framer-motion";
+import {
+  Download,
+  FileText,
+  Video,
+  Linkedin,
+  CheckCircle,
+} from "lucide-react";
+
+
 function Carrer() {
+const toolkitFeatures = [
+  {
+    icon: FileText,
+    title: "Resume & LinkedIn Rebuild",
+    description:
+      "Templates and guides to showcase your career break positively",
+  },
+  {
+    icon: Video,
+    title: "Interview Readiness",
+    description:
+      "Practice questions and confidence-building exercises",
+  },
+  {
+    icon: CheckCircle,
+    title: "Skill Gap Assessment",
+    description:
+      "Identify and bridge the gaps in your professional skills",
+  },
+  {
+    icon: Linkedin,
+    title: "Real Returner Success Insights",
+    description:
+      "Learn from those who've successfully made their comeback",
+  },
+];
 
 
     const [hover, setHover] = useState(false);
@@ -82,7 +120,7 @@ function Carrer() {
                                   marginTop: 0,
                                 }}
                               >
-                                Nuturing success with talent that grows beside you
+                                Empowering People, Shaping Exceptional Careers.
                               </h3>
                               <p style={{
                                 paddingLeft: "30px",
@@ -96,13 +134,13 @@ function Carrer() {
                         </div>
                       </div>
 
-
+                      
 <div style={{paddingTop:"25px", backgroundColor:"#fff"}}>
 
 <div style={{backgroundColor:"#fff"}} >
 
 
-            <div className="container-fluid p-0">
+            {/* <div className="container-fluid p-0">
                 <img
                     src={img2}
                     alt="Banner"
@@ -112,7 +150,171 @@ function Carrer() {
                         display: "block"
                     }}
                 />
+            </div> */}
+
+
+
+              <section
+      style={{
+        padding: "120px 0",
+        backgroundColor: "#f5f7fa",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* Background blur circles */}
+      <motion.div
+        style={{
+          position: "absolute",
+          top: "-80px",
+          left: "-80px",
+          width: "260px",
+          height: "260px",
+          borderRadius: "50%",
+          background: "rgba(13,110,253,0.08)",
+          filter: "blur(80px)",
+        }}
+        animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
+        transition={{ duration: 10, repeat: Infinity }}
+      />
+
+      <motion.div
+        style={{
+          position: "absolute",
+          bottom: "-100px",
+          right: "-100px",
+          width: "300px",
+          height: "300px",
+          borderRadius: "50%",
+          background: "rgba(255,193,7,0.12)",
+          filter: "blur(90px)",
+        }}
+        animate={{ x: [0, -30, 0], y: [0, 20, 0] }}
+        transition={{ duration: 12, repeat: Infinity }}
+      />
+
+      <div className="container position-relative">
+        <div className="row align-items-center g-5">
+          {/* LEFT CONTENT */}
+          <motion.div
+            className="col-lg-6"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <span
+              style={{
+                display: "inline-block",
+                padding: "8px 16px",
+                borderRadius: "50px",
+                background: "rgba(13,110,253,0.1)",
+                color: "#015670",
+                fontSize: "14px",
+                marginBottom: "16px",
+              }}
+            >
+              Free Resource
+            </span>
+
+            <h2 style={{ fontSize: "48px", fontWeight: 700 }}>
+              REVIVE <span style={{ color: "#015670" }}>Toolkit</span>
+            </h2>
+
+            <p style={{ fontSize: "18px", color: "#6c757d" }}>
+              Get everything you need to prepare for your career comeback.
+              Designed specifically for returners.
+            </p>
+
+            <div className="mt-4">
+              {toolkitFeatures.map((item, index) => (
+                <motion.div
+                  key={index}
+                  className="d-flex mb-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "10px",
+                      background: "015670",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginRight: "16px",
+                    }}
+                  >
+                    <item.icon size={20} color="#015670" />
+                  </div>
+                  <div>
+                    <h6 style={{ marginBottom: "4px", fontWeight: 600 }}>
+                      {item.title}
+                    </h6>
+                    <p style={{ margin: 0, fontSize: "14px", color: "#6c757d" }}>
+                      {item.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
+
+            <button
+              className="btn mt-4 px-4 py-3 rounded-pill" style={{backgroundColor:"#015670", color:"white"}}
+            >
+              <Download size={18} className="me-2" />
+              Download Free Toolkit
+            </button>
+          </motion.div>
+
+          {/* RIGHT CARD */}
+          <motion.div
+            className="col-lg-6 text-center"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div
+              style={{
+                background: "rgba(255,255,255,0.75)",
+                backdropFilter: "blur(12px)",
+                borderRadius: "30px",
+                padding: "50px",
+                boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
+              }}
+            >
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                style={{
+                  width: "90px",
+                  height: "90px",
+                  borderRadius: "50%",
+                  border: "2px dashed #015670",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 20px",
+                }}
+              >
+                <Download size={36} color="#015670" />
+              </motion.div>
+
+              <h4 style={{ fontWeight: 700 }}>
+                Free Returnship Toolkit
+              </h4>
+              <p style={{ color: "#6c757d" }}>
+                PDF + Video Guides + Templates
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>  
 
 
             <div className="container mt-4 mb-3 text-center">

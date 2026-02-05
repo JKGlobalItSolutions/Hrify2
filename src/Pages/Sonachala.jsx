@@ -16,12 +16,13 @@ function Products() {
 
 
         <>
+        <div style={{height:"100px", background: "linear-gradient(135deg, #038A5F, #012419)",}}></div>
             <div
                 className="mb-5"
                 style={{
                     background: "linear-gradient(135deg, #038A5F, #012419)",
                     minHeight: "clamp(300px, 45vh, 450px)",
-                    marginTop:"80px"
+                    // marginTop:"80px"
                 }}
             >
                 <div className="container h-100">

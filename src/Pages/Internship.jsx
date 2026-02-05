@@ -1,5 +1,6 @@
 import Form from "../Components/Form"
 import video1 from "../assets/Internship/hero-video.mp4"
+import img1 from "../assets/Internship/img1.png"
 import img2 from "../assets/Internship/img2.png"
 import img3 from "../assets/Internship/img3.png"
 import img4 from "../assets/Internship/img4.png"
@@ -7,6 +8,21 @@ import img5 from "../assets/Internship/img5.png"
 
 
 function Internship() {
+
+
+
+
+const fadeUpStyle = {
+  animation: "fadeUp 1.2s ease-out forwards",
+  opacity: 0,
+};
+
+const arrowStyle = {
+  fontSize: "50px",
+  display: "inline-block",
+  animation: "arrowMove 1.5s ease-in-out infinite",
+};
+
 
 
     return (
@@ -17,86 +33,86 @@ function Internship() {
 
 
 
-            <div className="container-fluid p-0">
-                <div
-                    className="d-flex justify-content-center align-items-start"
-                    style={{
-                        position: "relative",
-                        minHeight: "100vh",
-                        overflow: "hidden",
-                    }}
-                >
-                    {/* Fixed Background Video */}
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        style={{
-                            position: "fixed",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                            zIndex: -2,
-                        }}
-                    >
-                        <source src={video1} type="video/mp4" />
-                    </video>
+      {/* ================= HERO SECTION ================= */}
+      <div className="container-fluid p-0">
+      <div
+        className="d-flex align-items-center"
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          width: "100%",
+          backgroundImage: `url(${img1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          overflow: "hidden",
+        }}
+      >
+        {/* Gradient Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0))",
+            zIndex: 1,
+          }}
+        />
 
-                    {/* Overlay */}
-                    <div
-                        style={{
-                            position: "fixed",
-                            inset: 0,
-                            backgroundColor: "rgba(0,0,0,0.4)",
-                            zIndex: -1,
-                        }}
-                    ></div>
+        {/* Content */}
+        <div
+          className="container"
+          style={{
+            position: "relative",
+            zIndex: 2,
+            color: "#fff",
+            paddingTop: "120px",
+            paddingBottom: "60px",
+            paddingLeft: "30px",
+            ...fadeUpStyle,
+          }}
+        >
+          <h1 style={{ fontSize: "75px", fontWeight: "700" }}>
+           Internship
+          </h1>
 
-                    {/* Hero Content */}
-                    <div
-                        className="container-fluid"
-                        style={{
-                            position: "relative",
-                            paddingTop: "350px",
-                            paddingBottom: "80px",
-                            color: "#fff",
-                        }}
-                    >
-                        <div className="container">
-                            <h1
-                                style={{
-                                    fontSize: "75px",
-                                    paddingLeft: "30px",
-                                    marginBottom: "10px",
-                                }}
-                            >
-                                <b>Internship</b>
-                            </h1>
+          <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+           Real-World Experience, Future-Ready Skills.
+          </h3>
 
-                            <h3
-                                style={{
-                                    paddingLeft: "30px",
-                                    fontSize: "32px",
-                                    fontWeight: "400",
-                                    marginTop: 0,
-                                }}
-                            >
-                                Seamless Staffing Limitless Growth
-                            </h3>
-                            <p style={{
-                                paddingLeft: "30px",
-                                fontSize: "32px", fontSize: "50px"
-                            }}>→</p>
+          {/* Animated Arrow */}
+          <p style={arrowStyle}>→</p>
+        </div>
 
-                            {/* small scroll space only */}
-                            <div style={{ height: "40vh" }}></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        {/* Animations */}
+        <style>
+          {`
+            @keyframes fadeUp {
+              from {
+                opacity: 0;
+                transform: translateY(30px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            @keyframes arrowMove {
+              0% {
+                transform: translateX(0);
+              }
+              50% {
+                transform: translateX(20px); /* ~5cm */
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          `}
+        </style>
+      </div>
+    </div>
 
 
 

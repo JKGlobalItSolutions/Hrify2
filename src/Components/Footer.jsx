@@ -68,6 +68,12 @@ function Footer() {
                                 <li>Web Development</li>
                                 <li>App Development</li>
                                 <li>System Integration</li>
+                                <li>Cyber Security</li>
+                                <li>Block Chain</li>
+                                <li>AL & ML</li>
+                                <li>Manual Service</li>
+                                <li>Enterprise</li>
+                                <li>Quality Engineering</li>
                                 <li>Networking Solutions</li>
                             </ul>
                         </div>
@@ -139,7 +145,7 @@ function Footer() {
                                     lineHeight: "1.7",
                                 }}
                             >
-                                <p style={{ marginBottom: "8px" }}>
+                                {/* <p style={{ marginBottom: "8px" }}>
                                     <i className="bi bi-envelope-fill me-2"></i>
                                     <a
                                         href="mailto:jayakrishnan@hrify.co.in"
@@ -147,7 +153,7 @@ function Footer() {
                                     >
                                         jayakrishnan@hrify.co.in
                                     </a>
-                                </p>
+                                </p> */}
 
                                 <p style={{ marginBottom: 0, color: "#fff", fontWeight: "500" }}>
                                     <i className="bi bi-geo-alt-fill me-2"></i>

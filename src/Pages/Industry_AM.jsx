@@ -3,23 +3,110 @@ import AMimg1 from "../assets/Industries/AMimg1.png";
 
 
 
+
+const fadeUpStyle = {
+  animation: "fadeUp 1.2s ease-out forwards",
+  opacity: 0,
+};
+
+const arrowStyle = {
+  fontSize: "50px",
+  display: "inline-block",
+  animation: "arrowMove 1.5s ease-in-out infinite",
+};
+
+
+
+
+
 function Industry_AM() {
     return (
 
         <>
 
 
-         <div className="container-fluid p-0" style={{ marginTop: "80px" }}>
-                        <img
-                            src={AMimg1}
-                            alt="Banner"
-                            style={{
-                                width: "100%",
-                                height: "auto",
-                                display: "block"
-                            }}
-                        />
-                    </div>
+       
+             {/* ================= HERO SECTION ================= */}
+             <div className="container-fluid p-0">
+             <div
+               className="d-flex align-items-center"
+               style={{
+                 position: "relative",
+                 minHeight: "100vh",
+                 width: "100%",
+                 backgroundImage: `url(${AMimg1})`,
+                 backgroundSize: "cover",
+                 backgroundPosition: "center",
+                 backgroundRepeat: "no-repeat",
+                 overflow: "hidden",
+               }}
+             >
+               {/* Gradient Overlay */}
+               <div
+                 style={{
+                   position: "absolute",
+                   inset: 0,
+                   background:
+                     "linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0))",
+                   zIndex: 1,
+                 }}
+               />
+       
+               {/* Content */}
+               <div
+                 className="container"
+                 style={{
+                   position: "relative",
+                   zIndex: 2,
+                   color: "#fff",
+                   paddingTop: "120px",
+                   paddingBottom: "60px",
+                   paddingLeft: "30px",
+                   ...fadeUpStyle,
+                 }}
+               >
+                 <h1 style={{ fontSize: "50px", fontWeight: "700" }}>
+                  Automotive and Mobility
+                 </h1>
+       
+                 {/* <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+                  Nuturing success with talent that grows beside you
+                 </h3>
+        */}
+                 {/* Animated Arrow */}
+                 <p style={arrowStyle}>→</p>
+               </div>
+       
+               {/* Animations */}
+               <style>
+                 {`
+                   @keyframes fadeUp {
+                     from {
+                       opacity: 0;
+                       transform: translateY(30px);
+                     }
+                     to {
+                       opacity: 1;
+                       transform: translateY(0);
+                     }
+                   }
+       
+                   @keyframes arrowMove {
+                     0% {
+                       transform: translateX(0);
+                     }
+                     50% {
+                       transform: translateX(20px); /* ~5cm */
+                     }
+                     100% {
+                       transform: translateX(0);
+                     }
+                   }
+                 `}
+               </style>
+             </div>
+           </div>
+       
 
 
 

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <div style={{marginTop:"80px"}}>
+    <div>
       <Navbar onSearch={setSearchParams} />
       <JobList searchParams={searchParams}/>
       </div>

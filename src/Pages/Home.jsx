@@ -1,14 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import video1 from "../assets/Home/hero-video.mp4";
+import img1 from "../assets/Home/img11.jpeg";
 import img2 from "../assets/Home/img2.jpg";
 import img3 from "../assets/Home/img3.jpg";
 import img4 from "../assets/Home/img4.jpg";
+
+
+import { motion } from "framer-motion";
+
+
 function Home() {
   return (
     <>
-
-      {/* ================= HERO SECTION ================= */}
+{/* 
+      ================= HERO SECTION =================
       <div className="container-fluid p-0">
         <div
           className="d-flex justify-content-center align-items-start"
@@ -18,7 +24,7 @@ function Home() {
             overflow: "hidden",
           }}
         >
-          {/* Fixed Background Video */}
+          Fixed Background Video
           <video
             autoPlay
             loop
@@ -37,7 +43,7 @@ function Home() {
             <source src={video1} type="video/mp4" />
           </video>
 
-          {/* Overlay */}
+          Overlay
           <div
             style={{
               position: "fixed",
@@ -47,7 +53,7 @@ function Home() {
             }}
           ></div>
 
-          {/* Hero Content */}
+          Hero Content
           <div
             className="container-fluid"
             style={{
@@ -83,12 +89,255 @@ function Home() {
                 fontSize: "32px", fontSize: "50px"
               }}>→</p>
 
-              {/* small scroll space only */}
+              small scroll space only
               <div style={{ height: "40vh" }}></div>
             </div>
           </div>
         </div>
+      </div> */}
+
+
+
+
+
+<div style={{ backgroundColor: "#fff" }}>
+  <section
+    style={{
+      position: "relative",
+      minHeight: "100vh",
+      overflow: "hidden",
+      background: "linear-gradient(180deg, #0f3a4f 0%, #1e5a73 100%)",
+      paddingTop: "140px",
+      paddingBottom: "120px", // wave-ku space
+    }}
+  >
+    {/* Floating blobs */}
+    <motion.div
+      style={{
+        position: "absolute",
+        top: "80px",
+        left: "40px",
+        width: "280px",
+        height: "280px",
+        borderRadius: "50%",
+        background: "rgba(245,194,107,0.15)",
+        filter: "blur(120px)",
+      }}
+      animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
+      transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+    />
+
+    <motion.div
+      style={{
+        position: "absolute",
+        bottom: "80px",
+        right: "60px",
+        width: "380px",
+        height: "380px",
+        borderRadius: "50%",
+        background: "rgba(255,255,255,0.12)",
+        filter: "blur(140px)",
+      }}
+      animate={{ x: [0, -40, 0], y: [0, 30, 0] }}
+      transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+    />
+
+    {/* Bottom wave */}
+    <svg
+      viewBox="0 0 1440 120"
+      style={{ position: "absolute", bottom: 0, width: "100%" }}
+    >
+      <path
+        fill="#fff"
+        d="M0 60C240 120 480 0 720 60C960 120 1100 0 1440 60V120H0Z"
+      />
+    </svg>
+
+    <div
+      className="hero-wrapper"
+      style={{
+        maxWidth: "1200px",
+        margin: "0 auto",
+        padding: "0 24px",
+        display: "flex",
+        alignItems: "center",
+        gap: "60px",
+      }}
+    >
+      {/* LEFT */}
+      <div className="hero-left" style={{ flex: 1, color: "#fff" }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "10px",
+            padding: "8px 16px",
+            borderRadius: "999px",
+            background: "rgba(255,255,255,0.12)",
+            border: "1px solid rgba(255,255,255,0.25)",
+            marginBottom: "24px",
+            fontSize: "14px",
+          }}
+        >
+          <span
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: "#007EA3",
+            }}
+          />
+          A HRIFY Initiative
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="hero-title"
+          style={{
+            fontSize: "50px",
+            fontWeight: 800,
+            lineHeight: 1.1,
+            marginBottom: "20px",
+          }}
+        >
+          <span style={{ color: "#f5c26b" }}>HRIFY</span>
+          <br />
+          Empowering Talent. 
+          <br />
+          <span style={{ opacity: 0.85 }}>Enabling Growth.</span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="hero-text"
+          style={{
+            fontSize: "18px",
+            color: "rgba(255,255,255,0.75)",
+            maxWidth: "480px",
+            marginBottom: "32px",
+          }}
+        >
+          End-to-end HR and workforce solutions designed for today’s evolving businesses. We connect the right people to the right roles—efficiently and ethically.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="hero-buttons"
+          style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}
+        >
+          <button
+            style={{
+              background: "#f5c26b",
+              color: "#1a1a1a",
+              border: "none",
+              padding: "16px 30px",
+              borderRadius: "999px",
+              fontWeight: 600,
+              fontSize: "16px",
+            }}
+          >
+            →
+          </button>
+
+          {/* <button
+            style={{
+              background: "transparent",
+              color: "#fff",
+              border: "1px solid rgba(255,255,255,0.35)",
+              padding: "16px 30px",
+              borderRadius: "999px",
+              fontSize: "16px",
+            }}
+          >
+            Download Free Toolkit
+          </button> */}
+        </motion.div>
       </div>
+
+      {/* RIGHT IMAGE */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95, y: 30 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="hero-right"
+        style={{ flex: 1 }}
+      >
+        <div
+          style={{
+            position: "relative",
+            borderRadius: "28px",
+            overflow: "hidden",
+            boxShadow: "0 40px 90px rgba(0,0,0,0.4)",
+          }}
+        >
+          <img
+            src={img1}
+            alt="Career comeback"
+            style={{ width: "100%", height: "auto", display: "block" }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              // background:"linear-gradient(to top, rgba(0,0,0,0.45), transparent)",
+            }}
+          />
+        </div>
+      </motion.div>
+    </div>
+
+    {/* RESPONSIVE */}
+    <style>
+      {`
+        @media (max-width: 992px) {
+          .hero-wrapper {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+          }
+
+          .hero-title {
+            font-size: 40px;
+          }
+
+          .hero-text {
+            margin: 0 auto 28px;
+          }
+
+          .hero-buttons {
+            justify-content: center;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .hero-title {
+            font-size: 32px;
+          }
+
+          .hero-text {
+            font-size: 16px;
+          }
+
+          .hero-right {
+            margin-top: 20px;
+          }
+        }
+      `}
+    </style>
+  </section>
+</div>
+
+
+
 
       {/* ================= CONTENT SECTION ================= */}
       <div style={{ backgroundColor: "#fff",  }}>
@@ -188,7 +437,7 @@ function Home() {
                 }}
               >
 
-                Our specialized digital services division, Hrifty Digital, delivers
+                Our specialized digital services division, Hrify Digital, delivers
                 exceptional digital solutions that empower clients to transform and
                 revolutionize their businesses.
 
@@ -212,7 +461,7 @@ function Home() {
                   fontSize: "30px",
                 }}
               >
-                Staff & Talent Management
+                Staffing & Talent Management
               </h4>
 
               <p
