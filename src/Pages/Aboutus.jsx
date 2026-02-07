@@ -1,13 +1,13 @@
 import img1 from "../assets/About/img1.png";
 import video1 from "../assets/About/video1.mp4";
-import img2 from "../assets/About/img2.png";
+import whoWeAreImg from "../assets/About/img2.png";
 import bgimg1 from "../assets/About/bgimg1.png";
 import img3 from "../assets/About/img3.png";
 import img4 from "../assets/About/img4.png";
 import HrifyLogo from "../assets/Navbar/logo.png";
 import Form from "../Components/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { motion } from "framer-motion";
 function About() {
 
 
@@ -25,9 +25,74 @@ const arrowStyle = {
 
 
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const fadeLeft = {
+  hidden: { opacity: 0, x: -80 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1.5, // seconds (increase this)
+      ease: "easeOut"
+    }
+  }
+};
+
+const fadeRight = {
+  hidden: { opacity: 0, x: 80 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1.5, // seconds increase
+      ease: "easeOut"
+    }
+  }
+};
+
 
   return (
     <>
+
+
+
+    <style>
+        {`
+          body { margin:0; }
+
+          .glass-card{
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(14px);
+            border-radius: 24px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+            height: 100%;
+          }
+
+          .gradient-text{
+            background: linear-gradient(90deg,#0dcaf0,#015670);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .hover-lift{
+            transition: all 0.4s ease;
+          }
+
+          .hover-lift:hover{
+            transform: translateY(-12px);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+          }
+
+          .service-icon{
+            font-size: 42px;
+            margin-bottom: 15px;
+          }
+        `}
+      </style>
       {/* REMOVE DEFAULT BODY MARGIN */}
       <style>
         {`body { margin: 0; padding: 0; }`}
@@ -139,69 +204,131 @@ const arrowStyle = {
 
 
 
-
-
-
-
-
-        <div
-          className="s mt-5 p-3 mb-5 text-center"
-          style={{
-            // fontFamily: "'Redressed', sans-serif",
-            lineHeight: "1.8",
-            fontSize: "20px",
-            fontWeight:"800",
-            color: "#015670",
-            backgroundColor: "#fff"
-          }}
-        >
-          <p><b>
-            Contract Staffing offers flexible staffing solutions for short-term or project-based requirements, providing access to skilled professionals exactly when you need them, while Permanent Placement connects you with top-tier talent for long-term roles to ensure the right fit for your organization’s growth, and Contract-to-Hire gives you a flexible hiring approach that allows you to evaluate talent on contract before transitioning them into permanent positions.</b>
-          </p>
-        </div>
-
-
-        <div className="container py-5">
+      {/* ================= WHO WE ARE ================= */}
+      <div style={{ background: "#f6fbfd", padding: "90px 0" }}>
+        <div className="container">
           <div className="row align-items-center">
 
-            {/* LEFT CONTENT */}
-            <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
-              <h3 className="mb-3" style={{ fontSize: "24px", color: "#015670", fontWeight: "bold", fontFamily: "'Outfit', sans-serif" }}>Contract Staffing and Placement</h3>
+            <motion.div
+              className="col-lg-6 mb-4 mb-lg-0"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeLeft}
+            >
+              <div className="glass-card p-3">
+                <img
+                  src={whoWeAreImg}
+                  alt="Who We Are HRIFY"
+                  className="img-fluid"
+                  style={{ borderRadius: "20px" }}
+                />
+              </div>
+            </motion.div>
 
+            <motion.div
+              className="col-lg-6"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeRight}
+            >
+              <span
+                style={{
+                  background: "#e6f7fc",
+                  color: "#015670",
+                  padding: "6px 16px",
+                  borderRadius: "20px",
+                  fontSize: "14px",
+                  fontWeight: "600"
+                }}
+              >
+                WHO WE ARE
+              </span>
 
-              <p style={{ fontSize: "18px", fontWeight: "medium", fontFamily: "'Outfit', sans-serif" }}>
-                Flexible staffing solutions to address short-term or project-based workforce requirements with skilled professionals.
-                We provide end-to-end recruitment services to help businesses find and retain top talent for long-term, full-time roles.
-                Our rigorous screening process ensures candidates are the right fit for your company culture and objectives.
-                We specialize in sourcing senior-level executives and leadership talent to drive strategic growth and innovation within your organization.
-                Our extensive network and targeted approach guarantee quality hires.
+              <h2 style={{ fontSize: "42px", fontWeight: "700", marginTop: "20px" }}>
+                Empowering Businesses Through People
+              </h2>
+
+              <p style={{ fontSize: "18px", lineHeight: "1.8", marginTop: "20px" }}>
+                HRIFY is a people-first IT staffing and talent solutions company dedicated to helping organizations build high-performing teams. We specialize in IT staffing, strategic talent management, and technology services that enable businesses to scale faster and smarter.
+
+                With a deep understanding of the evolving tech landscape, we connect skilled professionals with the right opportunities through flexible hiring models, quality-driven recruitment, and long-term partnerships. From startups to enterprises, we act as a trusted partner in aligning talent, technology, and business goals.
+
+                At HRIFY, we don’t just fill roles — we build careers, empower diversity through initiatives like our REVIVE program, and deliver workforce solutions that drive sustainable growth.
               </p>
-
-              <h3 className="mb-3" style={{ fontSize: "24px", color: "#015670", fontWeight: "bold", fontFamily: "'Outfit', sans-serif" }}>Contract-to-Hire</h3>
-              <p style={{ fontSize: "18px", fontWeight: "medium", fontFamily: "'Outfit', sans-serif" }}>
-                Our Contract-to-Hire solutions offer flexibility for businesses to assess a candidate’s performance and cultural fit before making a permanent hiring decision.
-                This approach minimizes hiring risks, ensures seamless transitions, and helps organizations secure top talent with confidence.
-              </p>
-
-              <h3 className="mb-3" style={{ fontSize: "24px", color: "#015670", fontWeight: "bold", fontFamily: "'Outfit', sans-serif" }}>Permanent Staffing</h3>
-              <p style={{ fontSize: "18px", fontWeight: "medium", justifyContent: "center", fontFamily: "'Outfit', sans-serif" }}>
-                We provide comprehensive recruitment services to help businesses find the right talent for long-term success.
-                Our rigorous screening and selection process ensures that candidates not only possess the required skills but also align with your company’s culture and vision.
-                With our expertise, you can build a strong, dedicated workforce that drives growth and stability.
-              </p>
-            </div>
-
-            {/* RIGHT IMAGE */}
-            <div className="col-lg-5 col-md-12 text-center">
-              <img
-                src={img2}
-                alt="Staffing Solutions"
-                className="img-fluid rounded"
-              />
-            </div>
+            </motion.div>
 
           </div>
         </div>
+      </div>
+
+
+ <motion.div
+        className="container py-5"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+      >
+        <h2 className="gradient-text text-center mb-5" style={{fontSize:"40px"}} ><b>Our Services</b></h2>
+
+        <div className="row g-4">
+
+          {/* IT Staffing */}
+          <div className="col-md-4">
+            <div className="glass-card p-4 hover-lift">
+              {/* <div className="service-icon">👨‍💻</div> */}
+              <h4>IT Staffing</h4>
+              <p>
+                End-to-end IT staffing solutions delivering skilled professionals
+                for contract, permanent, and project-based roles.
+              </p>
+              <ul>
+                <li>Contract & Permanent Hiring</li>
+                <li>Contract-to-Hire</li>
+                <li>On-demand Workforce</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Talent Management */}
+          <div className="col-md-4">
+            <div className="glass-card p-4 hover-lift">
+              {/* <div className="service-icon">🎯</div> */}
+              <h4>Talent Management</h4>
+              <p>
+                Strategic talent programs designed to attract, develop, and
+                retain high-performing professionals.
+              </p>
+              <ul>
+                <li>Leadership Hiring</li>
+                <li>REVIVE – Women Returnship</li>
+                <li>Talent Pipeline Building</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* IT Services */}
+          <div className="col-md-4">
+            <div className="glass-card p-4 hover-lift">
+              {/* <div className="service-icon">⚙️</div> */}
+              <h4>IT Services</h4>
+              <p>
+                Technology-driven services helping businesses build, scale, and
+                modernize their digital ecosystem.
+              </p>
+              <ul>
+                <li>Web & Application Development</li>
+                <li>Digital Transformation</li>
+                <li>Managed IT Support</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </motion.div>
+
 
         <div
           style={{

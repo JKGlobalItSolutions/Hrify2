@@ -1,10 +1,21 @@
 import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import logo from "../assets/Navbar/logo.png";
+import logo2 from "../assets/Navbar/logo2.png";
 
 function Navbar() {
+
+
+
+  const location = useLocation();
+const healthcareRoutes = ["/industries/Industry_HL"];
+
+const isHealthcarePage = healthcareRoutes.includes(location.pathname);
+
+
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,7 +45,7 @@ function Navbar() {
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src={logo}
+            src={isHealthcarePage ? logo2 : logo}
             alt="HRIFY Logo"
             style={{
               height: "58px",

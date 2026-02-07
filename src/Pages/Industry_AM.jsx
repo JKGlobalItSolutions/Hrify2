@@ -65,14 +65,14 @@ function Industry_AM() {
                    ...fadeUpStyle,
                  }}
                >
-                 <h1 style={{ fontSize: "50px", fontWeight: "700" }}>
+                 <h1 className="mb-2" style={{ fontSize: "50px", fontWeight: "700" }}>
                   Automotive and Mobility
                  </h1>
        
-                 {/* <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
-                  Nuturing success with talent that grows beside you
+                 <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+                  Engineering the future of transportation with skilled professionals supporting connected, electrified, and software-driven mobility ecosystems.
                  </h3>
-        */}
+       
                  {/* Animated Arrow */}
                  <p style={arrowStyle}>→</p>
                </div>
@@ -113,7 +113,7 @@ function Industry_AM() {
 
             <div className="container-fluid p-2 mt-5 text-center" >
                         <h1 className="mb-2" style={{fontFamily:"poppins", fontSize:"40px"}}><b>Automotive and Mobility</b></h1>
-                        <p style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px" }}>Automotive and Mobility refers to the industries and technologies focused on the design, manufacturing, and operation of vehicles, along with the development of innovative transportation solutions that enable efficient, safe, and sustainable movement of people and goods. This domain encompasses traditional automotive manufacturing, electric and autonomous vehicles, shared mobility services, smart infrastructure, and advancements in connectivity to reshape the future of transportation. </p>
+                        <p className="p-4" style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px" }}>Automotive and Mobility staffing services focus on providing skilled professionals to support the evolving transportation and vehicle technology ecosystem. This industry includes traditional automotive manufacturing, electric vehicles (EV), autonomous and connected vehicles, and modern mobility solutions. By delivering qualified manpower across technical and non-technical roles, staffing services help organizations maintain efficiency, innovation, and growth in a highly competitive market. </p>
                     </div>
         
         
@@ -128,16 +128,16 @@ function Industry_AM() {
                             <div className="col-lg-8 col-md-12">
                                 <h3 style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px", fontWeight:"bold" }}>Vehicle Innovation</h3>
                                 <p style={{ fontFamily:"poppins", fontSize:"18px" }}>
-                                    Driving the future of mobility, our focus is on the latest advancements in electric, autonomous, and connected vehicle technologies. We support innovation that enhances energy efficiency, promotes sustainability, and delivers safer, smarter transportation solutions. From cutting-edge electric drivetrains to AI-powered autonomous systems and integrated connectivity features, we are at the forefront of transforming the automotive industry. </p>
+                                    We support vehicle innovation by providing skilled professionals who drive advancements in automotive and mobility technologies. Our staffing solutions enable organizations to build teams specializing in electric vehicles, autonomous systems, connected vehicle platforms, and next-generation automotive engineering. By supplying domain-ready talent, we help companies accelerate innovation, improve product quality, and stay competitive in a rapidly evolving industry. </p>
         
                                 <h3 style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px", fontWeight:"bold" }}>Sustainable Solutions</h3>
-                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>We are committed to promoting eco-friendly technologies that reduce carbon emissions and support environmental sustainability. Our solutions focus on the adoption of electric vehicles (EVs), renewable energy integration, and energy-efficient transportation systems. By leveraging innovative technologies, we aim to create a cleaner, greener future for global mobility. </p>
+                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>Our sustainable staffing solutions focus on supporting eco-friendly and future-ready mobility initiatives. We help organizations recruit talent skilled in electric vehicle development, battery technology, energy efficiency, and environmentally responsible manufacturing practices. By aligning manpower strategies with sustainability goals, we enable businesses to reduce their environmental impact while achieving long-term operational success. </p>
         
                                 <h3 style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px", fontWeight:"bold" }}>Smart Mobility </h3>
-                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>Embracing the future of transportation, our smart mobility initiatives include shared mobility services, ride-hailing platforms, and intelligent transportation systems. By integrating smart infrastructure and leveraging data-driven insights, we enhance urban mobility, reduce traffic congestion, and offer convenient, cost-effective transportation options for both individuals and businesses.</p>
+                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>We empower smart mobility initiatives by staffing professionals who support shared mobility platforms, intelligent transportation systems, and data-driven mobility services. From software developers and data analysts to operations and fleet management experts, our recruitment solutions help organizations enhance urban mobility, optimize transportation networks, and deliver efficient, user-centric mobility experiences.</p>
         
                                 <h3 style={{ color: "#015670", fontFamily:"poppins", fontSize:"18px", fontWeight:"bold" }}>Global Transportation Evolution </h3>
-                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>As the world shifts toward seamless, efficient, and sustainable movement of people and goods, we are leading the way in revolutionizing global transportation. Our focus is on innovative solutions that streamline logistics, enhance connectivity between regions, and support the development of sustainable transportation networks on a global scale. </p>
+                                <p style={{ lineHeight: "1.7", fontFamily:"poppins", fontSize:"18px" }}>As the transportation ecosystem evolves globally, we provide scalable staffing solutions to support cross-regional operations and international growth. Our focus is on connecting organizations with skilled talent across manufacturing, technology, and mobility services. By enabling access to a global workforce, we help automotive and mobility companies adapt to changing markets and build resilient, future-ready teams. </p>
         
         
         

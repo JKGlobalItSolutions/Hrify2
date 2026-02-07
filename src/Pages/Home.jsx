@@ -290,6 +290,8 @@ function Home() {
               inset: 0,
               // background:"linear-gradient(to top, rgba(0,0,0,0.45), transparent)",
             }}
+            // animate={{ y: [0, -12, 0] }}
+            //     transition={{ repeat: Infinity, duration: 6 }}
           />
         </div>
       </motion.div>
@@ -418,7 +420,9 @@ function Home() {
                 className="mb-4 fw-bold" // Bootstrap bold + margin bottom
                 style={{
                   fontSize: "30px",
-                  fontFamily: "'Poppins', sans-serif"
+                  fontFamily: "'Poppins', sans-serif",
+                  color: "#007EA3"
+
                 }}
               >
                 Digital Technology Services
@@ -451,7 +455,8 @@ function Home() {
               className="mb-4 pb-3" // Bootstrap spacing
               style={{
                 fontWeight: "700",
-                fontFamily: "'Poppins', sans-serif"
+                fontFamily: "'Poppins', sans-serif",
+                
                 // borderBottom: "1px solid #e0e0e0", // main bottom line for the block
               }}
             >
@@ -459,6 +464,7 @@ function Home() {
                 className="mb-4 fw-bold" // Bootstrap bold + margin bottom
                 style={{
                   fontSize: "30px",
+                  color: "#007EA3"
                 }}
               >
                 Staffing & Talent Management
@@ -500,7 +506,8 @@ function Home() {
                 className="mb-4 fw-bold" // Bootstrap bold + margin bottom
                 style={{
                   fontSize: "30px",
-                  fontFamily: "'Poppins', sans-serif"
+                  fontFamily: "'Poppins', sans-serif",
+                  color: "#007EA3"
                 }}
               >
                 Business Process Management
@@ -577,14 +584,14 @@ function Home() {
         <div className="container-fluid py-5 text-center">
           <h2
             className="fw-bold mb-4"
-            style={{ color: "#003241", fontSize: "60px" }}
+            style={{ color: "#007EA3", fontSize: "60px" }}
           >
             Reinventing the Future
           </h2>
 
           <p
             style={{
-              color: "#0081A7",
+              // color: "#0081A7",
               maxWidth: "1300px",
               margin: "0 auto",
               fontSize: "30px",

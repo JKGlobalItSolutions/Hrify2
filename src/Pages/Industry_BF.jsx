@@ -72,13 +72,13 @@ const arrowStyle = {
             ...fadeUpStyle,
           }}
         >
-          <h1 style={{ fontSize: "50px", fontWeight: "700" }}>
+          <h1 className="mb-2" style={{ fontSize: "50px", fontWeight: "700" }}>
            Banking and Finance
           </h1>
 
-          {/* <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
-           Nuturing success with talent that grows beside you
-          </h3> */}
+          <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+           Delivering expert staffing and workforce solutions that support secure, scalable operations across banking, financial services, and fintech environments.
+          </h3>
 
           {/* Animated Arrow */}
           <p style={arrowStyle}>→</p>
