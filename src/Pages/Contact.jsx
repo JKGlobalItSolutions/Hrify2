@@ -1,4 +1,4 @@
-import img2 from "../assets/Contact/img2.png"
+import img2 from "../assets/Contact/img2.jpeg"
 
 
 function Contact() {

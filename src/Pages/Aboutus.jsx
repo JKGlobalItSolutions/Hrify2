@@ -377,7 +377,7 @@ const fadeRight = {
                       style={{ height: "30px" }}
                     />
                   </div>
-                </div>
+                </div>Offering expert staffing and operational support for healthcare systems, life science advancement, and compliant, patient-centric services.
 
                 {/* RIGHT CONTENT */}
                 <div className="col-lg-8 col-md-12">

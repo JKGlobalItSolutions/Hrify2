@@ -123,7 +123,7 @@ const Revive = () => {
               variants={fadeUp}
             >
               <h2 className="fw-bold mb-3">
-                 <span style={{ color: "#4da3ff" }}>REVIVE PROGRAM</span>
+                 <span style={{ color: "#015670" }}>REVIVE PROGRAM</span>
               </h2>
 
               <p className="text-muted">
@@ -143,7 +143,7 @@ const Revive = () => {
                 to step back into your career when you choose.
               </p>
 
-              <p className="fw-semibold text-primary">
+              <p className="fw-semibold" style={{ color: "#015670" }} >
                 Because a career break does not mean the end of your career.
               </p>
             </motion.div>
@@ -165,7 +165,39 @@ const Revive = () => {
         </div>
       </section>
 
-      {/* ================= HOW IT WORKS ================= */}
+     <style>{`
+  .revive-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 45px 25px 35px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    position: relative;
+  }
+
+  /* Step number circle */
+  .step-circle {
+    width: 36px;
+    height: 36px;
+    background: #eaf2f6;          /* soft light background */
+    color: #003241;               /* ✅ NUMBER COLOR */
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Icon color */
+  .revive-icon {
+    color: #003241;
+    margin-top: 18px;
+  }
+`}</style> 
     {/* ================= HOW IT WORKS ================= */}
 <section className="py-5 bg-white">
   <div className="container text-center">
@@ -177,133 +209,98 @@ const Revive = () => {
       viewport={{ once: true }}
       variants={fadeUp}
     >
-      How <span style={{ color: "#4da3ff" }}>REVIVE</span> Works
+      How <span style={{ color: "#015670" }}>REVIVE</span> Works
     </motion.h2>
 
     <p className="text-muted mb-5">
       A simple four-step journey to restart your career
     </p>
 
+   <motion.div
+  className="row g-4"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={stagger}
+>
+  {[
+    ["1", "bi-clipboard-check", "Apply & Skill Assessment", "Personalized evaluation to understand your strengths"],
+    ["2", "bi-mortarboard", "Structured Upskilling", "Targeted learning aligned to industry needs"],
+    ["3", "bi-briefcase", "Client Project Experience", "Hands-on work with real client projects"],
+    ["4", "bi-rocket-takeoff", "Career Transition", "Support to move into contract or full-time roles"]
+  ].map((item, i) => (
     <motion.div
-      className="row g-4"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={stagger}
+      key={i}
+      className="col-lg-3 col-md-6"
+      variants={fadeUp}
+      whileHover={{ y: -10 }}
     >
-      {[
-        [
-          "1",
-          "bi-clipboard-check",
-          "Apply & Skill Assessment",
-          "Personalized evaluation to understand your strengths"
-        ],
-        [
-          "2",
-          "bi-mortarboard",
-          "Structured Upskilling",
-          "Targeted learning aligned to industry needs"
-        ],
-        [
-          "3",
-          "bi-briefcase",
-          "Client Project Experience",
-          "Hands-on work with real client projects"
-        ],
-        [
-          "4",
-          "bi-rocket-takeoff",
-          "Career Transition",
-          "Support to move into contract or full-time roles"
-        ]
-      ].map((item, i) => (
-        <motion.div
-          className="col-lg-3 col-md-6"
-          key={i}
-          variants={fadeUp}
-          whileHover={{
-            y: -12,
-            boxShadow: "0 20px 40px rgba(0,0,0,0.12)"
-          }}
-          transition={{ type: "spring", stiffness: 200 }}
-        >
-          <div className="revive-card text-center h-100">
-            <div className="step-circle">{item[0]}</div>
+      <div className="revive-card text-center h-100">
 
-            <motion.i
-              className={`bi ${item[1]} fs-2 text-primary`}
-              initial={{ scale: 0.8 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 0.4 }}
-            />
+        {/* Step Number */}
+        <div style={{backgroundColor:"#003241"}} className="step-circle">
+          {item[0]} 
+        </div>
 
-            <h6 className="fw-bold mt-3">{item[2]}</h6>
-            <p className="text-muted small mt-2">
-              {item[3]}
-            </p>
-          </div>
-        </motion.div>
-      ))}
+        {/* Icon */}
+       <div className="step-circle">{item[0]}</div>
+
+<i className={`bi ${item[1]} fs-2 revive-icon`}></i>
+
+
+        <h6 className="fw-bold mt-3">{item[2]}</h6>
+        <p className="text-muted small mt-2">{item[3]}</p>
+
+      </div>
     </motion.div>
+  ))}
+</motion.div>
+
   </div>
 
   {/* ===== LOCAL STYLES ===== */}
-  <style>{`
-    .revive-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 40px 25px 30px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-      position: relative;
-      transition: all 0.3s ease;
-    }
 
-    .step-circle {
-      width: 36px;
-      height: 36px;
-      background: linear-gradient(135deg, #4da3ff, #1f6a8a);
-      color: #fff;
-      border-radius: 50%;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: -18px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  `}</style>
+
+
 </section>
 
 
       {/* ================= PROGRAM OVERVIEW ================= */}
-      <section
-        style={{
-          background: "linear-gradient(180deg, #1f4e68, #173f55)",
-          padding: "100px 0"
-        }}
-      >
-        <div className="container text-center text-white">
-          <h2 className="fw-bold mb-5">
-            Program <span style={{ color: "#6bc1ff" }}>Overview</span>
-          </h2>
+       <section
+      style={{
+        background: "linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%)",
+        padding: "100px 0"
+      }}
+    >
+      <div className="container text-center">
+        <motion.h2
+          className="fw-bold mb-5"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          style={{ color: "#0a2540" }}
+        >
+          Program <span style={{ color: "#015670" }}>Overview</span>
+        </motion.h2>
 
-          <div className="row g-4">
-            <StatCard value={12} label="Week Program" />
-            <StatCard value={100} label="Remote & Hybrid" suffix="+" />
-            <StatCard value={4} label="Industry Domains" />
-            <StatCard value={85} label="Conversion Rate" suffix="%" />
-          </div>
+        <div className="row g-4"  >
+          <StatCard value={12}  label="Week Program" />
+          <StatCard value={100} label="Remote & Hybrid" suffix="+" />
+          <StatCard value={4} label="Industry Domains" />
+          <StatCard value={85} label="Conversion Rate" suffix="%" />
         </div>
-      </section>
+      </div>
+    </section>
+
+
+    
 
       {/* ================= TOOLKIT ================= */}
       <section className="py-5 bg-light">
         <div className="container">
           <h2 className="fw-bold text-center mb-5">
-            The <span style={{ color: "#4da3ff" }}>REVIVE Toolkit</span>
+            The <span style={{ color: "#003241" }}>REVIVE Toolkit</span>
           </h2>
 
           <div className="row g-4">
@@ -372,15 +369,44 @@ const Revive = () => {
 /* ================= STAT CARD ================= */
 const StatCard = ({ value, label, suffix = "" }) => {
   const { count, ref } = useCountUp(value);
+
   return (
     <div className="col-lg-3 col-md-6" ref={ref}>
-      <div className="revive-card text-center">
-        <h1 className="fw-bold text-primary">
+      <div
+        className="revive-card text-center"
+        style={{
+          background: "#ffffff",
+          borderRadius: "22px",
+          padding: "40px 20px",
+          boxShadow: "0 20px 40px rgba(0,0,0,0.06)",
+          height: "100%"
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "48px",
+            fontWeight: "800",
+            color: "#027598",
+            marginBottom: "10px"
+          }}
+        >
           {count}{suffix}
-        </h1>
-        <p className="text-muted">{label}</p>
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            fontWeight: "500",
+            color: "#5b6b7a",
+            margin: 0
+          }}
+        >
+          {label}
+        </p>
       </div>
     </div>
+
+
   );
 };
 

@@ -91,8 +91,7 @@ const arrowStyle = {
           </h1>
 
             <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
-            Providing manpower expertise for healthcare systems, life science innovation, and compliant, patient-centric operational support.
-            </h3>
+Offering expert staffing and operational support for healthcare systems, life science advancement, and compliant, patient-centric services.            </h3>
 
           {/* Animated Arrow */}
           <p style={arrowStyle}>→</p>
