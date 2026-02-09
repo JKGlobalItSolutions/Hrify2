@@ -72,7 +72,7 @@ const radioStyle = {
                     >
                         <div className="container text-center">
                             <h1 className="mb-3">
-                                <b>CONTACT US</b>
+                                {/* <b>CONTACT US</b> */}
                             </h1>
                         </div>
                     </div>
