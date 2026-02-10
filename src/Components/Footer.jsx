@@ -117,6 +117,14 @@ function Footer() {
                                     <i className="bi bi-facebook"></i>
                                 </a>
 
+  <a
+    href="https://www.linkedin.com/company/hrifytechnologies/about/"
+    style={iconStyle}
+    target="_blank"
+    rel="noreferrer"
+  >
+    <i className="bi bi-linkedin"></i>
+  </a>
                                 <a
                                     href="https://wa.me/+918608600778"
                                     style={iconStyle}
@@ -209,6 +217,7 @@ const iconStyle = {
     fontSize: "16px",
     textDecoration: "none",
 };
+
 
 const linkStyle = {
     color: "#d1d5db",
