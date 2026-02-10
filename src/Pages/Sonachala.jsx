@@ -25,36 +25,36 @@ function Products() {
                     // marginTop:"80px"
                 }}
             >
-                <div className="container h-100">
-                    <div className="row h-100 align-items-center">
+               <div className="container h-100">
+  <div className="row h-100 align-items-center">
 
-                        {/* LEFT IMAGE */}
-                        <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
-                            <img
-                            className="mt-5"
-                                src={img1}
-                                alt="Hotel"
-                                style={{
-                                    width: "100%",
-                                    maxWidth: "200px",
-                                    height: "auto",
-                                    objectFit: "contain",
-                                    borderRadius: "12px"
-                                }}
-                            />
-                        </div>
+    {/* LEFT IMAGE */}
+    <div className="col-lg-6 col-md-12 d-flex justify-content-lg-start justify-content-center align-items-center">
+      <img
+        className="img-fluid mt-5"
+        src={img1}
+        alt="Hotel"
+        style={{
+          maxWidth: "200px",
+          objectFit: "contain",
+          borderRadius: "12px",
+          marginLeft: "10px",   // 👈 slight left corner move
+        }}
+      />
+    </div>
 
-                        {/* RIGHT CONTENT */}
-                        <div className="col-lg-6 col-md-12 d-flex align-items-center">
-                            <div className="text-white text-center text-lg-start mt-5">
-                                <h1 style={{ fontWeight: "600" }}>
-                                    Hotel Revenue Management Solutions
-                                </h1>
-                            </div>
-                        </div>
+    {/* RIGHT CONTENT */}
+    <div className="col-lg-6 col-md-12 d-flex align-items-center">
+      <div className="text-white text-center text-lg-start mt-5">
+        <h1 style={{ fontWeight: "600"  }}>
+          Hotel Revenue Management Solutions
+        </h1>
+      </div>
+    </div>
 
-                    </div>
-                </div>
+  </div>
+</div>
+
             </div>
 
 

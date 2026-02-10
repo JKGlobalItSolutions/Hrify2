@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import img1 from "../assets/Contact/img1.png"
+import img1 from "../assets/Contact/img1.jpeg"
 
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";

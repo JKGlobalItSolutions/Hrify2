@@ -248,7 +248,7 @@ const arrowStyle = {
                 </div> */}
 
 
-                <div className="container py-5">
+                <div className="container-fluid py-5">
                     <div className="row align-items-center">
 
 
@@ -261,7 +261,7 @@ const arrowStyle = {
                                 src={img6}
                                 alt="Staffing Solutions"
                                 className="img-fluid rounded"
-                                style={{ maxWidth: "100%" }}
+                                style={{ maxWidth: "90%" }}
                             />
                         </div>
 

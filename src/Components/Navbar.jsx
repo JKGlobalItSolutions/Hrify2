@@ -159,7 +159,7 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
                 <li><Link className="dropdown-item" to="/prohub/Carrer">Career</Link></li>
                 <li><Link className="dropdown-item" to="/prohub/internship">Internship</Link></li>
                 <li><Link className="dropdown-item" to="/prohub/referal">Referral Program</Link></li>
-                <li><Link className="dropdown-item" to="/prohub/revive">Revive</Link></li>
+                <li><Link className="dropdown-item" to="/prohub/revive">Rise Program</Link></li>
               </ul>
             </li>
           </ul>
