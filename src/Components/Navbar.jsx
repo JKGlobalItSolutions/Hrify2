@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Link, useLocation  } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/Navbar/logo.png";
 import logo2 from "../assets/Navbar/logo2.png";
 
 function Navbar() {
-
-
-
   const location = useLocation();
-const healthcareRoutes = ["/industries/Industry_HL"];
 
-const isHealthcarePage = healthcareRoutes.includes(location.pathname);
+  const healthcareRoutes = ["/industries/Industry_HL"];
+  const lightBackgroundRoutes = ["/admin", "/contact"];
 
-
+  const isHealthcarePage = healthcareRoutes.includes(location.pathname);
+  const isLightPage = lightBackgroundRoutes.includes(location.pathname);
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,19 +20,22 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const textColor = scrolled ? "#000" : "#fff";
+  // ✅ FINAL TEXT COLOR FIX
+  const textColor = scrolled || isLightPage ? "#000" : "#fff";
 
   return (
     <nav
       className="navbar navbar-expand-lg fixed-top"
       style={{
-        backgroundColor: scrolled ? "#fff" : "transparent",
-        boxShadow: scrolled ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
+        backgroundColor: scrolled || isLightPage ? "#fff" : "transparent",
+        boxShadow:
+          scrolled || isLightPage
+            ? "0 2px 10px rgba(0,0,0,0.1)"
+            : "none",
         padding: "15px clamp(10px, 4vw, 40px)",
         transition: "all 0.3s ease",
         zIndex: 1050
@@ -42,19 +43,16 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
     >
       <div className="container-fluid">
 
-        {/* Logo */}
+        {/* LOGO */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src={isHealthcarePage ? logo2 : logo}
             alt="HRIFY Logo"
-            style={{
-              height: "58px",
-              transition: "0.3s"
-            }}
+            style={{ height: "58px", transition: "0.3s" }}
           />
         </Link>
 
-        {/* Toggle */}
+        {/* TOGGLER */}
         <button
           className="navbar-toggler"
           type="button"
@@ -64,37 +62,30 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Menu */}
+        {/* MENU */}
         <div className="collapse navbar-collapse" id="hrifyNavbar">
           <ul
             className="navbar-nav mx-auto mb-2 mb-lg-0"
-            style={{
-              gap: "22px",
-              fontSize: "16px",
-              fontWeight: 600
-            }}
+            style={{ gap: "22px", fontSize: "16px", fontWeight: 600 }}
           >
             {[
               { name: "Home", path: "/" },
               { name: "About Us", path: "/about" },
               { name: "Services", path: "/services" },
-              { name: "Talent Management", path: "/talent_management" },
+              { name: "Talent Management", path: "/talent_management" }
             ].map((item, i) => (
               <li className="nav-item" key={i}>
                 <Link
                   className="nav-link"
                   to={item.path}
-                  style={{
-                    color: textColor,
-                    transition: "color 0.3s"
-                  }}
+                  style={{ color: textColor }}
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
 
-            {/* Product */}
+            {/* PRODUCT */}
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
@@ -113,15 +104,12 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
               </ul>
             </li>
 
-            {/* Industries */}
+            {/* INDUSTRIES */}
             <li className="nav-item dropdown">
               <button
                 className="nav-link dropdown-toggle btn btn-link"
                 data-bs-toggle="dropdown"
-                style={{
-                  color: textColor,
-                  textDecoration: "none"
-                }}
+                style={{ color: textColor, textDecoration: "none" }}
               >
                 Industries
               </button>
@@ -133,25 +121,19 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
               </ul>
             </li>
 
+            
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/opportunities"
-                style={{ color: textColor }}
-              >
+              <Link className="nav-link" to="/opportunities" style={{ color: textColor }}>
                 Opportunities
               </Link>
             </li>
 
-            {/* Careers */}
+            {/* CAREERS */}
             <li className="nav-item dropdown">
               <button
                 className="nav-link dropdown-toggle btn btn-link"
                 data-bs-toggle="dropdown"
-                style={{
-                  color: textColor,
-                  textDecoration: "none"
-                }}
+                style={{ color: textColor, textDecoration: "none" }}
               >
                 Careers
               </button>
@@ -162,9 +144,10 @@ const isHealthcarePage = healthcareRoutes.includes(location.pathname);
                 <li><Link className="dropdown-item" to="/prohub/revive">Rise Program</Link></li>
               </ul>
             </li>
+
           </ul>
 
-          {/* Buttons */}
+          {/* BUTTONS */}
           <div className="d-flex gap-2 mt-3 mt-lg-0">
             <Link
               to="/contact"

@@ -303,7 +303,7 @@ const fadeRight = {
               </p>
               <ul>
                 <li>Leadership Hiring</li>
-                <li>REVIVE – Women Returnship</li>
+                <li>Rise – Women Returnship</li>
                 <li>Talent Pipeline Building</li>
               </ul>
             </div>
