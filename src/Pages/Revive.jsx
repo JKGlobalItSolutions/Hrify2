@@ -72,7 +72,7 @@ const Revive = () => {
             >
               <motion.h1 variants={fadeUp} className="fw-bold mt-4" style={{ fontSize: "50px" }}>
                 Restart Your Career with <br />
-                <span style={{ color: "#6bc1ff" }}>REVIVE</span>
+                <span style={{ color: "#6bc1ff" }}>RISE</span>
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-white-50 mt-3">
@@ -123,23 +123,23 @@ const Revive = () => {
               variants={fadeUp}
             >
               <h2 className="fw-bold mb-3">
-                 <span style={{ color: "#015670" }}>REVIVE PROGRAM</span>
+                 <span style={{ color: "#015670" }}>RISE PROGRAM</span>
               </h2>
 
               <p className="text-muted">
-                REVIVE by HRIFY is a support program created for women professionals
+                RISE by HRIFY is a support program created for women professionals
                 who want to return to work after a career break. It helps you rebuild
                 confidence, refresh your skills, and move forward at your own pace.
               </p>
 
               <p className="text-muted">
-                REVIVE respects your past experience and understands that career breaks
+                RISE respects your past experience and understands that career breaks
                 happen for many reasons—motherhood, caregiving, personal priorities,
                 or life transitions.
               </p>
 
               <p className="text-muted">
-                With guidance, mentoring, and real exposure, REVIVE helps you feel ready
+                With guidance, mentoring, and real exposure, RISE helps you feel ready
                 to step back into your career when you choose.
               </p>
 
@@ -209,7 +209,7 @@ const Revive = () => {
       viewport={{ once: true }}
       variants={fadeUp}
     >
-      How <span style={{ color: "#015670" }}>REVIVE</span> Works
+      How <span style={{ color: "#015670" }}>RISE</span> Works
     </motion.h2>
 
     <p className="text-muted mb-5">
@@ -300,7 +300,7 @@ const Revive = () => {
       <section className="py-5 bg-light">
         <div className="container">
           <h2 className="fw-bold text-center mb-5">
-            The <span style={{ color: "#003241" }}>REVIVE Toolkit</span>
+            The <span style={{ color: "#003241" }}>RISE Toolkit</span>
           </h2>
 
           <div className="row g-4">
@@ -332,11 +332,10 @@ const Revive = () => {
       >
         <div className="container text-center text-white">
           <h2 className="fw-bold mb-4">
-            REVIVE is here to support your comeback.
+            RISE is here to support your comeback.
           </h2>
           <button className="btn btn-light btn-lg rounded-pill px-5 fw-semibold">
-            Apply for REVIVE
-          </button>
+            Apply for RISE          </button>
         </div>
       </section>
 

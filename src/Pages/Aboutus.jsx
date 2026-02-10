@@ -330,83 +330,96 @@ const fadeRight = {
       </motion.div>
 
 
+    {/* ================= VISION & MISSION SECTION ================= */}
+
+
+
+
+
+
+
+    
+<div
+  style={{
+    background: "linear-gradient(90deg, #CFF4FF 0%, #FFFFFF 100%)",
+    width: "100%",
+    padding: "70px 0",
+  }}
+>
+  <div className="container">
+    <div className="row align-items-center">
+
+      {/* LEFT PROFILE */}
+      <div className="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+        <img
+          src={img3}
+          alt="Founder & CEO"
+          style={{
+            width: "280px",
+            // borderRadius: "20px",
+            // boxShadow: "0 12px 30px rgba(0,0,0,0.12)"
+          }}
+        />
+
+        <h5 className="mt-3 fw-semibold" style={{ color: "#015670" }}>
+          Jayakrishnan J
+        </h5>
+
+        <p style={{ color: "#015670", marginBottom: "8px" }}>
+          Founder & CEO
+        </p>
+
         <div
           style={{
-            background: "linear-gradient(90deg, #CFF4FF 0%, #FFFFFF 100%)",
-            width: "100%",
-            padding: "60px 0",
+            background: "#fff",
+            padding: "6px 16px",
+            borderRadius: "6px",
+            display: "inline-block",
           }}
         >
-          {/* Dark overlay */}
-          <div style={{ width: "100%", height: "100%" }}>
-            <div className="container text-center">
-              <div className="row align-items-center">
-
-                {/* LEFT PROFILE */}
-                <div className="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
-                  <img
-                    src={img3}
-                    alt="Managing Director"
-                    style={{
-                      width: "290px",
-                      height: "auto",
-                      objectFit: "cover",
-                      borderRadius: "20px",
-                    }}
-                  />
-
-                  <h5 style={{ color: "#015670", marginTop: "15px", fontWeight: "600" }}>
-                    Jayakrishnan J
-                  </h5>
-
-                  <p style={{ color: "#015670", marginBottom: "5px" }}>
-                    Founder & CEO
-                  </p>
-
-                  <div
-                    style={{
-                      display: "inline-block",
-                      backgroundColor: "#fff",
-                      padding: "5px 15px",
-                      borderRadius: "5px",
-                    }}
-                  >
-                    <img
-                      src={HrifyLogo}
-                      alt="HRIFY Logo"
-                      style={{ height: "30px" }}
-                    />
-                  </div>
-                </div>Offering expert staffing and operational support for healthcare systems, life science advancement, and compliant, patient-centric services.
-
-                {/* RIGHT CONTENT */}
-                <div className="col-lg-8 col-md-12">
-                  <h3 style={{ color: "#015670", fontWeight: "700" }}>VISION</h3>
-                  <p style={{ color: "#015670", lineHeight: "1.8" }}>
-                    Known for its innovative solutions and exceptional client service,
-                    HRIFY Technologies sets the <br />standard in
-                    <span style={{ color: "#015670" }}>
-                      {" "}Talent Management, IT Services & IT Consulting{" "}
-                    </span>
-                    with its cutting-edge technologies and commitment to exceeding
-                    customer expectations.
-                  </p>
-
-                  <h3 style={{ color: "#015670", fontWeight: "700", marginTop: "30px" }}>
-                    MISSION
-                  </h3>
-                  <p style={{ color: "#015670", lineHeight: "1.8" }}>
-                    Our goal is to connect with as many businesses as possible,
-                    offering top-tier IT solutions <br />through a robust and expansive
-                    network of skilled teams, all while ensuring client satisfaction
-                    and fostering a culture of happiness among our employees.
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
+          <img src={HrifyLogo} alt="HRIFY" style={{ height: "28px" }} />
         </div>
+      </div>
+
+      {/* RIGHT CONTENT */}
+      <div className="col-lg-8 col-md-12 ps-lg-5">
+
+        {/* VISION */}
+        <h3   className="fw-bold mb-3 text-center"
+ style={{ color: "#015670"  }}>
+          VISION
+        </h3>
+
+        <p style={{     color: "#000000"   // black color
+, lineHeight: "1.9", fontSize: "17px" }}>
+          Known for its innovative solutions and exceptional client service,
+          HRIFY Technologies sets the standard in{" "}
+          <strong>Talent Management, IT Services & IT Consulting</strong>
+          through cutting-edge technologies and a strong commitment to
+          exceeding customer expectations.
+        </p>
+
+        {/* MISSION */}
+        <h3
+  className="fw-bold mb-3 text-center"
+          style={{ color: "#015670" }}
+        >
+          MISSION
+        </h3>
+
+        <p style={{    color: "#000000",    lineHeight: "1.9", fontSize: "17px" }}>
+          Our mission is to partner with businesses across industries by
+          delivering reliable IT solutions through a strong network of skilled
+          teams, while ensuring client satisfaction and fostering a positive,
+          people-first work culture.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
         <div className="container py-5">

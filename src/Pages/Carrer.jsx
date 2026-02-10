@@ -218,7 +218,7 @@ const toolkitFeatures = [
             </span>
 
             <h2 style={{ fontSize: "48px", fontWeight: 700 }}>
-              REVIVE <span style={{ color: "#015670" }}>Toolkit</span>
+              RISE <span style={{ color: "#015670" }}>Toolkit</span>
             </h2>
 
             <p style={{ fontSize: "18px", color: "#6c757d" }}>
