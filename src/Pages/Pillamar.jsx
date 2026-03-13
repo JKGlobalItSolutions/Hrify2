@@ -1,232 +1,337 @@
+import { motion } from "framer-motion";
+import {
+FaCalculator,
+FaFileInvoiceDollar,
+FaClock,
+FaShieldAlt,
+FaChartLine,
+FaDatabase
+} from "react-icons/fa";
 
-// import logo from "../assets/Pillamar/logo1.png"
-// import img1 from "../assets/Pillamar/img1.png"
-// import img2 from "../assets/Pillamar/img2.png"
-// import img3 from "../assets/Pillamar/img3.png"
-// import img4 from "../assets/Pillamar/img4.png"
-// import img5 from "../assets/Pillamar/img5.png"
-// import img6 from "../assets/Pillamar/img6.png"
-// import img7 from "../assets/Pillamar/img7.png"
+export default function App() {
 
+const features = [
+{
+icon:<FaCalculator size={28}/>,
+title:"Automated Salary Calculations",
+desc:"Automatically calculates salaries, bonuses, allowances and deductions ensuring accurate payroll processing."
+},
+{
+icon:<FaFileInvoiceDollar size={28}/>,
+title:"Digital Payslip Generation",
+desc:"Generate detailed digital payslips with complete breakdown of salary components and deductions."
+},
+{
+icon:<FaClock size={28}/>,
+title:"Attendance Integration",
+desc:"Connect employee attendance and leave data directly with payroll calculations."
+},
+{
+icon:<FaShieldAlt size={28}/>,
+title:"Tax & Compliance",
+desc:"Handles statutory deductions and tax rules according to government regulations."
+},
+{
+icon:<FaChartLine size={28}/>,
+title:"Real Time Reports",
+desc:"Generate payroll reports and insights for HR and finance teams instantly."
+},
+{
+icon:<FaDatabase size={28}/>,
+title:"Secure Data Management",
+desc:"Protect payroll data with secure storage and role based access."
+}
+];
 
-// function Pillamar() {
+return (
 
-//     return (
+<div style={{fontFamily:"Arial"}}>
 
-//         <>
+{/* HERO */}
 
-//             <div className="w-100 p-3" style={{marginTop:"80px"}}>
-//                 <img
-//                     src={img1}
-//                     alt="Hero"
-//                     style={{
-//                         width: "100%",
-//                         height: "auto",
-//                         objectFit: "cover",
-//                         display: "block"
-//                     }}
-//                 />
-//             </div>
+<section style={{background:"#0c8f5b",color:"white",padding:"120px 0"}}>
 
+<div className="container text-center">
 
-//             <div className="container text-center mt-5 mb-5">
+<motion.h1
+initial={{opacity:0,y:-40}}
+animate={{opacity:1,y:0}}
+transition={{duration:0.8}}
+style={{fontSize:"48px",fontWeight:"bold"}}
+>
+Pillamar Payroll Management Software
+</motion.h1>
 
-//                 <img src={logo} className="mb-4" alt="" />
+<p style={{maxWidth:"750px",margin:"auto",marginTop:"20px"}}>
+Advanced payroll automation platform developed under HRify Group
+to simplify payroll processing, salary management and compliance.
+</p>
 
-//                 <p style={{fontFamily:"poppins", fontSize:"20px", fontWeight:"bold"}}>Payroll Management Software streamlines the entire salary process by automating calculations, deductions, and tax compliance. It helps organizations ensure accurate and timely payments to employees while minimizing manual errors. By simplifying payroll tasks, it boosts HR efficiency and supports smooth workforce management.</p>
+</div>
+</section>
 
+{/* INTRODUCTION */}
 
-//             </div>
+<section style={{padding:"90px 0",background:"#f6fbf8"}}>
 
+<div className="container">
 
+<div className="row align-items-center">
 
+<div className="col-md-6">
 
+<motion.img
+src="/payroll.jpg"
+className="img-fluid rounded"
+initial={{opacity:0,x:-60}}
+whileInView={{opacity:1,x:0}}
+whileHover={{scale:1.05}}
+transition={{duration:0.6}}
+style={{boxShadow:"0 15px 40px rgba(0,0,0,0.15)"}}
+/>
 
-//             <div className="container my-5">
-//                 <div className="row justify-content-center align-items-center g-4">
+</div>
 
-//                     {/* Image 1 */}
-//                     <div className="col-lg-4 col-md-6 col-12 text-center">
-//                         <img
-//                             src={img2}
-//                             alt="Image 1"
-//                             style={{
-//                                 width: "100%",
-//                                 maxWidth: "280px",
-//                                 height: "auto",
-//                                 borderRadius: "20px"
-//                             }}
-//                         />
-//                     </div>
+<div className="col-md-6">
 
-//                     {/* Image 2 */}
-//                     <div className="col-lg-4 col-md-6 col-12 text-center">
-//                         <img
-//                             src={img3}
-//                             alt="Image 2"
-//                             style={{
-//                                 width: "100%",
-//                                 maxWidth: "280px",
-//                                 height: "auto",
-//                                 borderRadius: "20px"
-//                             }}
-//                         />
-//                     </div>
+<h2 style={{color:"#0c8f5b",fontWeight:"bold"}}>
+Introduction
+</h2>
 
-//                     {/* Image 3 */}
-//                     <div className="col-lg-4 col-md-6 col-12 text-center">
-//                         <img
-//                             src={img4}
-//                             alt="Image 3"
-//                             style={{
-//                                 width: "100%",
-//                                 maxWidth: "280px",
-//                                 height: "auto",
-//                                 borderRadius: "20px"
-//                             }}
-//                         />
-//                     </div>
+<p>
+Pillamar is an advanced payroll management software designed to
+simplify payroll operations for modern businesses.
+</p>
 
-//                 </div>
-//             </div>
+<p>
+It automates salary calculations, deductions, tax processing and
+compliance requirements to ensure employees are paid accurately
+and on time every pay cycle.
+</p>
 
+<p>
+The system reduces administrative workload for HR and finance
+teams while improving payroll accuracy and transparency.
+</p>
 
+</div>
 
-//             <div
-//                 style={{
-//                     width: "100%",
-//                     background: "linear-gradient(90deg, #008961 0%, #002319 100%)",
-//                     padding: "60px 0"
-//                 }}
+</div>
+</div>
+</section>
 
-//                 className="mb-5"
-//             >
-//                 <div className="row m-0 align-items-center">
+{/* ABOUT */}
 
-//                     {/* LEFT CONTENT */}
-//                     <div className="col-lg-12 col-md-12 text-white px-5">
-//                         <h2 style={{ fontWeight: "700", marginBottom: "20px", fontSize:"50px", fontFamily:"poppins", fontWeight:"bold" }}>
-//                             About Pillamar
-//                         </h2>
+<section style={{padding:"90px 0"}}>
 
-//                         <p style={{ fontSize: "25px", lineHeight: "1.7", fontFamily:"poppins", fontWeight:"bold" }}>
-//                             Our Payroll Management Software is built to simplify and automate your entire payroll workflow.
-//                             From employee onboarding to final payslip generation, every process is handled with precision
-//                             and compliance in mind. The system adapts to organizations of all sizes, ensuring flexibility,
-//                             accuracy, and complete control.
-//                         </p>
+<div className="container text-center">
 
-//                         <p style={{ fontSize: "25px", lineHeight: "1.7", marginTop:"40px", fontFamily:"poppins", fontWeight:"bold" }}>
-//                             With real-time data integration, HR and finance teams can manage payroll effortlessly while
-//                             maintaining transparency for employees. Automated updates for statutory regulations help
-//                             businesses stay compliant without constant manual intervention.
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
+<h2 style={{color:"#0c8f5b",fontWeight:"bold"}}>
+About Pillamar
+</h2>
 
+<p style={{maxWidth:"900px",margin:"auto",marginTop:"20px",lineHeight:"1.8"}}>
+Pillamar Payroll Management Software integrates employee data,
+attendance records, salary structures, tax rules and deductions
+into one centralized platform.
+</p>
 
+<p style={{maxWidth:"900px",margin:"auto"}}>
+HR teams can manage payroll operations, generate salary reports
+and monitor compensation structures through an easy dashboard.
+</p>
 
-//             <div className="container py-5">
-//                 <div className="row">
-//                     <div className="col-12">
+</div>
+</section>
 
-//                         <h3 className="mb-3" style={{ color: "#008961", fontFamily:"poppins", fontSize:"35px", fontWeight:"bold" }}>
-//                             Global Payroll Management
-//                         </h3>
+{/* PAYROLL AUTOMATION */}
 
-//                         <p style={{fontFamily:"poppins", fontSize:"20px",}}>
-//                             Our Payroll Management Software is designed to simplify and automate the
-//                             entire payroll process with accuracy, compliance, and efficiency. It
-//                             enables organizations to manage employee salaries, deductions,
-//                             incentives, taxes, and statutory compliance seamlessly, ensuring timely
-//                             and error-free payroll operations.
-//                         </p>
+<section style={{padding:"90px 0",background:"#f6fbf8"}}>
 
-//                         <p style={{fontFamily:"poppins", fontSize:"20px",}}>
-//                             The system provides a centralized platform to calculate payroll,
-//                             generate payslips, manage leave and attendance integration, and comply
-//                             with government regulations. With secure data handling and real-time
-//                             reporting, businesses gain better control, transparency, and confidence
-//                             in their payroll processes.
-//                         </p>
+<div className="container">
 
-//                         <p style={{fontFamily:"poppins", fontSize:"20px",}}>
-//                             Our solution reduces manual effort, minimizes errors, and saves valuable
-//                             time, allowing HR and finance teams to focus on strategic initiatives
-//                             rather than administrative tasks.
-//                         </p>
+<h2 className="text-center" style={{color:"#0c8f5b",fontWeight:"bold"}}>
+Payroll Automation
+</h2>
 
-//                         <h3 className="mb-3" style={{ color: "#008961", fontFamily:"poppins", fontSize:"35px", fontWeight:"bold" }}>
-//                             Benefits
-//                         </h3>
+<div className="row mt-5">
 
-//                         <p style={{fontFamily:"poppins", fontSize:"20px",}}>
-//                             By using our Payroll Management Software, businesses can ensure
-//                             accuracy, compliance, and efficiency while reducing operational
-//                             complexity and improving overall HR productivity.
-//                         </p>
+{[
+"Automated salary calculations",
+"Bonus and allowances processing",
+"Statutory deduction handling",
+"Automated payroll records"
+].map((item,index)=>(
 
-//                     </div>
-//                 </div>
-//             </div>
+<div className="col-md-3 mb-4" key={index}>
 
+<motion.div
+initial={{opacity:0,y:30}}
+whileInView={{opacity:1,y:0}}
+whileHover={{scale:1.05}}
+transition={{delay:index*0.2}}
+style={{
+background:"white",
+padding:"25px",
+borderRadius:"12px",
+boxShadow:"0 10px 25px rgba(0,0,0,0.1)"
+}}
+>
 
+<h6 style={{color:"#0c8f5b"}}>{item}</h6>
 
-//             <div className="container py-5">
-//                 <div className="row align-items-start">
+</motion.div>
 
-//                     {/* LEFT SIDE – TWO IMAGES */}
-//                     <div className="col-md-6">
-//                         <div className="mb-4">
-//                             <img
-//                                 src={img5}
-//                                 alt="UI Screen 1"
-//                                 className="img-fluid"
-//                                 style={{
-//                                     width: "70%",
-//                                     borderRadius: "6px",
-//                                 }}
-//                             />
-//                         </div>
+</div>
 
-//                         <div>
-//                             <img
-//                                 src={img6}
-//                                 alt="UI Screen 2"
-//                                 className="img-fluid"
-//                                 style={{
-//                                     width: "70%",
-//                                     borderRadius: "6px",
-//                                 }}
-//                             />
-//                         </div>
-//                     </div>
+))}
 
-//                     {/* RIGHT SIDE – LONG IMAGE */}
-//                     <div className="col-md-6 d-flex justify-content-center">
-//                         <img
-//                             src={img7}
-//                             alt="Profile"
-//                             className="img-fluid"
-//                             style={{
-//                                 height: "620px",     // 👈 long image look
-//                                 width: "auto",
-//                                 objectFit: "cover",
-//                             }}
-//                         />
-//                     </div>
+</div>
 
-//                 </div>
-//             </div>
+</div>
+</section>
 
+{/* GLOBAL PAYROLL */}
 
+<section style={{padding:"90px 0"}}>
 
-//         </>
-//     )
+<div className="container text-center">
 
-// }
+<h2 style={{color:"#0c8f5b",fontWeight:"bold"}}>
+Global Payroll Management
+</h2>
 
+<p style={{maxWidth:"900px",margin:"auto",marginTop:"20px",lineHeight:"1.8"}}>
+Pillamar provides a centralized payroll platform capable of
+managing multiple departments, employee roles and salary
+structures across organizations.
+</p>
 
+<p style={{maxWidth:"900px",margin:"auto"}}>
+HR teams can monitor payroll processing, generate reports
+and manage employee compensation efficiently.
+</p>
 
-// export default Pillamar
+</div>
+</section>
+
+{/* BENEFITS */}
+
+<section style={{padding:"90px 0",background:"#f6fbf8"}}>
+
+<div className="container">
+
+<h2 className="text-center" style={{color:"#0c8f5b",fontWeight:"bold"}}>
+Benefits
+</h2>
+
+<div className="row mt-5">
+
+{[
+"Improved payroll accuracy",
+"Faster salary processing",
+"Reduced manual effort",
+"Better compliance tracking",
+"Transparent employee payslips",
+"Scalable payroll system"
+].map((item,index)=>(
+
+<div className="col-md-4 mb-4" key={index}>
+
+<motion.div
+whileHover={{scale:1.05}}
+initial={{opacity:0,y:30}}
+whileInView={{opacity:1,y:0}}
+transition={{delay:index*0.2}}
+style={{
+background:"white",
+padding:"30px",
+borderRadius:"12px",
+boxShadow:"0 10px 25px rgba(0,0,0,0.1)"
+}}
+>
+
+<h6 style={{color:"#0c8f5b"}}>{item}</h6>
+
+</motion.div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+</section>
+
+{/* KEY FEATURES */}
+
+<section style={{padding:"100px 0"}}>
+
+<div className="container">
+
+<h2 className="text-center fw-bold mb-5" style={{color:"#0c8f5b"}}>
+Key Features
+</h2>
+
+<div className="row">
+
+{features.map((item,index)=>(
+
+<div className="col-md-4 mb-4" key={index}>
+
+<motion.div
+initial={{opacity:0,y:40}}
+whileInView={{opacity:1,y:0}}
+transition={{delay:index*0.2}}
+whileHover={{
+scale:1.05,
+boxShadow:"0 20px 40px rgba(0,0,0,0.15)"
+}}
+style={{
+background:"#fff",
+padding:"30px",
+borderRadius:"12px",
+textAlign:"center"
+}}
+>
+
+<div style={{color:"#0c8f5b",marginBottom:"15px"}}>
+{item.icon}
+</div>
+
+<h5 style={{color:"#0c8f5b"}}>{item.title}</h5>
+
+<p style={{fontSize:"14px",color:"#555"}}>
+{item.desc}
+</p>
+
+</motion.div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+</section>
+
+{/* FOOTER */}
+
+<footer style={{background:"#0c8f5b",color:"white",padding:"40px 0"}}>
+
+<div className="container text-center">
+
+<h4>Pillamar Payroll Software</h4>
+
+<p>Developed under HRify Group</p>
+
+</div>
+
+</footer>
+
+</div>
+
+);
+}

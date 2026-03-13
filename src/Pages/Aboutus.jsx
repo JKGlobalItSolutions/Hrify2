@@ -7,6 +7,14 @@ import img4 from "../assets/About/img4.png";
 import HrifyLogo from "../assets/Navbar/logo.png";
 import Form from "../Components/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo1 from "../assets/Services/logo1.png";
+import logo2 from "../assets/Services/logo2.png";
+import logo3 from "../assets/Services/logo3.png";
+import logo4 from "../assets/Services/logo4.png";
+import logo5 from "../assets/Services/logo5.png";
+import logo6 from "../assets/Services/logo6.png";
+
+
 import { motion } from "framer-motion";
 function About() {
 
@@ -275,58 +283,51 @@ const fadeRight = {
 
         <div className="row g-4">
 
-          {/* IT Staffing */}
-          <div className="col-md-4">
-            <div className="glass-card p-4 hover-lift">
-              {/* <div className="service-icon">👨‍💻</div> */}
-              <h4>IT Staffing</h4>
-              <p>
-                End-to-end IT staffing solutions delivering skilled professionals
-                for contract, permanent, and project-based roles.
-              </p>
-              <ul>
-                <li>Contract & Permanent Hiring</li>
-                <li>Contract-to-Hire</li>
-                <li>On-demand Workforce</li>
-              </ul>
-            </div>
-          </div>
+  {/* Talent Management */}
+  <div className="col-md-6">
+    <div className="glass-card p-4 hover-lift">
+      <h4>Talent Management</h4>
+      <p>
+        Strategic talent solutions designed to attract, develop, and retain
+        high-performing professionals across industries.
+      </p>
 
-          {/* Talent Management */}
-          <div className="col-md-4">
-            <div className="glass-card p-4 hover-lift">
-              {/* <div className="service-icon">🎯</div> */}
-              <h4>Talent Management</h4>
-              <p>
-                Strategic talent programs designed to attract, develop, and
-                retain high-performing professionals.
-              </p>
-              <ul>
-                <li>Leadership Hiring</li>
-                <li>Rise – Women Returnship</li>
-                <li>Talent Pipeline Building</li>
-              </ul>
-            </div>
-          </div>
+      <ul>
+        <li>Contract & Permanent Hiring</li>
+        <li>Contract-to-Hire</li>
+        <li>On-demand Workforce</li>
+        <li>Leadership & Executive Hiring</li>
+        <li>Campus Recruitment Programs</li>
+        <li>Employee Training & Development</li>
+        <li>Talent Pipeline Building</li>
+      </ul>
+    </div>
+  </div>
 
-          {/* IT Services */}
-          <div className="col-md-4">
-            <div className="glass-card p-4 hover-lift">
-              {/* <div className="service-icon">⚙️</div> */}
-              <h4>IT Services</h4>
-              <p>
-                Technology-driven services helping businesses build, scale, and
-                modernize their digital ecosystem.
-              </p>
-              <ul>
-                <li>Web & Application Development</li>
-                <li>Digital Transformation</li>
-                <li>Managed IT Support</li>
-              </ul>
-            </div>
-          </div>
+  {/* IT Services */}
+  <div className="col-md-6">
+    <div className="glass-card p-4 hover-lift">
+      <h4>IT Services</h4>
+      <p>
+        Technology-driven services helping businesses build, scale, and
+        modernize their digital ecosystem.
+      </p>
 
-        </div>
+      <ul>
+        <li>Design & Development</li>
+        <li>Business Solutions</li>
+        <li>Networking Solutions</li>
+        <li>Cybersecurity</li>
+        <li>Blockchain</li>
+        <li>Enterprise</li>
+        <li>AI & ML</li>
+        <li>Managed Services</li>
+        <li>Quality Engineering</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
       </motion.div>
 
 
@@ -394,8 +395,8 @@ const fadeRight = {
 , lineHeight: "1.9", fontSize: "17px" }}>
           Known for its innovative solutions and exceptional client service,
           HRIFY Technologies sets the standard in{" "}
-          <strong>Talent Management, IT Services & IT Consulting</strong>
-          through cutting-edge technologies and a strong commitment to
+          <strong>Talent Management, IT Services & IT Consulting </strong>
+            through cutting-edge technologies and a strong commitment to
           exceeding customer expectations.
         </p>
 
@@ -471,12 +472,179 @@ const fadeRight = {
         </div>
 
 
-        <div className="container mt-4 mb-5 text-center">
-          <h2 style={{ color: "#015670", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}><b>Let’s Bring Your Vision to Life</b></h2>
-          <p style={{ color: "#949494", fontFamily: "'Outfit', sans-serif", fontSize: "20px" }}>Your journey toward innovation and success starts here. Connect with us to explore how we can collaborate to achieve your goals.</p>
-
+{/* ================= CLIENTS SECTION ================= */}
+<section className="clients py-5" style={{ backgroundColor: "#f8f9fa" }}>
+  <div className="container">
+    <h2 className="gradient-text text-center mb-5" style={{color: "#00566F", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}>
+      <b>Trusted By Our Clients</b>
+    </h2>
+    
+    <div className="logo-track" style={{ overflow: "hidden", width: "100%" }}>
+      <div className="logo-track-inner" style={{ 
+        display: "flex", 
+        width: "max-content", 
+        animation: "scroll 25s linear infinite",
+        gap: "60px"
+      }}>
+        {/* First set of logos */}
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+             <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        
+        {/* Duplicate set of logos for seamless looping */}
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+        <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+        </div>
+     <div className="logo-item" style={{ 
+          flexShrink: 0, 
+          height: "70px", 
+          display: "flex", 
+          alignItems: "center",
+          transition: "transform 0.3s ease"
+        }}>
+          <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
         </div>
 
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    {`
+      .logo-track:hover .logo-track-inner {
+        animation-play-state: paused;
+      }
+
+      .logo-item:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+
+      @media (max-width: 768px) {
+        .logo-track-inner {
+          gap: 40px;
+        }
+        .logo-item img {
+          height: 50px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo-track-inner {
+          gap: 30px;
+        }
+        .logo-item img {
+          height: 40px;
+        }
+      }
+    `}
+  </style>
+</section>
+
+
+
+        <div className="container mt-4 mb-2 text-center">
+          <h2 style={{ color: "#015670", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}><b>Let’s Bring Your Vision to Life</b></h2>
+          <p style={{ color: "#949494", fontFamily: "'Outfit', sans-serif", fontSize: "20px" }}>Your journey toward innovation and success starts here. Connect with us to explore how we can collaborate to achieve your goals.</p>
+        </div>
         <Form />
       </div>
     </>

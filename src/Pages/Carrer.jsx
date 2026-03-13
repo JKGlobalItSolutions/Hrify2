@@ -320,7 +320,7 @@ const toolkitFeatures = [
             <div className="container mt-4 mb-3 text-center">
                 <h2 style={{ color: "#015670", fontFamily:"'Outfit', sans-serif", fontSize:"36px" }}><b>Join Our Team and Help Us Shape the Future</b></h2>
                 <p style={{ color: "#949494", fontFamily:"'Outfit', sans-serif", fontSize:"20px" }}>Fill out the form below to express your interest in a career with us. We’re looking for passionate, skilled
-                    professionals for roles in IT staffing, consulting, talent management, and more.</p>
+                    professionals for roles in Talent Management, consulting, talent management, and more.</p>
 
             </div>
 

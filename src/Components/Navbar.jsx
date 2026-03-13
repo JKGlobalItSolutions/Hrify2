@@ -86,24 +86,107 @@ function Navbar() {
             ))}
 
             {/* PRODUCT */}
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                data-bs-toggle="dropdown"
-                style={{ color: textColor }}
-              >
-                Product & Solutions
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/sonachala">
-                    Sonachala
-                  </Link>
-                </li>
-              </ul>
-            </li>
+      <li className="nav-item dropdown">
+  <Link
+    className="nav-link dropdown-toggle"
+    to="#"
+    data-bs-toggle="dropdown"
+    style={{ color: textColor }}
+  >
+    Product & Solutions
+  </Link>
 
+  <ul className="dropdown-menu">
+
+    {/* Sonachala */}
+    <li
+      style={{ position: "relative" }}
+      onMouseEnter={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "block")
+      }
+      onMouseLeave={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "none")
+      }
+    >
+      <span className="dropdown-item">Hotel Tech </span>
+
+      <ul
+        className="dropdown-menu submenu"
+        style={{
+          display: "none",
+          position: "absolute",
+          left: "100%",
+          top: "0"
+        }}
+      >
+        <li>
+          <Link className="dropdown-item" to="/sonachala">
+          Sonachala 
+          </Link>
+        </li>
+      </ul>
+    </li>
+
+    {/* Sonagiri */}
+    {/* <li
+      style={{ position: "relative" }}
+      onMouseEnter={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "block")
+      }
+      onMouseLeave={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "none")
+      }
+    >
+      <span className="dropdown-item">Property Tech</span>
+
+      <ul
+        className="dropdown-menu submenu"
+        style={{
+          display: "none",
+          position: "absolute",
+          left: "100%",
+          top: "0"
+        }}
+      >
+        <li>
+          <Link className="dropdown-item" to="/sonagiri">
+           Sonagiri
+          </Link>
+        </li>
+      </ul>
+    </li> */}
+
+    {/* Pillamar */}
+    {/* <li
+      style={{ position: "relative" }}
+      onMouseEnter={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "block")
+      }
+      onMouseLeave={(e) =>
+        (e.currentTarget.querySelector(".submenu").style.display = "none")
+      }
+    >
+      <span className="dropdown-item">  Payroll</span>
+
+      <ul
+        className="dropdown-menu submenu"
+        style={{
+          display: "none",
+          position: "absolute",
+          left: "100%",
+          top: "0"
+        }}
+      >
+        <li>
+          <Link className="dropdown-item" to="/pillamar">
+          Pillamar 
+          </Link>
+        </li>
+      </ul>
+    </li> */}
+
+  </ul>
+</li>
             {/* INDUSTRIES */}
             <li className="nav-item dropdown">
               <button

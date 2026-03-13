@@ -8,7 +8,12 @@ import img4 from "../assets/Talent_management/img4.jpeg"
 import img5 from "../assets/Talent_management/img5.png"
 import img6 from "../assets/Talent_management/img6.jpeg"
 import img7 from "../assets/Talent_management/img7.png"
-
+import logo1 from "../assets/Services/logo1.png";
+import logo2 from "../assets/Services/logo2.png";
+import logo3 from "../assets/Services/logo3.png";
+import logo4 from "../assets/Services/logo4.png";
+import logo5 from "../assets/Services/logo5.png";
+import logo6 from "../assets/Services/logo6.png";
 
 function Talent_management() {
 
@@ -339,12 +344,55 @@ const arrowStyle = {
                     </div>
                 </div>
 
+{/* ================= PARTNER LOGOS ================= */}
+
+<div className="container py-5">
+
+<h2
+  className="text-center mb-4"
+  style={{ color: "#015670", fontWeight: "600" }}
+>
+  Our Trusted Partners
+</h2>
+
+<div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap",
+    gap: "40px",
+  }}
+>
+
+<img src={logo1} alt="logo1" style={{ height: "70px", objectFit: "contain" }} />
+
+<img src={logo2} alt="logo2" style={{ height: "70px", objectFit: "contain" }} />
+
+<img src={logo3} alt="logo3" style={{ height: "70px", objectFit: "contain" }} />
+
+<img src={logo4} alt="logo4" style={{ height: "70px", objectFit: "contain" }} />
+
+<img src={logo5} alt="logo5" style={{ height: "70px", objectFit: "contain" }} />
+
+<img src={logo6} alt="logo6" style={{ height: "70px", objectFit: "contain" }} />
+
+</div>
+
+</div>
+
+
+
 
                 <div className="container mt-4 mb-2 text-center">
                     <h2 style={{ color: "#015670" }}><b>Unlock Your Business Potential with the Right Talent</b></h2>
                     <p style={{ color: "#000000" }}>Our Talent Management services provide tailored solutions to help you find and nurture the best talent</p>
 
                 </div>
+
+
+
+
 
 
                 <Form />

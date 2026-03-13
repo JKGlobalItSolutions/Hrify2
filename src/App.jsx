@@ -10,11 +10,12 @@ import Services from "./Pages/Services";
 import Talent_management from "./Pages/Talent_management";
 import Products from "./Pages/Sonachala";
 import Industries from "./Pages/Industries";
+import Sonagiri from "./Pages/Sonagiri";
 import Carrer from "./Pages/Carrer";
 import Opportunities from "./Pages/Opportunities";
 import Admin from "./Pages/Admin";
 import Contact from "./Pages/Contact";
-// import Pillamar from "./Pages/Pillamar";
+import Pillamar from "./Pages/Pillamar";
 import Internship from "./Pages/Internship";
 import Referal from "./Pages/Referal";
 import Industry_HL from "./Pages/Industry_HL";
@@ -51,8 +52,9 @@ function App() {
           <Route path="/prohub/referal" element={<Referal />} />
           <Route path="/prohub/revive" element={<Revive />} />
    
-          {/* <Route path="/pillamar" element={<Pillamar />} /> */}
-          <Route path="/sonachala" element={<Products />} />
+          <Route path="/pillamar" element={<Pillamar />} />
+<Route path="/sonachala" element={<Products />} />
+          <Route path="/sonagiri" element={<Sonagiri />} />
 
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Admin />} />

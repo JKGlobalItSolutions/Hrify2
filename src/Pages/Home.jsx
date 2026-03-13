@@ -9,11 +9,23 @@ import img4 from "../assets/Home/img4.jpg";
 
 import { motion } from "framer-motion";
 
+const cardVariant = {
+  hiddenLeft: { opacity: 0, x: -120 },
+  hiddenRight: { opacity: 0, x: 120 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
 
 function Home() {
   return (
     <>
-{/* 
+{
+
+/* 
       ================= HERO SECTION =================
       <div className="container-fluid p-0">
         <div
@@ -107,7 +119,7 @@ function Home() {
       minHeight: "100vh",
       overflow: "hidden",
       background: "linear-gradient(180deg, #0f3a4f 0%, #1e5a73 100%)",
-      paddingTop: "140px",
+      paddingTop: "180px",
       paddingBottom: "120px", // wave-ku space
     }}
   >
@@ -166,7 +178,7 @@ function Home() {
     >
       {/* LEFT */}
       <div className="hero-left" style={{ flex: 1, color: "#fff" }}>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -191,7 +203,7 @@ function Home() {
             }}
           />
           A HRIFY Initiative
-        </motion.div>
+        </motion.div> */}
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -409,20 +421,21 @@ function Home() {
           <div className="container-fluid py-4">
 
             {/* Digital Technology Services */}
-            <div
-              className="mb-4 pb-3" // Bootstrap spacing
-              style={{
-                fontWeight: "700",
-                // borderBottom: "1px solid #e0e0e0", // main bottom line for the block
-              }}
+            <motion.div
+              variants={cardVariant}
+              initial="hiddenLeft"
+              whileInView="visible"
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="mb-4 pb-3"
+              style={{ fontWeight: "700" }}
             >
               <h4
-                className="mb-4 fw-bold" // Bootstrap bold + margin bottom
+                className="mb-4 fw-bold"
                 style={{
                   fontSize: "30px",
                   fontFamily: "'Poppins', sans-serif",
                   color: "#007EA3"
-
                 }}
               >
                 Digital Technology Services
@@ -433,41 +446,41 @@ function Home() {
                 style={{
                   fontSize: "20px",
                   lineHeight: "1.8",
-                  borderBottom: "2px solid rgba(0,0,0,0.1)", // faint line
-                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)", // 👈 increased height & blur
+                  borderBottom: "2px solid rgba(0,0,0,0.1)",
+                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)",
                   display: "inline-block",
                   paddingBottom: "5px",
                   fontFamily: "'Poppins', sans-serif"
                 }}
               >
-
                 Our specialized digital services division, Hrify Digital, delivers
                 exceptional digital solutions that empower clients to transform and
                 revolutionize their businesses.
-
               </p>
+            </motion.div>
 
-            </div>
 
-
-            {/* Digital Technology Services */}
-            <div
-              className="mb-4 pb-3" // Bootstrap spacing
+            {/* Talent Management */}
+            <motion.div
+              variants={cardVariant}
+              initial="hiddenRight"
+              whileInView="visible"
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="mb-4 pb-3"
               style={{
                 fontWeight: "700",
                 fontFamily: "'Poppins', sans-serif",
-                
-                // borderBottom: "1px solid #e0e0e0", // main bottom line for the block
               }}
             >
               <h4
-                className="mb-4 fw-bold" // Bootstrap bold + margin bottom
+                className="mb-4 fw-bold"
                 style={{
                   fontSize: "30px",
                   color: "#007EA3"
                 }}
               >
-                Staffing & Talent Management
+                Talent Management
               </h4>
 
               <p
@@ -475,35 +488,35 @@ function Home() {
                 style={{
                   fontSize: "20px",
                   lineHeight: "1.8",
-                  borderBottom: "2px solid rgba(0,0,0,0.1)", // faint line
-                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)", // 👈 increased height & blur
+                  borderBottom: "2px solid rgba(0,0,0,0.1)",
+                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)",
                   display: "inline-block",
                   paddingBottom: "5px",
                 }}
               >
-
                 We are a digital consulting company that believes in
                 technology-driven transformation to create meaningful and lasting
                 impact. Our expertise enables clients to identify, recruit, and
                 place specialized talent, ensuring success today while building a
                 strong foundation for the future.
-
               </p>
-
-            </div>
+            </motion.div>
 
             {/* Business Process Management */}
-            {/* Digital Technology Services */}
-            <div
-              className="mb-4 pb-3" // Bootstrap spacing
+            <motion.div
+              variants={cardVariant}
+              initial="hiddenLeft"
+              whileInView="visible"
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="mb-4 pb-3"
               style={{
                 fontWeight: "700",
                 fontFamily: "'Poppins', sans-serif"
-                // borderBottom: "1px solid #e0e0e0", // main bottom line for the block
               }}
             >
               <h4
-                className="mb-4 fw-bold" // Bootstrap bold + margin bottom
+                className="mb-4 fw-bold"
                 style={{
                   fontSize: "30px",
                   fontFamily: "'Poppins', sans-serif",
@@ -518,23 +531,20 @@ function Home() {
                 style={{
                   fontSize: "20px",
                   lineHeight: "1.8",
-                  borderBottom: "2px solid rgba(0,0,0,0.1)", // faint line
-                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)", // 👈 increased height & blur
+                  borderBottom: "2px solid rgba(0,0,0,0.1)",
+                  boxShadow: "0px 5px 10px rgba(0,0,0,0.1)",
                   display: "inline-block",
                   paddingBottom: "5px",
                   fontFamily: "'Poppins', sans-serif"
                 }}
               >
-
                 We create robust digital business frameworks through continuous
                 analysis, testing, iteration, and performance monitoring to drive
                 long-term success and growth. Our business consulting services go
                 beyond meeting client needs by delivering a clear digital roadmap
                 that enables confident, data-driven decisions.
-
               </p>
-
-            </div>
+            </motion.div>
 
           </div>
         </div>

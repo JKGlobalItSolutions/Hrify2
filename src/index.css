@@ -18,3 +18,41 @@ h1, h2, h3, h4, h5, h6, strong, b {
 label, .form-label {
     font-weight: 400; /* Regular weight for form elements */
 }
+.client-section{
+  overflow:hidden;
+  width:100%;
+  background:#ffffff;
+  padding:60px 0;
+}
+
+.logo-slider{
+  display:flex;
+  width:fit-content;
+  animation: scrollLogos 25s linear infinite;
+}
+
+.logo-item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 40px;
+}
+
+.logo-item img{
+  height:80px;
+  object-fit:contain;
+  transition: transform 0.4s ease;
+}
+
+.logo-item img:hover{
+  transform: scale(1.15);
+}
+
+@keyframes scrollLogos{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
