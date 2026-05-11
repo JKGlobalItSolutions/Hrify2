@@ -13,54 +13,57 @@ import logo3 from "../assets/Services/logo3.png";
 import logo4 from "../assets/Services/logo4.png";
 import logo5 from "../assets/Services/logo5.png";
 import logo6 from "../assets/Services/logo6.png";
-
+import logo7 from "../assets/Services/logo7.JPG";
+import logo8 from "../assets/Services/logo8.png";
+import logo9 from "../assets/Services/logo9.png";
+import logo10 from "../assets/Services/logo10.png";
 
 import { motion } from "framer-motion";
 function About() {
 
 
 
-const fadeUpStyle = {
-  animation: "fadeUp 1.2s ease-out forwards",
-  opacity: 0,
-};
+  const fadeUpStyle = {
+    animation: "fadeUp 1.2s ease-out forwards",
+    opacity: 0,
+  };
 
-const arrowStyle = {
-  fontSize: "50px",
-  display: "inline-block",
-  animation: "arrowMove 1.5s ease-in-out infinite",
-};
+  const arrowStyle = {
+    fontSize: "50px",
+    display: "inline-block",
+    animation: "arrowMove 1.5s ease-in-out infinite",
+  };
 
 
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0 }
-};
+  const fadeUp = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0 }
+  };
 
-const fadeLeft = {
-  hidden: { opacity: 0, x: -80 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1.5, // seconds (increase this)
-      ease: "easeOut"
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -80 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.5, // seconds (increase this)
+        ease: "easeOut"
+      }
     }
-  }
-};
+  };
 
-const fadeRight = {
-  hidden: { opacity: 0, x: 80 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1.5, // seconds increase
-      ease: "easeOut"
+  const fadeRight = {
+    hidden: { opacity: 0, x: 80 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.5, // seconds increase
+        ease: "easeOut"
+      }
     }
-  }
-};
+  };
 
 
   return (
@@ -68,7 +71,7 @@ const fadeRight = {
 
 
 
-    <style>
+      <style>
         {`
           body { margin:0; }
 
@@ -107,60 +110,60 @@ const fadeRight = {
       </style>
 
 
-   {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO SECTION ================= */}
       <div className="container-fluid p-0">
-      <div
-        className="d-flex align-items-center"
-        style={{
-          position: "relative",
-          minHeight: "100vh",
-          width: "100%",
-          backgroundImage: `url(${img1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          overflow: "hidden",
-        }}
-      >
-        {/* Gradient Overlay */}
         <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(244, 238, 238, 0))",
-            zIndex: 1,
-          }}
-        />
-
-        {/* Content */}
-        <div
-          className="container"
+          className="d-flex align-items-center"
           style={{
             position: "relative",
-            zIndex: 2,
-            color: "#fff",
-            paddingTop: "120px",
-            paddingBottom: "60px",
-            paddingLeft: "30px",
-            ...fadeUpStyle,
+            minHeight: "100vh",
+            width: "100%",
+            backgroundImage: `url(${img1})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            overflow: "hidden",
           }}
         >
-          <h1 style={{ fontSize: "75px", fontWeight: "700" }}>
-            About Us
-          </h1>
+          {/* Gradient Overlay */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(244, 238, 238, 0))",
+              zIndex: 1,
+            }}
+          />
 
-          <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
-            Connecting talent with opportunity
-          </h3>
+          {/* Content */}
+          <div
+            className="container"
+            style={{
+              position: "relative",
+              zIndex: 2,
+              color: "#fff",
+              paddingTop: "120px",
+              paddingBottom: "60px",
+              paddingLeft: "30px",
+              ...fadeUpStyle,
+            }}
+          >
+            <h1 style={{ fontSize: "75px", fontWeight: "700" }}>
+              About Us
+            </h1>
 
-          {/* Animated Arrow */}
-          <p style={arrowStyle}>→</p>
-        </div>
+            <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+              Connecting talent with opportunity
+            </h3>
 
-        {/* Animations */}
-        <style>
-          {`
+            {/* Animated Arrow */}
+            <p style={arrowStyle}>→</p>
+          </div>
+
+          {/* Animations */}
+          <style>
+            {`
             @keyframes fadeUp {
               from {
                 opacity: 0;
@@ -184,9 +187,9 @@ const fadeRight = {
               }
             }
           `}
-        </style>
+          </style>
+        </div>
       </div>
-    </div>
 
 
 
@@ -212,214 +215,216 @@ const fadeRight = {
 
 
 
-      {/* ================= WHO WE ARE ================= */}
-      <div style={{ background: "#f6fbfd", padding: "90px 0" }}>
-        <div className="container">
-          <div className="row align-items-center">
+        {/* ================= WHO WE ARE ================= */}
+        <div style={{ background: "#f6fbfd", padding: "90px 0" }}>
+          <div className="container">
+            <div className="row align-items-center">
 
-            <motion.div
-              className="col-lg-6 mb-4 mb-lg-0"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeLeft}
-            >
-              <div className="glass-card p-3">
-                <img
-                  src={whoWeAreImg}
-                  alt="Who We Are HRIFY"
-                  className="img-fluid"
-                  style={{ borderRadius: "20px" }}
-                />
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="col-lg-6"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeRight}
-            >
-              <span
-                style={{
-                  background: "#e6f7fc",
-                  color: "#015670",
-                  padding: "6px 16px",
-                  borderRadius: "20px",
-                  fontSize: "14px",
-                  fontWeight: "600"
-                }}
+              <motion.div
+                className="col-lg-6 mb-4 mb-lg-0"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeLeft}
               >
-                WHO WE ARE
-              </span>
+                <div className="glass-card p-3">
+                  <img
+                    src={whoWeAreImg}
+                    alt="Who We Are HRIFY"
+                    className="img-fluid"
+                    style={{ borderRadius: "20px" }}
+                  />
+                </div>
+              </motion.div>
 
-              <h2 style={{ fontSize: "42px", fontWeight: "700", marginTop: "20px" }}>
-                Empowering Businesses Through People
-              </h2>
+              <motion.div
+                className="col-lg-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeRight}
+              >
+                <span
+                  style={{
+                    background: "#e6f7fc",
+                    color: "#015670",
+                    padding: "6px 16px",
+                    borderRadius: "20px",
+                    fontSize: "14px",
+                    fontWeight: "600"
+                  }}
+                >
+                  WHO WE ARE
+                </span>
 
-              <p style={{ fontSize: "18px", lineHeight: "1.8", marginTop: "20px" }}>
-                HRIFY is a people-first IT staffing and talent solutions company dedicated to helping organizations build high-performing teams. We specialize in IT staffing, strategic talent management, and technology services that enable businesses to scale faster and smarter.
+                <h2 style={{ fontSize: "42px", fontWeight: "700", marginTop: "20px" }}>
+                  Empowering Businesses Through People
+                </h2>
 
-                With a deep understanding of the evolving tech landscape, we connect skilled professionals with the right opportunities through flexible hiring models, quality-driven recruitment, and long-term partnerships. From startups to enterprises, we act as a trusted partner in aligning talent, technology, and business goals.
+                <p style={{ fontSize: "18px", lineHeight: "1.8", marginTop: "20px" }}>
+                  HRIFY is a people-first IT staffing and talent solutions company dedicated to helping organizations build high-performing teams. We specialize in IT staffing, strategic talent management, and technology services that enable businesses to scale faster and smarter.
 
-                At HRIFY, we don’t just fill roles — we build careers, empower diversity through initiatives like our REVIVE program, and deliver workforce solutions that drive sustainable growth.
-              </p>
-            </motion.div>
+                  With a deep understanding of the evolving tech landscape, we connect skilled professionals with the right opportunities through flexible hiring models, quality-driven recruitment, and long-term partnerships. From startups to enterprises, we act as a trusted partner in aligning talent, technology, and business goals.
 
+                  At HRIFY, we don’t just fill roles — we build careers, empower diversity through initiatives like our REVIVE program, and deliver workforce solutions that drive sustainable growth.
+                </p>
+              </motion.div>
+
+            </div>
           </div>
         </div>
-      </div>
 
 
- <motion.div
-        className="container py-5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-      >
-        <h2 className="gradient-text text-center mb-5" style={{fontSize:"40px"}} ><b>Our Services</b></h2>
+        <motion.div
+          className="container py-5"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <h2 className="gradient-text text-center mb-5" style={{ fontSize: "40px" }} ><b>Our Services</b></h2>
 
-        <div className="row g-4">
+          <div className="row g-4">
 
-  {/* Talent Management */}
-  <div className="col-md-6">
-    <div className="glass-card p-4 hover-lift">
-      <h4>Talent Management</h4>
-      <p>
-        Strategic talent solutions designed to attract, develop, and retain
-        high-performing professionals across industries.
-      </p>
+            {/* Talent Management */}
+            <div className="col-md-6">
+              <div className="glass-card p-4 hover-lift">
+                <h4>Talent Management</h4>
+                <p>
+                  Strategic talent solutions designed to attract, develop, and retain
+                  high-performing professionals across industries.
+                </p>
 
-      <ul>
-        <li>Contract & Permanent Hiring</li>
-        <li>Contract-to-Hire</li>
-        <li>On-demand Workforce</li>
-        <li>Leadership & Executive Hiring</li>
-        <li>Campus Recruitment Programs</li>
-        <li>Employee Training & Development</li>
-        <li>Talent Pipeline Building</li>
-      </ul>
-    </div>
-  </div>
+                <ul>
+                  <li>Contract & Permanent Hiring</li>
+                  <li>Contract-to-Hire</li>
+                  <li>On-demand Workforce</li>
+                  <li>Leadership & Executive Hiring</li>
+                  <li>Campus Recruitment Programs</li>
+                  <li>Employee Training & Development</li>
+                  <li>Talent Pipeline Building</li>
+                </ul>
+              </div>
+            </div>
 
-  {/* IT Services */}
-  <div className="col-md-6">
-    <div className="glass-card p-4 hover-lift">
-      <h4>IT Services</h4>
-      <p>
-        Technology-driven services helping businesses build, scale, and
-        modernize their digital ecosystem.
-      </p>
+            {/* IT Services */}
+            <div className="col-md-6">
+              <div className="glass-card p-4 hover-lift">
+                <h4>IT Services</h4>
+                <p>
+                  Technology-driven services helping businesses build, scale, and
+                  modernize their digital ecosystem.
+                </p>
 
-      <ul>
-        <li>Design & Development</li>
-        <li>Business Solutions</li>
-        <li>Networking Solutions</li>
-        <li>Cybersecurity</li>
-        <li>Blockchain</li>
-        <li>Enterprise</li>
-        <li>AI & ML</li>
-        <li>Managed Services</li>
-        <li>Quality Engineering</li>
-      </ul>
-    </div>
-  </div>
+                <ul>
+                  <li>Design & Development</li>
+                  <li>Business Solutions</li>
+                  <li>Networking Solutions</li>
+                  <li>Cybersecurity</li>
+                  <li>Blockchain</li>
+                  <li>Enterprise</li>
+                  <li>AI & ML</li>
+                  <li>Managed Services</li>
+                  <li>Quality Engineering</li>
+                </ul>
+              </div>
+            </div>
 
-</div>
-      </motion.div>
-
-
-    {/* ================= VISION & MISSION SECTION ================= */}
+          </div>
+        </motion.div>
 
 
+        {/* ================= VISION & MISSION SECTION ================= */}
 
 
 
 
 
-    
-<div
-  style={{
-    background: "linear-gradient(90deg, #CFF4FF 0%, #FFFFFF 100%)",
-    width: "100%",
-    padding: "70px 0",
-  }}
->
-  <div className="container">
-    <div className="row align-items-center">
 
-      {/* LEFT PROFILE */}
-      <div className="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
-        <img
-          src={img3}
-          alt="Founder & CEO"
-          style={{
-            width: "280px",
-            // borderRadius: "20px",
-            // boxShadow: "0 12px 30px rgba(0,0,0,0.12)"
-          }}
-        />
 
-        <h5 className="mt-3 fw-semibold" style={{ color: "#015670" }}>
-          Jayakrishnan J
-        </h5>
-
-        <p style={{ color: "#015670", marginBottom: "8px" }}>
-          Founder & CEO
-        </p>
 
         <div
           style={{
-            background: "#fff",
-            padding: "6px 16px",
-            borderRadius: "6px",
-            display: "inline-block",
+            background: "linear-gradient(90deg, #CFF4FF 0%, #FFFFFF 100%)",
+            width: "100%",
+            padding: "70px 0",
           }}
         >
-          <img src={HrifyLogo} alt="HRIFY" style={{ height: "28px" }} />
+          <div className="container">
+            <div className="row align-items-center">
+
+              {/* LEFT PROFILE */}
+              <div className="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+                <img
+                  src={img3}
+                  alt="Founder & CEO"
+                  style={{
+                    width: "280px",
+                    // borderRadius: "20px",
+                    // boxShadow: "0 12px 30px rgba(0,0,0,0.12)"
+                  }}
+                />
+
+                <h5 className="mt-3 fw-semibold" style={{ color: "#015670" }}>
+                  Jayakrishnan J
+                </h5>
+
+                <p style={{ color: "#015670", marginBottom: "8px" }}>
+                  Founder & CEO
+                </p>
+
+                <div
+                  style={{
+                    background: "#fff",
+                    padding: "6px 16px",
+                    borderRadius: "6px",
+                    display: "inline-block",
+                  }}
+                >
+                  <img src={HrifyLogo} alt="HRIFY" style={{ height: "28px" }} />
+                </div>
+              </div>
+
+              {/* RIGHT CONTENT */}
+              <div className="col-lg-8 col-md-12 ps-lg-5">
+
+                {/* VISION */}
+                <h3 className="fw-bold mb-3 text-center"
+                  style={{ color: "#015670" }}>
+                  VISION
+                </h3>
+
+                <p style={{
+                  color: "#000000"   // black color
+                  , lineHeight: "1.9", fontSize: "17px"
+                }}>
+                  Known for its innovative solutions and exceptional client service,
+                  HRIFY Technologies sets the standard in{" "}
+                  <strong>Talent Management, IT Services & IT Consulting </strong>
+                  through cutting-edge technologies and a strong commitment to
+                  exceeding customer expectations.
+                </p>
+
+                {/* MISSION */}
+                <h3
+                  className="fw-bold mb-3 text-center"
+                  style={{ color: "#015670" }}
+                >
+                  MISSION
+                </h3>
+
+                <p style={{ color: "#000000", lineHeight: "1.9", fontSize: "17px" }}>
+                  Our mission is to partner with businesses across industries by
+                  delivering reliable IT solutions through a strong network of skilled
+                  teams, while ensuring client satisfaction and fostering a positive,
+                  people-first work culture.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* RIGHT CONTENT */}
-      <div className="col-lg-8 col-md-12 ps-lg-5">
-
-        {/* VISION */}
-        <h3   className="fw-bold mb-3 text-center"
- style={{ color: "#015670"  }}>
-          VISION
-        </h3>
-
-        <p style={{     color: "#000000"   // black color
-, lineHeight: "1.9", fontSize: "17px" }}>
-          Known for its innovative solutions and exceptional client service,
-          HRIFY Technologies sets the standard in{" "}
-          <strong>Talent Management, IT Services & IT Consulting </strong>
-            through cutting-edge technologies and a strong commitment to
-          exceeding customer expectations.
-        </p>
-
-        {/* MISSION */}
-        <h3
-  className="fw-bold mb-3 text-center"
-          style={{ color: "#015670" }}
-        >
-          MISSION
-        </h3>
-
-        <p style={{    color: "#000000",    lineHeight: "1.9", fontSize: "17px" }}>
-          Our mission is to partner with businesses across industries by
-          delivering reliable IT solutions through a strong network of skilled
-          teams, while ensuring client satisfaction and fostering a positive,
-          people-first work culture.
-        </p>
-
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
 
@@ -472,139 +477,213 @@ const fadeRight = {
         </div>
 
 
-{/* ================= CLIENTS SECTION ================= */}
-<section className="clients py-5" style={{ backgroundColor: "#f8f9fa" }}>
-  <div className="container">
-    <h2 className="gradient-text text-center mb-5" style={{color: "#00566F", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}>
-      <b>Trusted By Our Clients</b>
-    </h2>
-    
-    <div className="logo-track" style={{ overflow: "hidden", width: "100%" }}>
-      <div className="logo-track-inner" style={{ 
-        display: "flex", 
-        width: "max-content", 
-        animation: "scroll 25s linear infinite",
-        gap: "60px"
-      }}>
-        {/* First set of logos */}
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-             <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        
-        {/* Duplicate set of logos for seamless looping */}
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-        <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
-     <div className="logo-item" style={{ 
-          flexShrink: 0, 
-          height: "70px", 
-          display: "flex", 
-          alignItems: "center",
-          transition: "transform 0.3s ease"
-        }}>
-          <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
-        </div>
+        {/* ================= CLIENTS SECTION ================= */}
+        <section className="clients py-5" style={{ backgroundColor: "#f8f9fa" }}>
+          <div className="container">
+            <h2 className="gradient-text text-center mb-5" style={{ color: "#00566F", fontFamily: "'Outfit', sans-serif", fontSize: "36px" }}>
+              <b>Trusted By Our Clients</b>
+            </h2>
+
+            <div className="logo-track" style={{ overflow: "hidden", width: "100%" }}>
+              <div className="logo-track-inner" style={{
+                display: "flex",
+                width: "max-content",
+                animation: "scroll 25s linear infinite",
+                gap: "60px"
+              }}>
+                {/* First set of logos */}
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo7} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo8} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo9} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo10} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
 
 
-      </div>
-    </div>
-  </div>
 
-  <style>
-    {`
+                {/* Duplicate set of logos for seamless looping */}
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo1} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo2} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo3} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo4} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo5} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo6} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo7} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo8} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo9} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+                <div className="logo-item" style={{
+                  flexShrink: 0,
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "transform 0.3s ease"
+                }}>
+                  <img src={logo10} alt="client" style={{ height: "70px", objectFit: "contain" }} />
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <style>
+            {`
       .logo-track:hover .logo-track-inner {
         animation-play-state: paused;
       }
@@ -636,8 +715,8 @@ const fadeRight = {
         }
       }
     `}
-  </style>
-</section>
+          </style>
+        </section>
 
 
 

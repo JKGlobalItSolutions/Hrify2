@@ -99,7 +99,12 @@ function Navbar() {
   <ul className="dropdown-menu">
 
     {/* Sonachala */}
-    <li
+    <li>
+          <Link className="dropdown-item" to="/sonachala">
+          Sonachala 
+          </Link>
+        </li>
+    {/* <li
       style={{ position: "relative" }}
       onMouseEnter={(e) =>
         (e.currentTarget.querySelector(".submenu").style.display = "block")
@@ -119,13 +124,9 @@ function Navbar() {
           top: "0"
         }}
       >
-        <li>
-          <Link className="dropdown-item" to="/sonachala">
-          Sonachala 
-          </Link>
-        </li>
+        
       </ul>
-    </li>
+    </li> */}
 
     {/* Sonagiri */}
     {/* <li
