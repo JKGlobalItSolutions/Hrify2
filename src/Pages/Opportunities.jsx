@@ -1,0 +1,21 @@
+import React, { useState } from "react";
+import Navbar from "../Components/Navbarjob";
+import JobList from "./JobList";
+
+function App() {
+  const [searchParams, setSearchParams] = useState({
+    search: "",
+    location: "",
+  });
+
+  return (
+    <>
+    <div>
+      <Navbar onSearch={setSearchParams} />
+      <JobList searchParams={searchParams}/>
+      </div>
+    </>
+  );
+}
+
+export default App;
